@@ -245,6 +245,32 @@ function bones_fonts() {
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
 
+// CHARLES HELPER FUNCTIONS
+function helper($var) {
+  $type = gettype ( $var );
+  echo '<h2>Var is type: '.$type.'.</h2>';
+
+  if($type == 'array') {
+    echo '<pre>'.print_r($var).'</pre>';  
+  } elseif($type == 'object') {
+    echo '<pre>'.var_dump($var).'</pre>';  
+  }
+  
+}
+
+// Wen Clean String format
+function cleanString($string){
+  $search = '/[^[:alpha:]]/';
+  $space = ' ';
+  $replace = '-';
+  $newString = str_replace($search, $replace, $string);
+  $newString = strtolower($newString);
+  $newString = str_replace($space, $replace, $newString);
+
+  return $newString;
+
+}
+
 // WORDPRESS WYSIWYG CUSTOM EDITS
 // Enable font size & font family selects in the editor
 if ( ! function_exists( 'wpex_mce_buttons' ) ) {

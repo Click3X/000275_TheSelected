@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	background-color:#fff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -185,7 +185,11 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			padding: 0.75em;
+			// padding: 0.75em;
+			padding: 12px 12px 8px;
+			text-transform: uppercase;
+
+			border-bottom: 4px solid black;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -194,7 +198,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				border-bottom: 4px solid $gold;
 			}
 		}
 
@@ -258,16 +262,13 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
 
 			header {
-				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
 			}
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
 
 				p {
 					margin: 0;

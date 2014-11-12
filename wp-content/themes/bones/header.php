@@ -40,6 +40,27 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
+        <?php
+            // GET COUNT OF MENU ITEMS 
+            $my_menu = wp_get_nav_menu_object( 'Main' );
+            // Echo count of items in menu
+            $item_count = $my_menu->count;
+            $nav_item_width = intval(100/$item_count);
+            $item_class=$nav_item_width.'%';
+
+            echo '<style>
+                @media(min-width: 768px) {
+                    #menu-main li {
+                        float: left;
+                        position: relative;
+                        width: '.$item_class.';
+                        text-align: center;
+                        font-weight:500;
+                    }
+                }
+                </style>';
+        ?>
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -51,26 +72,27 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-
 					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => false,                           // remove nav container
-    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					'theme_location' => 'main-nav',                 // where it's located in the theme
-    					'before' => '',                                 // before the menu
-        			'after' => '',                                  // after the menu
-        			'link_before' => '',                            // before each link
-        			'link_after' => '',                             // after each link
-        			'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
+                        
+						<?php wp_nav_menu(
+                            array(
+            					'container' => false,                           // remove nav container
+            					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+            					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+            					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+            					'theme_location' => 'main-nav',                 // where it's located in the theme
+            					'before' => '',                                 // before the menu
+                    			'after' => '',                                  // after the menu
+                    			'link_before' => '',                            // before each link
+                    			'link_after' => '',                             // after each link
+                    			'depth' => 0,                                   // limit the depth of the nav
+            					'fallback_cb' => ''                             // fallback function (if there is one)
+						    )
+                        ); ?>
 
 					</nav>
 
