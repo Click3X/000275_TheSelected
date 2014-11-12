@@ -245,5 +245,56 @@ function bones_fonts() {
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
 
+// WORDPRESS WYSIWYG CUSTOM EDITS
+// Enable font size & font family selects in the editor
+if ( ! function_exists( 'wpex_mce_buttons' ) ) {
+  function wpex_mce_buttons( $buttons ) {
+    array_unshift( $buttons, 'fontselect' ); // Add Font Select
+    array_unshift( $buttons, 'fontsizeselect' ); // Add Font Size Select
+    return $buttons;
+  }
+}
+add_filter( 'mce_buttons_2', 'wpex_mce_buttons' );
+
+// Customize mce editor font sizes
+if ( ! function_exists( 'wpex_mce_text_sizes' ) ) {
+  function wpex_mce_text_sizes( $initArray ){
+    $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 19px 21px 24px 29px 34px 38px 88px";
+    return $initArray;
+  }
+}
+add_filter( 'tiny_mce_before_init', 'wpex_mce_text_sizes' );
+
+// Add custom Fonts to the Fonts list
+if ( ! function_exists( 'wpex_mce_google_fonts_array' ) ) {
+  function wpex_mce_google_fonts_array( $initArray ) {
+      $initArray['font_formats'] = 'Brandon Grotesque=brandon-grotesque,sans-serif;Minion Pro=minion-pro,serif;';
+            return $initArray;
+  }
+}
+add_filter( 'tiny_mce_before_init', 'wpex_mce_google_fonts_array' );
+
+// ADD ALL WYSIWYG EDITOR OPTIONS
+function enable_more_buttons($buttons) {
+
+// $buttons[] = 'fontselect';
+// $buttons[] = 'fontsizeselect';
+// $buttons[] = 'styleselect';
+$buttons[] = 'backcolor';
+// $buttons[] = 'newdocument';
+// $buttons[] = 'cut';
+// $buttons[] = 'copy';
+// $buttons[] = 'charmap';
+// $buttons[] = 'hr';
+// $buttons[] = 'visualaid';
+
+return $buttons;
+}
+add_filter("mce_buttons_3", "enable_more_buttons");
+
+
+
+
+
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
