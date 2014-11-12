@@ -1450,6 +1450,47 @@ select {
   background-position: 97.5% center;
 }
 
+/* line 1, ../scss/modules/_sticky-footer.scss */
+* {
+  margin: 0;
+}
+
+/* line 4, ../scss/modules/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../scss/modules/_sticky-footer.scss */
+#container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+/* line 12, ../scss/modules/_sticky-footer.scss */
+#container:after {
+  content: "";
+  display: block;
+}
+
+/* line 16, ../scss/modules/_sticky-footer.scss */
+.footer, #container:after {
+  height: 142px;
+}
+
+/* line 1, ../scss/modules/_footer.scss */
+.description {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 4, ../scss/modules/pages/_home.scss */
+.page-id-4 #container,
+.page-id-4 .hentry {
+  background-color: #000;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

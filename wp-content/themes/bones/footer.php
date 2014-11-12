@@ -1,14 +1,25 @@
-			<footer class="footer" role="contentinfo">
+        </div> <!-- END CONTAINER -->
 
-				<div id="inner-footer" class="wrap cf">
+		<footer class="footer" role="contentinfo">
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+			<div id="inner-footer" class="wrap cf">
 
-				</div>
+                <?php
+                    // PRINT BLOG DESCRIPTION
+                    echo '<h2 class="description">';
+                        bloginfo('description');
+                    echo '</h2>';
 
-			</footer>
+                    // GET ADDRESS FROM CONTACT-US PAGE OUTSIDE OF LOOP
+                    global $wp_query;
+                    $postid = 13;
+                    echo get_post_meta($postid, 'address', true);
+                    wp_reset_query();
+                ?>
 
-		</div>
+			</div>
+
+		</footer>		
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
