@@ -1,0 +1,28 @@
+// RESPONSIVE FONTS
+
+h1 {
+  line-height: 1em;
+  font-size: 3em;
+  margin-bottom: .9em;
+  
+  @media(min-width: 481px) {
+    font-size: 4em;
+  }
+
+  @media(min-width: 768px) {
+    font-size: 5.5em;
+  }
+  
+  span {
+    letter-spacing: normal;
+  }
+}
+
+h2 {
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+
+  @media(min-width: 481px) {
+    font-size: 2.4em;
+  }
+}

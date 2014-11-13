@@ -12,8 +12,6 @@
 
 							<header class="article-header">
 
-								<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
 							</header> <?php // end article header ?>
 
 							<section class="entry-content cf" itemprop="articleBody">

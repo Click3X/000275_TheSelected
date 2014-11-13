@@ -67,6 +67,19 @@
 
 		<div id="container" class="tk-brandon-grotesque">
 
+            <?php
+                // IF IS HOME PAGE, GET MARQUEE TEXT
+                if( is_page(44) ) {
+                    $post_id =4;
+                    $post_object = get_post( $post_id );
+
+                    echo '<div class="marquee cf">';
+                        echo $post_object->post_content;
+                    echo '</div>';
+                }
+
+            ?>
+
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap cf">

@@ -23,9 +23,9 @@ body {}
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 760px;
-}
+// .wrap {
+// 	width: 760px;
+// }
 
 /*********************
 HEADER STYLES
@@ -41,6 +41,8 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
+	// width: 95%;
+	margin: 0 auto;
 	ul {
 		background:$black;
 		margin-top:0;

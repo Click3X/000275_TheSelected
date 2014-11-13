@@ -318,6 +318,12 @@ return $buttons;
 }
 add_filter("mce_buttons_3", "enable_more_buttons");
 
+// // CUSTOM WYSIWYG STYLES
+// function my_theme_add_editor_styles() {
+//     add_editor_style( 'library/css/wysiwyg.css' );
+// }
+// add_action( 'after_setup_theme', 'my_theme_add_editor_styles' );
+
 
 
 
