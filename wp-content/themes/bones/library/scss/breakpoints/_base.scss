@@ -189,6 +189,7 @@ and more scalable.
 			padding: 12px 12px 8px;
 			text-transform: uppercase;
 			border-bottom: 4px solid black;
+			font-size: .9em;
 
 			@include prefix(transition, all 400ms);
 
@@ -313,11 +314,11 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
-			padding: 1.5em 1.5em 0;
+			// padding: 1.5em 1.5em 0;
 
-			p {
-				margin: 0 0 1.5em;
-			}
+			// p {
+			// 	margin: 0 0 1.5em;
+			// }
 
 
 			ul, ol, table, dl {}
@@ -888,3 +889,14 @@ FOOTER STYLES
 
 
 	.copyright {}
+
+
+// CHARLES STYLES
+// HR ELEMENT STYLES IN WYSIWYG
+.entry-content hr {	
+	width: 6em;
+	margin: 1em auto 1.2em;
+	background: black;
+	height: 2px;
+	border: 0;
+}

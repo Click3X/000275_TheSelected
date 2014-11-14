@@ -1,0 +1,98 @@
+// WHO WE ARE
+
+.page-id-6 {
+
+    .article-holder {
+        width: 95%;
+        margin: 0 auto;
+
+        .entry-content {
+            padding-left:1em;
+            padding-right:1em;
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.5em;
+        }
+    }
+}
+
+.checkered {    
+    padding: 3em 0;
+    background: #ebebeb;
+}
+
+
+
+// .page-id-6 .article-holder .entry-content.checkered {    
+//     padding: 3em 0;
+    
+//     &:nth-of-type(odd) {
+//         background: #ebebeb;
+//     }
+// }
+
+.checker-holder {
+    background-color:#ebebeb;
+    margin:3em 0 4.5em;
+}
+
+@media(min-width: 481px) {
+    .checkered .child {
+        width: 75%;
+        margin:0 auto;
+    }
+    .entry-content {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+.entry-content.checkered {
+    &:nth-of-type(even) {
+        background-color: #ffffff;
+    }
+}
+
+
+
+@media(min-width: 768px) {
+    .entry-content {
+        background-color: #ffffff;
+    }
+
+    .checker-holder {
+        background-color:#ebebeb;
+        margin:3em 0 4.5em;
+    }
+
+    .checkered {    
+        position: relative;
+        width:50%;
+        height: auto;
+        padding-top:0;
+        padding-bottom:50%;
+
+        &:nth-of-type(odd) {
+            float: right;
+            clear:left;
+        }
+        &:nth-of-type(even) {
+            float:left;
+            clear:right;
+        }
+
+        .child {
+            width: 75%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

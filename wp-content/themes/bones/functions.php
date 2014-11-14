@@ -326,6 +326,13 @@ add_filter("mce_buttons_3", "enable_more_buttons");
 
 
 
+// ALLOW SVG
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 
 
 
