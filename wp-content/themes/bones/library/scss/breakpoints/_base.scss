@@ -123,21 +123,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+	letter-spacing: .0618em;
 }
 
 h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+	letter-spacing: .0618em;
 }
 
 h3, .h3 {
 	font-size: 1.125em;
+	letter-spacing: .0618em;
 }
 
 h4, .h4 {
 	font-size: 1.1em;
 	font-weight: 700;
+	letter-spacing: .0618em;
 }
 
 h5, .h5 {
@@ -145,6 +149,7 @@ h5, .h5 {
 	line-height: 2.09em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	letter-spacing: .0618em;
 }
 
 /*********************
@@ -189,7 +194,8 @@ and more scalable.
 			padding: 12px 12px 8px;
 			text-transform: uppercase;
 			border-bottom: 4px solid black;
-			font-size: .9em;
+			// font-size: 1em;
+			font-size: .95em;
 
 			@include prefix(transition, all 400ms);
 
@@ -201,6 +207,7 @@ and more scalable.
 			*/
 			&:hover, &:focus {
 				border-bottom: 4px solid $gold;
+				// font-weight: bold;
 			}
 		}
 
@@ -893,10 +900,15 @@ FOOTER STYLES
 
 // CHARLES STYLES
 // HR ELEMENT STYLES IN WYSIWYG
+.marquee hr,
 .entry-content hr {	
 	width: 6em;
 	margin: 1em auto 1.2em;
 	background: black;
 	height: 2px;
 	border: 0;
+}
+
+.marquee hr {
+	background-color: white;
 }
