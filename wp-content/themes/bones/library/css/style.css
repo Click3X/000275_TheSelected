@@ -1587,15 +1587,16 @@ p {
   background-repeat: repeat;
   background-size: 266px 192px;
   height: 100vh;
+  max-height: 1200px;
 }
-/* line 12, ../scss/modules/pages/_marquee.scss */
+/* line 13, ../scss/modules/pages/_marquee.scss */
 .marquee h1 span strong span {
   font-weight: 800;
   letter-spacing: .08em;
   color: #fff;
 }
 
-/* line 26, ../scss/modules/pages/_marquee.scss */
+/* line 27, ../scss/modules/pages/_marquee.scss */
 .marquee hr,
 .entry-content hr {
   width: 5.5em;
@@ -1605,22 +1606,22 @@ p {
   border: 0;
 }
 
-/* line 34, ../scss/modules/pages/_marquee.scss */
+/* line 35, ../scss/modules/pages/_marquee.scss */
 .marquee hr {
   background-color: white;
 }
 
-/* line 39, ../scss/modules/pages/_marquee.scss */
+/* line 40, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1, #container > div.marquee.comment-respond > div > h1 {
   background-color: transparent;
   margin-top: 0;
 }
-/* line 43, ../scss/modules/pages/_marquee.scss */
+/* line 44, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 span, #container > div.marquee.comment-respond > div > h1 span {
   background-color: transparent;
 }
 
-/* line 47, ../scss/modules/pages/_marquee.scss */
+/* line 48, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(2), #container > div.marquee.comment-respond > div > h2:nth-child(2),
 #container > div.marquee.cf > div > h1,
 #container > div.marquee.comment-respond > div > h1 {
@@ -1628,19 +1629,19 @@ p {
   z-index: 1;
 }
 
-/* line 49, ../scss/modules/pages/_marquee.scss */
+/* line 50, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
   background-color: transparent !important;
 }
 
-/* line 52, ../scss/modules/pages/_marquee.scss */
+/* line 53, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(6) > span > strong, #container > div.marquee.comment-respond > div > h2:nth-child(6) > span > strong,
 #container > div.marquee.cf > div > h2:nth-child(5) > span > span > strong,
 #container > div.marquee.comment-respond > div > h2:nth-child(5) > span > span > strong {
   font-weight: 800;
 }
 
-/* line 58, ../scss/modules/pages/_marquee.scss */
+/* line 59, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(7) > span, #container > div.marquee.comment-respond > div > h2:nth-child(7) > span,
 #container > div.marquee.cf > div > h2:nth-child(6) > span,
 #container > div.marquee.comment-respond > div > h2:nth-child(6) > span,
@@ -1649,7 +1650,7 @@ p {
   background-color: transparent !important;
 }
 
-/* line 62, ../scss/modules/pages/_marquee.scss */
+/* line 63, ../scss/modules/pages/_marquee.scss */
 .marquee-holder {
   position: absolute;
   top: 0;
@@ -1662,27 +1663,27 @@ p {
   max-width: 1010px;
 }
 
-/* line 72, ../scss/modules/pages/_marquee.scss */
+/* line 73, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
   margin-bottom: 0;
 }
 
-/* line 75, ../scss/modules/pages/_marquee.scss */
+/* line 76, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
   font-size: 50px !important;
 }
 
-/* line 76, ../scss/modules/pages/_marquee.scss */
+/* line 77, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
   font-size: 14px !important;
 }
 
-/* line 77, ../scss/modules/pages/_marquee.scss */
+/* line 78, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
   font-size: 35px !important;
 }
 
-/* line 80, ../scss/modules/pages/_marquee.scss */
+/* line 81, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
 #container > div.marquee.cf > div > h2 > span > span > strong > span,
 #container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
@@ -1690,39 +1691,39 @@ p {
 }
 
 @media (min-width: 620px) {
-  /* line 82, ../scss/modules/pages/_marquee.scss */
+  /* line 83, ../scss/modules/pages/_marquee.scss */
   .marquee-holder {
     height: 320px;
   }
 
-  /* line 85, ../scss/modules/pages/_marquee.scss */
+  /* line 86, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
     margin-bottom: 0.375em;
   }
 
-  /* line 88, ../scss/modules/pages/_marquee.scss */
+  /* line 89, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
     font-size: 18px !important;
   }
 
-  /* line 92, ../scss/modules/pages/_marquee.scss */
+  /* line 93, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
   #container > div.marquee.cf > div > h2 > span > span > strong > span,
   #container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
     font-size: 24px !important;
   }
 
-  /* line 96, ../scss/modules/pages/_marquee.scss */
+  /* line 97, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
     font-size: 78px !important;
   }
 
-  /* line 100, ../scss/modules/pages/_marquee.scss */
+  /* line 101, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
     font-size: 55px !important;
   }
 
-  /* line 105, ../scss/modules/pages/_marquee.scss */
+  /* line 106, ../scss/modules/pages/_marquee.scss */
   .marquee hr,
   .entry-content hr {
     width: 7.5em;
@@ -1730,7 +1731,7 @@ p {
   }
 }
 @media (max-width: 619px) {
-  /* line 113, ../scss/modules/pages/_marquee.scss */
+  /* line 114, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
     line-height: 1.5rem;
   }
