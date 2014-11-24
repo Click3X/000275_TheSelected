@@ -127,10 +127,15 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
 	margin-bottom: 0.375em;
 	letter-spacing: .0618em;
+	font-size: 1em;
+	line-height: 1.9em;
+	
+	@media(min-width: 620px){
+		font-size: 1.75em;
+		line-height: 1.4em;
+	}
 }
 
 h3, .h3 {
