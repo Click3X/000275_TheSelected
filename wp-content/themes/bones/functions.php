@@ -285,7 +285,8 @@ add_filter( 'mce_buttons_2', 'wpex_mce_buttons' );
 // Customize mce editor font sizes
 if ( ! function_exists( 'wpex_mce_text_sizes' ) ) {
   function wpex_mce_text_sizes( $initArray ){
-    $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 19px 21px 24px 29px 34px 38px 88px";
+    // $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 19px 21px 24px 29px 34px 38px 88px";
+    $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 18px 21px 24px 29px 34px 38px 55px 78px";
     return $initArray;
   }
 }
@@ -332,6 +333,29 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+// FIX THUMBNAIL DISPLAY FOR SVG
+function fix_svg() {
+  echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img { 
+             width: 100% !important; 
+             height: auto !important; 
+        }
+        </style>';
+}
+add_action('admin_head', 'fix_svg');
+
+// ADVANCED CUSTOM FIELDS OPTIONS CODE
+// ADD 'CLIENT INFO' TAB TO ADMIN MAIN MENU
+function my_acf_options_page_settings( $settings )
+{
+  $settings['title'] = 'Client Info';
+  $settings['pages'] = array('Contact Information');
+
+  return $settings;
+}
+
+add_filter('acf/options_page/settings', 'my_acf_options_page_settings');
 
 
 

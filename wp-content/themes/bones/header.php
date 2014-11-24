@@ -59,6 +59,61 @@
                     }
                 }
                 </style>';
+
+                
+            // ECHO LOGO STYLES
+            // GET LOGOS FROM 'CLIENT INFORMATION' OPTINO FIELD IN ADMIN
+            $svgLogo = get_field('logo-svg', 'options');
+            $pngLogo = get_field('logo-png', 'options');
+            
+            echo '<style>';
+
+            echo '
+                .logo-holder {
+                    width:100%;
+                    max-width:114px;
+                    height:100%;
+                    max-height:100px;
+                    position:absolute;
+
+                    top: -5%;
+                    left: 34%;
+                    right: 0;
+                    bottom: auto;
+                    
+                    margin: auto;
+                    -webkit-transform: rotate(8deg);
+                    transform: rotate(8deg);
+                }
+                .logo {
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                    width:100%;
+                    height:100%;
+                }';
+
+            if($pngLogo) { 
+                $pngLogo = $pngLogo['url'];
+                echo "\n";
+                echo '.logo {';
+                    echo 'background-image:url("'.$pngLogo.'");';
+                echo '}';
+                echo "\n";
+            }
+
+
+            if($svgLogo) { 
+                $svgLogo = $svgLogo['url']; 
+                echo "\n";
+                echo '.svg .logo {';
+                    echo 'background-image:url("'.$svgLogo.'");';
+                echo '}';
+                echo "\n";
+            }
+
+            echo '</style>';
+
+
         ?>
 
 	</head>
@@ -74,7 +129,11 @@
                     $post_object = get_post( $post_id );
 
                     echo '<div class="marquee cf">';
-                        echo $post_object->post_content;
+                        // echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';
+                        echo '<div class="marquee-holder cf">';
+                            echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';
+                            echo $post_object->post_content;
+                        echo '</div>';
                     echo '</div>';
                 }
 
