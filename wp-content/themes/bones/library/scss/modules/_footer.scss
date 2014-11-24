@@ -3,3 +3,56 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.footer {
+    background-color: black;
+    position: relative;
+}
+
+#inner-footer {
+    padding-bottom: 2em;
+    background-color: black;
+
+    .logo-holder {
+        position: static;
+        margin:1.5em auto;
+        min-width: 87px;
+        max-width: 120px;
+        
+        @include prefix(transform, rotate(0deg));
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 1.73039996623993px;
+        font-family: brandon-grotesque,sans-serif;
+
+        @media(min-width:620px) {
+            font-size: 18px;  
+        }
+    }
+}
+
+#inner-footer > div.wrap.cf > h2 > span > strong > span {
+    font-weight: 800;
+}
+
+.social-links {
+    width:100%;
+    max-width:80px;
+    margin:.3em auto;
+
+    li {
+        width:50%;
+        position: relative;
+        float:left;
+        padding:8px 6px;
+
+        a {
+            display: block;
+            width:100%;
+            padding-bottom: 100%;
+        }
+    }
+}

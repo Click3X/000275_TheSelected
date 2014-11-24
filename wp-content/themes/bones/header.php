@@ -70,32 +70,37 @@
 
             echo '
                 .logo-holder {
-                    width:100%;
-                    max-width:114px;
-                    height:100%;
-                    max-height:100px;
+                    width: 17%;
+                    height:auto;
                     position:absolute;
 
-                    top: -5%;
-                    left: 34%;
+                    top:0;
+                    bottom:0;
                     right: 0;
-                    bottom: auto;
-                    
+                    left:0;
+
                     margin: auto;
-                    -webkit-transform: rotate(8deg);
-                    transform: rotate(8deg);
+                    margin-top: -7%;
+                    margin-right: 22%;
+
+                    -webkit-transform: rotate(10deg);
+                    transform: rotate(10deg);
                 }
                 .logo {
                     background-repeat:no-repeat;
                     background-size:cover;
                     width:100%;
-                    height:100%;
+                    height:auto;
+                    padding-bottom:100%;
+                    min-width: 87px;
+                    min-height: 80px;
                 }';
 
             if($pngLogo) { 
                 $pngLogo = $pngLogo['url'];
                 echo "\n";
-                echo '.logo {';
+                echo '.logo {
+                          background-position: 50% 50%;';
                     echo 'background-image:url("'.$pngLogo.'");';
                 echo '}';
                 echo "\n";
@@ -113,6 +118,33 @@
 
             echo '</style>';
 
+            // SOCIAL LINKS STYLES
+            $social_links = get_field('social_links', 'options');
+            if($social_links) {
+                echo '<style>';
+                // helper($social_links);
+                foreach ($social_links as $key => $social_link) {
+                    $class=cleanString($social_link['name']);
+
+                    $imageSvg = $social_link['image_svg']['url'];
+                    $imagePng = $social_link['image_png']['url'];
+
+                    echo '.social-'.$class.' a {
+                        display:block;
+                        width:50%;
+                        background-image:url("'.$imagePng.'");
+                        background-repeat:no-repeat;
+                        background-size:contain;
+                        background-position:50% 50%;
+                    }';
+                    
+                    echo '.svg .social-'.$class.' a {
+                        background-image:url("'.$imageSvg.'");
+                    }';
+                }
+                echo '</style>';
+            }
+
 
         ?>
 
@@ -129,9 +161,10 @@
                     $post_object = get_post( $post_id );
 
                     echo '<div class="marquee cf">';
-                        // echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';
                         echo '<div class="marquee-holder cf">';
+                            // LOGO - STAMP CODE
                             echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';
+                            // CONTENT FROM MARQUEE PAGE
                             echo $post_object->post_content;
                         echo '</div>';
                     echo '</div>';

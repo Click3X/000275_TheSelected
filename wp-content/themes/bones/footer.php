@@ -1,19 +1,40 @@
         </div> <!-- END CONTAINER -->
 
-		<footer class="footer" role="contentinfo">
+		<footer class="footer cf" role="contentinfo">
 
-			<div id="inner-footer" class="wrap cf">
+			<div id="inner-footer" class="cf">
 
                 <?php
-                    // PRINT BLOG DESCRIPTION
-                    echo '<h2 class="description">';
-                        bloginfo('description');
-                    echo '</h2>';
+                    // LOGO - STAMP CODE
+                    echo '<div class="logo-holder"><div class="logo"></div></div>';
 
-                    // GET ADDRESS FROM CONTACT-US PAGE OUTSIDE OF LOOP
-                    global $wp_query;
-                    $postid = 13;
-                    echo get_post_meta($postid, 'address', true);
+                    // PRINT BLOG DESCRIPTION
+                    echo '<div class="wrap cf">';
+                        echo '<h2 class="description">';
+                            bloginfo('description');
+                        echo '</h2>';
+
+                        // GET ADDRESS FROM CONTACT-US PAGE OUTSIDE OF LOOP
+                        global $wp_query;
+                        $postid = 13;
+                        echo get_post_meta($postid, 'address', true);
+
+
+                        // SOCIAL MEDIA LINKS
+                        $social_links = get_field('social_links', 'options');
+
+                        // helper($social_links);
+                        echo '<ul class="social-links">';
+                            foreach ($social_links as $key => $social_link) {
+                                $class=cleanString($social_link['name']);
+                                echo '<li class="social-'.$class.'">';
+                                    echo '<a href="'.$social_link['url'].'" class=""></a>';
+                                echo '</li>';
+                            }
+                        echo '</ul>';
+
+                    echo '</div>';
+                    
                     wp_reset_query();
                 ?>
 

@@ -58,6 +58,7 @@
     padding:.5em;
 
     height: 240px;
+    max-width: 1010px;
 }
 
 #container > div.marquee.cf > div > h2 { margin-bottom: 0; }
@@ -88,7 +89,7 @@
         font-size: 78px !important;   
     }
 
-    #container > div.marquee.cf > div > h2:nth-child(1) > span {
+    #container > div.marquee.cf > div > h2:nth-child(2) > span {
         font-size: 55px !important;
     }
 
