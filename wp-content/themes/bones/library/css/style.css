@@ -1822,6 +1822,11 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transformk: translate(-50%, -50%);
+    -moz-transformk: translate(-50%, -50%);
+    -o-transformk: translate(-50%, -50%);
+    -ms-transformk: translate(-50%, -50%);
+    transformk: translate(-50%, -50%);
   }
 }
 /* line 2, ../scss/modules/pages/_case-study.scss */
