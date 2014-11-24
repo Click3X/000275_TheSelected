@@ -1,0 +1,83 @@
+// CASE STUDIES
+.case-study-link {
+    float:left;
+    width:33.333333%;
+
+    a {
+        display: block;
+        max-width: 300px;
+        margin:0 auto;
+        text-align: center;
+        position: relative;
+
+        .overlay-holder {
+            position: relative;
+        }
+
+        .case-overlay {
+            text-align: center;
+            position: absolute;
+            bottom:0; top:0; left:0; right:0;
+            margin: auto;
+            background-color:rgba(0,0,0,0.6);
+            width: 100%;
+
+            h3 {
+                max-width: 90%;
+                color: white;
+                font-weight: 800;
+                text-transform: uppercase;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin:-1.5em auto auto;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    text-align: center;
+                    margin:0 auto;
+                    height: 0;
+                    border-bottom:2px solid #FFFFFF;
+                    width:4em;
+                    padding-top: 1em;
+                }
+            }
+            opacity: 0;
+            @include prefix(transition, opacity 250ms);
+        }
+
+        &:hover {
+            .case-overlay {
+                opacity: 1;
+            }
+        }
+
+    }
+    .case-study-logo {
+        width:80%;
+        max-width:80%;
+        padding: 1em 0;
+    }
+    img {
+        display: block;
+        margin:0 auto;
+        padding:0;
+        height:auto;
+        width: 100%;
+        max-width:100%;
+    }
+}
+
+.page-id-10 {
+    #content {
+        margin-top:2em;
+        margin-bottom:4em;
+    }
+
+    #inner-content.wrap {
+        width:100%;
+        max-width:1040px;
+    }
+}

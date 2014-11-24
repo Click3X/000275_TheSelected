@@ -76,6 +76,11 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 
+add_image_size( 'case-study-mobile', 264, 368, true );
+add_image_size( 'case-study', 670, 865, true );
+
+add_image_size( 'case-study-logo', 300, 200, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -334,16 +339,16 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
-// FIX THUMBNAIL DISPLAY FOR SVG
-function fix_svg() {
-  echo '<style type="text/css">
-        .attachment-266x266, .thumbnail img { 
-             width: 100% !important; 
-             height: auto !important; 
-        }
-        </style>';
-}
-add_action('admin_head', 'fix_svg');
+// // FIX THUMBNAIL DISPLAY FOR SVG
+// function fix_svg() {
+//   echo '<style type="text/css">
+//         .attachment-266x266, .thumbnail img { 
+//              width: 100% !important; 
+//              height: auto !important; 
+//         }
+//         </style>';
+// }
+// add_action('admin_head', 'fix_svg');
 
 // ADVANCED CUSTOM FIELDS OPTIONS CODE
 // ADD 'CLIENT INFO' TAB TO ADMIN MAIN MENU

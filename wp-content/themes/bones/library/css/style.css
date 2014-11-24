@@ -1464,18 +1464,30 @@ html, body {
 #container {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  margin-bottom: -278px;
+}
+@media (min-width: 620px) {
+  /* line 7, ../scss/modules/_sticky-footer.scss */
+  #container {
+    margin-bottom: -330px;
+  }
 }
 
-/* line 12, ../scss/modules/_sticky-footer.scss */
+/* line 15, ../scss/modules/_sticky-footer.scss */
 #container:after {
   content: "";
   display: block;
 }
 
-/* line 16, ../scss/modules/_sticky-footer.scss */
+/* line 19, ../scss/modules/_sticky-footer.scss */
 .footer, #container:after {
-  height: 142px;
+  height: 278px;
+}
+@media (min-width: 620px) {
+  /* line 19, ../scss/modules/_sticky-footer.scss */
+  .footer, #container:after {
+    height: 330px;
+  }
 }
 
 /* line 1, ../scss/modules/_footer.scss */
@@ -1487,16 +1499,18 @@ html, body {
 
 /* line 7, ../scss/modules/_footer.scss */
 .footer {
-  background-color: black;
   position: relative;
 }
 
-/* line 12, ../scss/modules/_footer.scss */
+/* line 11, ../scss/modules/_footer.scss */
 #inner-footer {
   padding-bottom: 2em;
   background-color: black;
+  background-image: url("../../../../../img/background/bg.png");
+  background-repeat: repeat;
+  background-size: 266px 192px;
 }
-/* line 16, ../scss/modules/_footer.scss */
+/* line 19, ../scss/modules/_footer.scss */
 #inner-footer .logo-holder {
   position: static;
   margin: 1.5em auto;
@@ -1508,7 +1522,7 @@ html, body {
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 25, ../scss/modules/_footer.scss */
+/* line 28, ../scss/modules/_footer.scss */
 #inner-footer h2 {
   font-weight: 800;
   font-size: 14px;
@@ -1516,31 +1530,31 @@ html, body {
   font-family: brandon-grotesque,sans-serif;
 }
 @media (min-width: 620px) {
-  /* line 25, ../scss/modules/_footer.scss */
+  /* line 28, ../scss/modules/_footer.scss */
   #inner-footer h2 {
     font-size: 18px;
   }
 }
 
-/* line 37, ../scss/modules/_footer.scss */
+/* line 40, ../scss/modules/_footer.scss */
 #inner-footer > div.wrap.cf > h2 > span > strong > span, #inner-footer > div.wrap.comment-respond > h2 > span > strong > span {
   font-weight: 800;
 }
 
-/* line 41, ../scss/modules/_footer.scss */
+/* line 44, ../scss/modules/_footer.scss */
 .social-links {
   width: 100%;
   max-width: 80px;
   margin: .3em auto;
 }
-/* line 46, ../scss/modules/_footer.scss */
+/* line 49, ../scss/modules/_footer.scss */
 .social-links li {
   width: 50%;
   position: relative;
   float: left;
   padding: 8px 6px;
 }
-/* line 52, ../scss/modules/_footer.scss */
+/* line 55, ../scss/modules/_footer.scss */
 .social-links li a {
   display: block;
   width: 100%;
@@ -1569,16 +1583,19 @@ p {
 /* line 2, ../scss/modules/pages/_marquee.scss */
 .marquee {
   background: black;
+  background-image: url("../../../../../img/background/bg.png");
+  background-repeat: repeat;
+  background-size: 266px 192px;
   height: 100vh;
 }
-/* line 9, ../scss/modules/pages/_marquee.scss */
+/* line 12, ../scss/modules/pages/_marquee.scss */
 .marquee h1 span strong span {
   font-weight: 800;
   letter-spacing: .08em;
   color: #fff;
 }
 
-/* line 23, ../scss/modules/pages/_marquee.scss */
+/* line 26, ../scss/modules/pages/_marquee.scss */
 .marquee hr,
 .entry-content hr {
   width: 5.5em;
@@ -1588,22 +1605,22 @@ p {
   border: 0;
 }
 
-/* line 31, ../scss/modules/pages/_marquee.scss */
+/* line 34, ../scss/modules/pages/_marquee.scss */
 .marquee hr {
   background-color: white;
 }
 
-/* line 36, ../scss/modules/pages/_marquee.scss */
+/* line 39, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1, #container > div.marquee.comment-respond > div > h1 {
   background-color: transparent;
   margin-top: 0;
 }
-/* line 40, ../scss/modules/pages/_marquee.scss */
+/* line 43, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 span, #container > div.marquee.comment-respond > div > h1 span {
   background-color: transparent;
 }
 
-/* line 44, ../scss/modules/pages/_marquee.scss */
+/* line 47, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(2), #container > div.marquee.comment-respond > div > h2:nth-child(2),
 #container > div.marquee.cf > div > h1,
 #container > div.marquee.comment-respond > div > h1 {
@@ -1611,19 +1628,28 @@ p {
   z-index: 1;
 }
 
-/* line 46, ../scss/modules/pages/_marquee.scss */
+/* line 49, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
   background-color: transparent !important;
 }
 
-/* line 49, ../scss/modules/pages/_marquee.scss */
+/* line 52, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(6) > span > strong, #container > div.marquee.comment-respond > div > h2:nth-child(6) > span > strong,
 #container > div.marquee.cf > div > h2:nth-child(5) > span > span > strong,
 #container > div.marquee.comment-respond > div > h2:nth-child(5) > span > span > strong {
   font-weight: 800;
 }
 
-/* line 54, ../scss/modules/pages/_marquee.scss */
+/* line 58, ../scss/modules/pages/_marquee.scss */
+#container > div.marquee.cf > div > h2:nth-child(7) > span, #container > div.marquee.comment-respond > div > h2:nth-child(7) > span,
+#container > div.marquee.cf > div > h2:nth-child(6) > span,
+#container > div.marquee.comment-respond > div > h2:nth-child(6) > span,
+#container > div.marquee.cf > div > h2:nth-child(2) > span,
+#container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
+  background-color: transparent !important;
+}
+
+/* line 62, ../scss/modules/pages/_marquee.scss */
 .marquee-holder {
   position: absolute;
   top: 0;
@@ -1636,27 +1662,27 @@ p {
   max-width: 1010px;
 }
 
-/* line 64, ../scss/modules/pages/_marquee.scss */
+/* line 72, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
   margin-bottom: 0;
 }
 
-/* line 67, ../scss/modules/pages/_marquee.scss */
+/* line 75, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
   font-size: 50px !important;
 }
 
-/* line 68, ../scss/modules/pages/_marquee.scss */
+/* line 76, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
   font-size: 14px !important;
 }
 
-/* line 69, ../scss/modules/pages/_marquee.scss */
+/* line 77, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
   font-size: 35px !important;
 }
 
-/* line 72, ../scss/modules/pages/_marquee.scss */
+/* line 80, ../scss/modules/pages/_marquee.scss */
 #container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
 #container > div.marquee.cf > div > h2 > span > span > strong > span,
 #container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
@@ -1664,39 +1690,39 @@ p {
 }
 
 @media (min-width: 620px) {
-  /* line 74, ../scss/modules/pages/_marquee.scss */
+  /* line 82, ../scss/modules/pages/_marquee.scss */
   .marquee-holder {
     height: 320px;
   }
 
-  /* line 77, ../scss/modules/pages/_marquee.scss */
+  /* line 85, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
     margin-bottom: 0.375em;
   }
 
-  /* line 80, ../scss/modules/pages/_marquee.scss */
+  /* line 88, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
     font-size: 18px !important;
   }
 
-  /* line 84, ../scss/modules/pages/_marquee.scss */
+  /* line 92, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
   #container > div.marquee.cf > div > h2 > span > span > strong > span,
   #container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
     font-size: 24px !important;
   }
 
-  /* line 88, ../scss/modules/pages/_marquee.scss */
+  /* line 96, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
     font-size: 78px !important;
   }
 
-  /* line 92, ../scss/modules/pages/_marquee.scss */
+  /* line 100, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
     font-size: 55px !important;
   }
 
-  /* line 97, ../scss/modules/pages/_marquee.scss */
+  /* line 105, ../scss/modules/pages/_marquee.scss */
   .marquee hr,
   .entry-content hr {
     width: 7.5em;
@@ -1704,7 +1730,7 @@ p {
   }
 }
 @media (max-width: 619px) {
-  /* line 105, ../scss/modules/pages/_marquee.scss */
+  /* line 113, ../scss/modules/pages/_marquee.scss */
   #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
     line-height: 1.5rem;
   }
@@ -1798,6 +1824,95 @@ p {
     transform: translate(-50%, -50%);
   }
 }
+/* line 2, ../scss/modules/pages/_case-study.scss */
+.case-study-link {
+  float: left;
+  width: 33.333333%;
+}
+/* line 6, ../scss/modules/pages/_case-study.scss */
+.case-study-link a {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+/* line 13, ../scss/modules/pages/_case-study.scss */
+.case-study-link a .overlay-holder {
+  position: relative;
+}
+/* line 17, ../scss/modules/pages/_case-study.scss */
+.case-study-link a .case-overlay {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 250ms;
+  -moz-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
+  -ms-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+/* line 25, ../scss/modules/pages/_case-study.scss */
+.case-study-link a .case-overlay h3 {
+  max-width: 90%;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -1.5em auto auto;
+}
+/* line 36, ../scss/modules/pages/_case-study.scss */
+.case-study-link a .case-overlay h3:after {
+  content: "";
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 0;
+  border-bottom: 2px solid #FFFFFF;
+  width: 4em;
+  padding-top: 1em;
+}
+/* line 52, ../scss/modules/pages/_case-study.scss */
+.case-study-link a:hover .case-overlay {
+  opacity: 1;
+}
+/* line 58, ../scss/modules/pages/_case-study.scss */
+.case-study-link .case-study-logo {
+  width: 80%;
+  max-width: 80%;
+  padding: 1em 0;
+}
+/* line 63, ../scss/modules/pages/_case-study.scss */
+.case-study-link img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 74, ../scss/modules/pages/_case-study.scss */
+.page-id-10 #content {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+/* line 79, ../scss/modules/pages/_case-study.scss */
+.page-id-10 #inner-content.wrap {
+  width: 100%;
+  max-width: 1040px;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -2024,7 +2139,7 @@ and more scalable.
 }
 /* line 208, ../scss/breakpoints/_base.scss */
 .nav li a:hover, .nav li a:focus {
-  border-bottom: 4px solid #dba251;
+  border-bottom: 4px solid #daa250;
 }
 /* line 230, ../scss/breakpoints/_base.scss */
 .nav li ul.sub-menu li a,

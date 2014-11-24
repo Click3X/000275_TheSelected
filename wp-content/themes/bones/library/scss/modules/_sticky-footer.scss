@@ -7,12 +7,19 @@ html, body {
 #container {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px; 
+  margin-bottom: -278px;
+  @media(min-width: 620px) {
+        margin-bottom: -330px; 
+    }
 }
 #container:after {
   content: "";
   display: block;
 }
 .footer, #container:after {
-  height: 142px; 
+  // height: 142px; 
+  height:278px;
+    @media(min-width: 620px) {
+        height:330px;
+    }
 }
