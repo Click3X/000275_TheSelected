@@ -7,8 +7,13 @@
         margin: 0 auto;
 
         .entry-content {
-            padding-left:1em;
-            padding-right:1em;
+            padding-left:0;
+            padding-right:0;
+
+            @media(min-width:620px) {
+                padding-left:1em;
+                padding-right:1em;
+            }
         }
 
         h2 {
