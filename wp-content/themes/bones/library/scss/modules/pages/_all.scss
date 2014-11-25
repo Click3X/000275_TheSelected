@@ -60,10 +60,16 @@
 }
 
 
-.page-template-page-template-home-php.mobile-fixed {
+.page-template-page-template-home-php.mobile-fixed,
+.page-template-page-template-home-php.fixed-header {
     padding-top:0;
 }
 
+.page-template-page-template-home-php.fixed-header {
+    #inner-content {
+        padding-top:46px;
+    }
+}
 
 .nav .current-menu-item {
     a { border-bottom: 4px solid $gold; }
