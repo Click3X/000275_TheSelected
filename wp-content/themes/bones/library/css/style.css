@@ -2459,14 +2459,39 @@ p {
 .panel-container .title-holder {
   text-align: center;
 }
-/* line 41, ../scss/modules/pages/_single-case-study.scss */
+/* line 42, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder .num-title-holder {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1.7em;
+}
+/* line 51, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder .num-holder {
+  font-family: brandon-grotesque, sans-serif;
+  color: #daa250;
+  font-size: 8em;
+  line-height: 1em;
+  margin: 0 auto;
+  font-weight: 800;
+  max-width: 300px;
+  width: 100%;
+}
+/* line 62, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .c-title {
   color: #000;
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.25em;
 }
-/* line 47, ../scss/modules/pages/_single-case-study.scss */
+/* line 72, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .c-title:after {
   content: "";
   display: block;
@@ -2474,6 +2499,39 @@ p {
   height: 3px;
   background-color: #000;
   margin: 1em auto 1.5em;
+}
+/* line 82, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder p {
+  font-size: 19px;
+  line-height: 1.3em;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+/* line 92, ../scss/modules/pages/_single-case-study.scss */
+.panel-container.intro img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 102, ../scss/modules/pages/_single-case-study.scss */
+  .panel-container.intro .pic-1,
+  .panel-container.intro .title-holder {
+    float: right;
+    width: 42%;
+    padding: 2.5em 1em;
+  }
+  /* line 107, ../scss/modules/pages/_single-case-study.scss */
+  .panel-container.intro .pic-0 {
+    float: left;
+    width: 58%;
+  }
+  /* line 111, ../scss/modules/pages/_single-case-study.scss */
+  .panel-container.intro .pic-0 img {
+    padding: 0 0 0 5em;
+  }
 }
 
 /*********************

@@ -38,11 +38,36 @@
 .panel-container {
     .title-holder {
         text-align: center;
+        
+        .num-title-holder {
+            position: relative;
+            display: inline-block;
+            margin:0 auto;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 1.7em;
+        }
+        .num-holder {
+            font-family: brandon-grotesque, sans-serif;
+            color:$gold;
+            font-size: 8em;
+            line-height: 1em;
+            margin:0 auto;
+            font-weight: 800;
+            max-width: 300px;
+            width: 100%;
+        }
+
         .c-title {
             color:#000;
             text-transform: uppercase;
             font-weight: 800;
             display: inline-block;
+
+            position: absolute;
+            left:0; right:0; 
+            bottom: -1.25em;
 
             &:after {
                 content: "";
@@ -53,5 +78,40 @@
                 margin:1em auto 1.5em;
             }
         }
+
+        p {
+            font-size: 19px;
+            line-height:1.3em;
+            font-family: brandon-grotesque, sans-serif;
+        }
     }
 }
+
+// PANEL STYLES BY FORMAT
+.panel-container.intro {
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        margin:0 auto;
+    }
+
+    @media(min-width: 768px) {
+        .pic-1,
+        .title-holder {
+            float:right;
+            width: 42%;
+            padding:2.5em 1em;
+        }
+        .pic-0 {
+            float:left;
+            width:58%;
+
+            img {
+                padding:0 0 0 5em;
+            }
+        }        
+    }
+}
+
