@@ -9,7 +9,6 @@
 
     position: absolute;
     z-index: 11;
-    // right:0;
     left:8px;
     top:0;
     @include prefix(transform, translateZ(11));

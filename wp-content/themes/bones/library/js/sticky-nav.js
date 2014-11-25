@@ -46,14 +46,14 @@ jQuery(document).ready(function($) {
     // ON SCROLL FUNCTION
     if(isMobile === false) {
         $( window ).scroll(function() {
-        console.log('This is isMobile:')
-        console.log(isMobile);
+        // console.log('This is isMobile:')
+        // console.log(isMobile);
         // if(isMobile === false) {
             windowScroll = $window.scrollTop();   
             distance = siteHeader.offsetTop;
 
-            console.log('this is windowScroll: '+windowScroll);
-            console.log('this is distance: '+distance);
+            // console.log('this is windowScroll: '+windowScroll);
+            // console.log('this is distance: '+distance);
 
             if ( windowScroll >= distance ) {
                 $(body).addClass('fixed-header');

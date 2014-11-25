@@ -107,6 +107,22 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  // IOS VIEWPORT HEIGHT FIX
+  var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+  if(iOS){
+
+      function iosVhHeightBug() {
+          var height = $(window).height();
+          $(".marquee").css('min-height', height);
+      }
+
+      iosVhHeightBug();
+      $(window).bind('resize', iosVhHeightBug);
+
+  } 
+
+
+  // MENU FOR MOBILE
   var menuButton = $('#mobile-menu-button'),
   mainMenuNav = $('#main-menu-nav');
 
