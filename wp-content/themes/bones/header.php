@@ -175,8 +175,9 @@
 			<header id="site-header" class="header" role="banner">
 
 				<div id="inner-header" class="wrap cf">
+                    <div id="nav-logo" class="nav-logo"></div>
 
-					<nav role="navigation">
+					<nav id="main-menu-nav" role="navigation" class="main-menu-nav">
 						<?php wp_nav_menu(
                             array(
             					'container' => false,                           // remove nav container

@@ -107,13 +107,15 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  var menuButton = $('#mobile-menu-button');
+  var menuButton = $('#mobile-menu-button'),
+  mainMenuNav = $('#main-menu-nav');
 
   menuButton.click(function(event) {
     event.preventDefault();
-    console.log('Menu Button Clicked!');
 
     menuButton.toggleClass('open');
+    mainMenuNav.toggleClass('slide-down-menu');
+
   });
 
   /*
