@@ -35,15 +35,27 @@
 // INNER HEADER BG COLORS FOR MOBILE MENU
 @media(max-width: 767px){
     #inner-header {
-        background-color:transparent;
+        background-color: black;
         @include prefix(transition, background-color 200ms);
     }
+
     .black-bg {
         @include prefix(transition, background-color 200ms);
     }
 
     #inner-header.black-bg {
         background-color: black;
+    }
+
+
+    // NAV BG IS TRANSPARENT ON HOME PAGE
+    .page-template-page-template-home-php {
+        #inner-header {
+            background-color:transparent;
+        }
+        #inner-header.black-bg {
+            background-color: black;
+        }
     }
 }
 
