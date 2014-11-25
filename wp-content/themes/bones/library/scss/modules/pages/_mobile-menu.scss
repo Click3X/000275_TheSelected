@@ -110,6 +110,8 @@
   }
   #main-menu-nav.slide-down-menu {
     top:0;
+    // @include prefix(box-shadow, 0px 2px 6px);
+    @include prefix(box-shadow, 0px 2px 6px 0 rgba(0,0,0,0.5));
     @include prefix(transform, translateY(46px));
   }
 
