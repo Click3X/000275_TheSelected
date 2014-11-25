@@ -9,7 +9,8 @@
 
     position: absolute;
     z-index: 11;
-    right:0;
+    // right:0;
+    left:8px;
     top:0;
     @include prefix(transform, translateZ(11));
     @include prefix(transition, all 0.3s);
@@ -71,6 +72,7 @@
     height: 46px;
     background-color:black;
     top:0;
+    display: none;
 
     @include prefix(transform, translateZ(11));
     @include prefix(transform, translateY(0));
