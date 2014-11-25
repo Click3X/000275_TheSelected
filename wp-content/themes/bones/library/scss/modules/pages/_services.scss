@@ -6,6 +6,51 @@
     margin-bottom: 30px;
 }
 
+.lines {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+    max-width: 80% !important;
+    max-height: 80%;
+}
+
+.circle-labels {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+
+    div {
+        width: 20px; height: 20px; border-radius: 50%; background: black; display: inline-block;
+        vertical-align: top;
+margin-top: 1px;
+    }
+}
+
+.label-str {
+    top: 15px;
+    left: 190px;
+    padding: 5px 17px;
+border: 2px solid black;
+}
+
+.label-com {
+    bottom: 40px;
+    left: 140px;
+    padding: 5px 17px;
+border: 2px solid black;
+}
+
+.label-cre {
+    right: 120px;
+bottom: 60px;
+    padding: 5px 17px;
+border: 2px solid #daa250;
+}
+
 .circle-wrapper {
     position: relative;
 }

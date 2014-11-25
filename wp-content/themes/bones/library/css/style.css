@@ -2196,18 +2196,72 @@ p {
 }
 
 /* line 9, ../scss/modules/pages/_services.scss */
+.lines {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+  max-width: 80% !important;
+  max-height: 80%;
+}
+
+/* line 20, ../scss/modules/pages/_services.scss */
+.circle-labels {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: black;
+}
+/* line 26, ../scss/modules/pages/_services.scss */
+.circle-labels div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+}
+
+/* line 33, ../scss/modules/pages/_services.scss */
+.label-str {
+  top: 15px;
+  left: 190px;
+  padding: 5px 17px;
+  border: 2px solid black;
+}
+
+/* line 40, ../scss/modules/pages/_services.scss */
+.label-com {
+  bottom: 40px;
+  left: 140px;
+  padding: 5px 17px;
+  border: 2px solid black;
+}
+
+/* line 47, ../scss/modules/pages/_services.scss */
+.label-cre {
+  right: 120px;
+  bottom: 60px;
+  padding: 5px 17px;
+  border: 2px solid #daa250;
+}
+
+/* line 54, ../scss/modules/pages/_services.scss */
 .circle-wrapper {
   position: relative;
 }
 
-/* line 13, ../scss/modules/pages/_services.scss */
+/* line 58, ../scss/modules/pages/_services.scss */
 .circle {
   margin: auto !important;
   max-width: 80% !important;
   display: block;
 }
 
-/* line 21, ../scss/modules/pages/_services.scss */
+/* line 66, ../scss/modules/pages/_services.scss */
 .heart-container {
   position: absolute;
   top: 20%;
@@ -2215,13 +2269,13 @@ p {
   right: 0;
 }
 @media (max-width: 560px) {
-  /* line 21, ../scss/modules/pages/_services.scss */
+  /* line 66, ../scss/modules/pages/_services.scss */
   .heart-container {
     top: 10%;
   }
 }
 
-/* line 46, ../scss/modules/pages/_services.scss */
+/* line 91, ../scss/modules/pages/_services.scss */
 .cubeWrapper {
   position: relative;
   margin: 50px auto;
@@ -2233,7 +2287,7 @@ p {
   height: 70%;
 }
 
-/* line 60, ../scss/modules/pages/_services.scss */
+/* line 105, ../scss/modules/pages/_services.scss */
 .cubeWrapper .rotator {
   -webkit-animation: rotateWen 4s linear 0s infinite normal;
   animation: rotateWen 4s linear 0s infinite normal;
@@ -2242,14 +2296,14 @@ p {
   transform-style: preserve-3d;
 }
 
-/* line 68, ../scss/modules/pages/_services.scss */
+/* line 113, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube {
   text-align: center;
   width: 70%;
   height: 70%;
   margin: auto;
 }
-/* line 76, ../scss/modules/pages/_services.scss */
+/* line 121, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube img {
   margin: 0 0 0 0 !important;
 }
