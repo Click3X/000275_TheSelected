@@ -1,22 +1,42 @@
 // ALL SCSS
 // FIXED HEADER - ATTACHED TO BODY
-@media(min-width: 768px) {
-    .fixed-header {
-        padding-top:46px;
-        #site-header {
-            width:100%;
-            position: fixed;
-            top:0;
-            z-index: 10;
-            @include prefix(transform, translateZ(10));
+.fixed-header {
+    padding-top:46px;
+    #site-header {
+        // box-shadow: 0px 2px 6px;
+        width:100%;
+        position: fixed;
+        top:0;
+        z-index: 10;
+        
+        @include prefix(transform, translateZ(10));
+
+        @media(max-width:767px) {
+            @include prefix(box-shadow, 0px 2px 6px 0 rgba(0,0,0,0.5));
         }
     }
 }
 
 
+
 .nav .current-menu-item {
     a { 
-        color:$gold;
+        // color:$gold;
         border-bottom: 4px solid $gold;
+    }
+}
+
+// F I X E D   F O O T E R 
+// BODY WITH CLASS OF FIX FOOTER - HAS FOOTER FIXED
+.fix-footer {
+    // CONTENT CLASS BG WHITE
+    #content { background-color: #ffffff; }
+
+    .footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+        @include prefix( transform, translateZ(-1) );
     }
 }

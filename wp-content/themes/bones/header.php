@@ -150,7 +150,16 @@
 
 	</head>
 
-	<body <?php body_class("fixed-header"); ?>>
+    <?php 
+        // ONLY ADD FIXED MENU IF NOT HOME PAGE
+        if(! is_page(44) ) {
+            $class = 'fixed-header fix-footer';
+        } else {
+            $class = 'fix-footer';
+        }
+    ?>
+
+	<body <?php body_class($class); ?>>
 
 		<div id="container" class="tk-brandon-grotesque">
 

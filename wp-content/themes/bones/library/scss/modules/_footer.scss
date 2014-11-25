@@ -4,12 +4,12 @@
     text-transform: uppercase;
 }
 
-.footer {
-    position: relative;
-}
+.footer { position: relative; }
 
 #inner-footer {
-    padding-bottom: 2em;
+    // padding-bottom: 2em;
+    padding-bottom:1.5em;
+    padding-top:.5em;
     background-color: black;
     background-image:url('../../../../../img/background/bg.png');
     background-repeat: repeat;
@@ -31,9 +31,7 @@
         letter-spacing: 1.73039996623993px;
         font-family: brandon-grotesque,sans-serif;
 
-        @media(min-width:620px) {
-            font-size: 18px;  
-        }
+        @media(min-width:620px) { font-size: 18px; }
     }
 }
 
