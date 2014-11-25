@@ -155,7 +155,7 @@
         if(! is_page(44) ) {
             $class = 'fixed-header fix-footer';
         } else {
-            $class = 'fix-footer';
+            $class = 'fix-footer mobile-fixed';
         }
     ?>
 

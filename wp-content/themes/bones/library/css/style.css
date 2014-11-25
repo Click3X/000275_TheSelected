@@ -1631,7 +1631,7 @@ select {
   }
 }
 @media (min-width: 768px) {
-  /* line 121, ../scss/modules/pages/_mobile-menu.scss */
+  /* line 120, ../scss/modules/pages/_mobile-menu.scss */
   #nav-logo {
     display: none;
   }
@@ -1775,16 +1775,45 @@ html, body {
   }
 }
 
-/* line 23, ../scss/modules/pages/_all.scss */
+@media (max-width: 767px) {
+  /* line 18, ../scss/modules/pages/_all.scss */
+  .mobile-fixed {
+    padding-top: 46px;
+  }
+  /* line 21, ../scss/modules/pages/_all.scss */
+  .mobile-fixed #site-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    -webkit-transform: translateZ(10);
+    -moz-transform: translateZ(10);
+    -o-transform: translateZ(10);
+    -ms-transform: translateZ(10);
+    transform: translateZ(10);
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  /* line 21, ../scss/modules/pages/_all.scss */
+  .mobile-fixed #site-header {
+    -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* line 39, ../scss/modules/pages/_all.scss */
 .nav .current-menu-item a {
   border-bottom: 4px solid #DAA250;
 }
 
-/* line 33, ../scss/modules/pages/_all.scss */
+/* line 46, ../scss/modules/pages/_all.scss */
 .fix-footer #content {
   background-color: #ffffff;
 }
-/* line 35, ../scss/modules/pages/_all.scss */
+/* line 48, ../scss/modules/pages/_all.scss */
 .fix-footer .footer {
   position: fixed;
   width: 100%;
