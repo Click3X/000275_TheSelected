@@ -2421,6 +2421,61 @@ p {
   max-width: 1040px;
 }
 
+/* line 5, ../scss/modules/pages/_single-case-study.scss */
+.single-case_study .c-tagline,
+.single-case_study .c-logo {
+  text-align: center;
+}
+/* line 9, ../scss/modules/pages/_single-case-study.scss */
+.single-case_study .c-logo {
+  margin: 1em auto;
+}
+/* line 12, ../scss/modules/pages/_single-case-study.scss */
+.single-case_study .c-logo img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+/* line 19, ../scss/modules/pages/_single-case-study.scss */
+.single-case_study .c-tagline h3 {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  max-width: 39em;
+  margin: 0 auto;
+}
+/* line 27, ../scss/modules/pages/_single-case-study.scss */
+.single-case_study .c-tagline h3:after {
+  content: "";
+  display: block;
+  width: 5em;
+  height: 3px;
+  background-color: #000;
+  margin: 1em auto 1.5em;
+}
+
+/* line 39, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder {
+  text-align: center;
+}
+/* line 41, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder .c-title {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+}
+/* line 47, ../scss/modules/pages/_single-case-study.scss */
+.panel-container .title-holder .c-title:after {
+  content: "";
+  display: block;
+  width: 4em;
+  height: 3px;
+  background-color: #000;
+  margin: 1em auto 1.5em;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

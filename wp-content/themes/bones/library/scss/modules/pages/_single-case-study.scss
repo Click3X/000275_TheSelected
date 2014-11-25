@@ -1,0 +1,57 @@
+// SINGLE CASE STUDY
+.single-case_study {
+
+    .c-tagline,
+    .c-logo {
+        text-align: center;
+    }
+
+    .c-logo {
+        margin: 1em auto;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+    .c-tagline h3 {
+        text-align: center;
+        color:#000;
+        text-transform: uppercase;
+        font-weight: 800;
+        max-width: 39em;
+        margin: 0 auto;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 5em;
+            height: 3px;
+            background-color: #000;
+            margin:1em auto 1.5em;
+        }
+    }
+}
+
+.panel-container {
+    .title-holder {
+        text-align: center;
+        .c-title {
+            color:#000;
+            text-transform: uppercase;
+            font-weight: 800;
+            display: inline-block;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 4em;
+                height: 3px;
+                background-color: #000;
+                margin:1em auto 1.5em;
+            }
+        }
+    }
+}
