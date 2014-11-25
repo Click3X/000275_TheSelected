@@ -32,6 +32,22 @@
 }
 
 
+// INNER HEADER BG COLORS FOR MOBILE MENU
+@media(max-width: 767px){
+    #inner-header {
+        background-color:transparent;
+        @include prefix(transition, background-color 200ms);
+    }
+    .black-bg {
+        @include prefix(transition, background-color 200ms);
+    }
+
+    #inner-header.black-bg {
+        background-color: black;
+    }
+}
+
+
 .page-template-page-template-home-php.mobile-fixed,
 .page-template-page-template-home-php.fixed-header {
     padding-top:0;
@@ -55,4 +71,11 @@
         z-index: -1;
         @include prefix( transform, translateZ(-1) );
     }
+}
+
+// SHADOW UTILITY CLASS
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }

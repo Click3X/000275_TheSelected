@@ -168,7 +168,7 @@
                     $post_id =4;
                     $post_object = get_post( $post_id );
 
-                    echo '<div class="marquee cf">';
+                    echo '<div class="marquee cf shadow">';
                         echo '<div class="marquee-holder cf">';
                             // LOGO - STAMP CODE
                             echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';

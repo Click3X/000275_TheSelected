@@ -124,13 +124,15 @@ jQuery(document).ready(function($) {
 
   // MENU FOR MOBILE
   var menuButton = $('#mobile-menu-button'),
-  mainMenuNav = $('#main-menu-nav');
+  mainMenuNav = $('#main-menu-nav'),
+  innerHeader = $('#inner-header');
 
   menuButton.click(function(event) {
     event.preventDefault();
 
     menuButton.toggleClass('open');
     mainMenuNav.toggleClass('slide-down-menu');
+    innerHeader.toggleClass('black-bg');
 
   });
 

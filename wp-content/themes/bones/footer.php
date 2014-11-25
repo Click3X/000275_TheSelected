@@ -2,7 +2,7 @@
 
 		<footer class="footer cf" role="contentinfo">
 
-			<div id="inner-footer" class="cf">
+			<div id="inner-footer" class="cf shadow">
 
                 <?php
                     // LOGO - STAMP CODE
