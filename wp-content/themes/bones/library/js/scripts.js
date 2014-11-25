@@ -113,7 +113,7 @@ jQuery(document).ready(function($) {
 
       function iosVhHeightBug() {
           var height = $(window).height();
-          $(".marquee").css('min-height', height);
+          $("#container .marquee").css('height', height);
       }
 
       iosVhHeightBug();
