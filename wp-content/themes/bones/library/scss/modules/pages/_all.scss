@@ -1,0 +1,22 @@
+// ALL SCSS
+// FIXED HEADER - ATTACHED TO BODY
+@media(min-width: 768px) {
+    .fixed-header {
+        padding-top:46px;
+        #site-header {
+            width:100%;
+            position: fixed;
+            top:0;
+            z-index: 10;
+            @include prefix(transform, translateZ(10));
+        }
+    }
+}
+
+
+.nav .current-menu-item {
+    a { 
+        color:$gold;
+        border-bottom: 4px solid $gold;
+    }
+}

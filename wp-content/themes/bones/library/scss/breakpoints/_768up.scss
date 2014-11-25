@@ -58,7 +58,8 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				// color: $white;
+				color:$gold;
 				// text-decoration: underline;
 			}
 		}

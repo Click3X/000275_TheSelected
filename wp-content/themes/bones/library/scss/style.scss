@@ -58,6 +58,8 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 // forms (inputs & labels)
 @import "modules/forms";
 
+// MOBILE MENU
+@import "modules/pages/mobile-menu";
 // STICKY FOOTER
 @import "modules/sticky-footer";
 
@@ -65,8 +67,10 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 @import "modules/footer";
 
 // P A G E S
+@import "modules/pages/all";
 // HOME
 @import "modules/pages/home";
+// MARWQUEE
 @import "modules/pages/marquee";
 
 // WHO WE ARE

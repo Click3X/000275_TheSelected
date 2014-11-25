@@ -1,0 +1,61 @@
+// MOBILE MENU STYLES
+.menu-icon {
+    width:44px;
+    height:44px;
+    cursor: pointer;
+    margin: 0 auto;
+    float: none;
+    text-align: left;
+
+    position: absolute;
+    z-index: 10;
+    right:0;
+    top:0;
+    @include prefix(transform, translateZ(10));
+    @include prefix(transition, all 0.3s);
+
+    @media(min-width: 768px) {
+      // display: none;
+    }
+}
+
+.menu-icon > span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 80%;
+    height:4px;
+    background-color:#ffffff;
+    border-radius:4px;
+}
+
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color:#ffffff;
+  border-radius:4px;
+  @include prefix(transition, all 0.3s);
+}
+
+.menu-icon > span:before {
+    @include prefix(transform, translateY(-0.7em));
+}
+
+.menu-icon > span:after {
+    @include prefix(transform, translateY(0.7em));
+}
+
+/* OPENED */
+
+.menu-icon.open {
+    margin-top:3px;
+    @include prefix(transform, rotate(45deg));
+}
+
+.menu-icon.open > span:after,
+.menu-icon.open > span:before { 
+    @include prefix(transform, rotate(90deg)); 
+}

@@ -107,6 +107,15 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  var menuButton = $('#mobile-menu-button');
+
+  menuButton.click(function(event) {
+    event.preventDefault();
+    console.log('Menu Button Clicked!');
+
+    menuButton.toggleClass('open');
+  });
+
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
