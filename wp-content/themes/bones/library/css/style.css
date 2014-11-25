@@ -2139,20 +2139,41 @@ p {
   }
 }
 /* line 1, ../scss/modules/pages/_services.scss */
-.circle {
-  position: relative;
-  margin: auto !important;
-  display: block;
+.short-divider {
+  border-bottom: 2px solid black;
+  width: 80px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* line 9, ../scss/modules/pages/_services.scss */
-.heart-container {
-  position: absolute;
-  top: 24%;
-  left: 22%;
+.circle-wrapper {
+  position: relative;
 }
 
-/* line 15, ../scss/modules/pages/_services.scss */
+/* line 13, ../scss/modules/pages/_services.scss */
+.circle {
+  margin: auto !important;
+  max-width: 80% !important;
+  display: block;
+}
+
+/* line 21, ../scss/modules/pages/_services.scss */
+.heart-container {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 560px) {
+  /* line 21, ../scss/modules/pages/_services.scss */
+  .heart-container {
+    top: 10%;
+  }
+}
+
+/* line 46, ../scss/modules/pages/_services.scss */
 .cubeWrapper {
   position: relative;
   margin: 50px auto;
@@ -2160,11 +2181,11 @@ p {
   perspective: 800px;
   -webkit-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
-  width: 534px;
-  height: 300px;
+  width: 70%;
+  height: 70%;
 }
 
-/* line 27, ../scss/modules/pages/_services.scss */
+/* line 60, ../scss/modules/pages/_services.scss */
 .cubeWrapper .rotator {
   -webkit-animation: rotateWen 4s linear 0s infinite normal;
   animation: rotateWen 4s linear 0s infinite normal;
@@ -2173,29 +2194,18 @@ p {
   transform-style: preserve-3d;
 }
 
-/* line 35, ../scss/modules/pages/_services.scss */
+/* line 68, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube {
   text-align: center;
-  width: 534px;
-  height: 501px;
-  /*background-color: red;*/
+  width: 70%;
+  height: 70%;
+  margin: auto;
 }
-/* line 40, ../scss/modules/pages/_services.scss */
+/* line 76, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube img {
   margin: 0 0 0 0 !important;
 }
 
-/*.cubeWrapper .cube span{
-    margin: 10px auto;
-    display: inline-block;
-}*/
-/*.cubeWrapper .cube .big{
-    font-size: 8em;
-}
-
-.cubeWrapper .cube .small{
-    font-size: 4em;
-}*/
 @-webkit-keyframes rotate3d {
   /* line 61, ../scss/modules/pages/_services.scss */
   from {

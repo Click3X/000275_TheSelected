@@ -1,15 +1,46 @@
-.circle {
+.short-divider {
+    border-bottom: 2px solid black;
+    width: 80px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.circle-wrapper {
     position: relative;
+}
+
+.circle {
+    
     margin: auto !important;
-    // max-width: none !important;
+    max-width: 80% !important;
     display: block;
 
 }
 
 .heart-container {
     position: absolute;
-    top: 24%;
-left: 22%;
+    top: 20%;
+    left: 0;
+    right: 0;
+
+    //     @media(min-width: 891px) {
+    //     top: 25%;
+    // }
+
+    // @media(max-width: 890px) {
+    //     top: 25%;
+    // }
+
+    // @media(max-width: 767px) {
+    //     top: 21%;
+    // }
+
+        @media(max-width: 560px) {
+        top: 10%;
+    }
+
+
 }
 
 .cubeWrapper {
@@ -20,8 +51,10 @@ left: 22%;
     perspective: 800px;
     -webkit-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
-    width: 534px;
-    height: 300px;
+    // width: 534px;
+    // height: 300px;
+    width: 70%;
+    height: 70%;
 }
 
 .cubeWrapper .rotator{
@@ -34,28 +67,17 @@ left: 22%;
 
 .cubeWrapper .cube {
     text-align: center;
-    width: 534px;
-    height: 501px;
+    // width: 534px;
+    // height: 501px;
+    width: 70%;
+    height: 70%;
+    margin: auto;
 
     img {
         margin: 0 0 0 0 !important;
         // max-width: none !important;
     }
-    /*background-color: red;*/
 }
-
-/*.cubeWrapper .cube span{
-    margin: 10px auto;
-    display: inline-block;
-}*/
-
-/*.cubeWrapper .cube .big{
-    font-size: 8em;
-}
-
-.cubeWrapper .cube .small{
-    font-size: 4em;
-}*/
 
 @-webkit-keyframes rotate3d {
     from {

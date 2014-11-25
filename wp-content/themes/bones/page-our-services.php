@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" style="overflow-x: hidden">
 
 				<div id="inner-content" class="wrap cf">
 
@@ -19,17 +19,23 @@
 
 							<section class="entry-content cf" itemprop="articleBody">
 								<?php the_content(); ?>
-								<img class="circle" src="<?php echo get_template_directory_uri(); ?>/library/images/circle.png">
-								<div class="heart-container">
+
+								<div class="short-divider"></div>
+								<div class="circle-wrapper">
+									<img class="circle" src="<?php echo get_template_directory_uri(); ?>/library/images/circle.png">
+									<div class="heart-container">
 									<div class="cubeWrapper">
-									    <div class="rotator">
-									        <div class="cube">
-									          <img src="<?php echo get_template_directory_uri(); ?>/library/images/heart.png">
-									          
-									        </div>
-									    </div>
+										<div class="rotator">
+										        <div class="cube">
+										          <img src="<?php echo get_template_directory_uri(); ?>/library/images/heart.png">
+										          
+										        </div>
+										    </div>
+										</div>
 									</div>
 								</div>
+
+								
 								
 							</section>
 
