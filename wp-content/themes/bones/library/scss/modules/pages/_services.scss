@@ -6,6 +6,86 @@
     margin-bottom: 30px;
 }
 
+.float-text {
+    position: absolute;
+}
+
+.black1 {
+    top: 25px;
+left: -20px;
+right: 0;
+}
+
+.black2 {
+    top: 18%;
+left: 20%;
+}
+
+.black3 {
+    top: 33%;
+left: 6%;
+}
+
+.black4 {
+    top: 48%;
+left: 6%;
+}
+
+.black5 {
+    top: 61%;
+left: 6%;
+}
+
+.black6 {
+    top: 74%;
+left: 14%;
+}
+
+.black7 {
+    bottom: 11%;
+left: 26%;
+}
+
+.heart-text {
+    position: absolute;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 270px;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+
+    @media(max-width: 995px) {
+        font-size: 0.88em;
+        width: 220px;
+        padding: 8px;
+    }
+
+        @media(max-width: 875px) {
+            font-size: 0.75em;
+            width: 190px;
+            padding: 8px;
+    }
+
+            @media(max-width: 560px) {
+font-size: 0.55em;
+width: 140px;
+padding: 4px;
+top: 39%;
+    }
+
+                @media(max-width: 450px) {
+
+width: 80px;
+
+    }
+}
+
 .lines {
     position: absolute;
     top: 0;
@@ -38,8 +118,8 @@ border: 2px solid black;
 }
 
 .label-com {
-    bottom: 40px;
-    left: 140px;
+bottom: 11%;
+left: 5%;
     padding: 5px 17px;
 border: 2px solid black;
 }
@@ -53,6 +133,8 @@ border: 2px solid #daa250;
 
 .circle-wrapper {
     position: relative;
+
+
 }
 
 .circle {
@@ -189,3 +271,13 @@ border: 2px solid #daa250;
         transform-origin: 50% 50%;
     }
 }
+
+    .bottom-text {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        color: black;
+        font-size: 1.2em;
+        margin: 90px auto;
+        line-height: 1.3em;
+    }
