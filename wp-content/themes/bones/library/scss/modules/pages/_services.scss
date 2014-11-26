@@ -49,34 +49,95 @@ left: 26%;
 }
 
 @media(max-width: 870px) {
-        .black3,.black4,.black5 {
-            left:0;
-            p{
-                            // font-size: 12px;
-            
-            }
+    .black3,.black4,.black5 {
+        left:0;
+    }
 
-        }
+    .black6,.black7 {
+        left: 7%;
+    }
 
-        .black6,.black7 {
-            left: 7%;
-        }
-
-        .black2 {
-            left: 7%;
-        }
+    .black2 {
+        left: 7%;
+    }
 }
 
 @media(max-width: 685px) {
-        .black1,.black2,.black3,.black4,.black5,.black6,.black7 {
+    .black1,.black2,.black3,.black4,.black5,.black6,.black7,.gold1,.gold2,.gold3,.gold4,.gold5,.gold6 {
             
-            p{
-                font-size: 12px;
-            
-            }
-
+        p{
+            font-size: 12px;
+            line-height: 16px;           
         }
+    }
 
+}
+
+@media(max-width: 560px) {
+    .black1,.black2,.black3,.black4,.black5,.black6,.black7,.gold1,.gold2,.gold3,.gold4,.gold5,.gold6 {
+            
+        p{
+            font-size: 10px;
+            line-height: 11px;
+        }
+    }
+
+}
+
+// GOLDEN
+.gold1 {
+    left: 0;
+    right: 0;
+    bottom: 3%;
+}
+
+.gold2 {
+    right: 20%;
+    bottom: 19%;
+}
+
+.gold3 {
+    right: 12%;
+    bottom: 35%;
+}
+
+.gold4 {
+    right: 2%;
+    top: 47%;
+}
+
+.gold5 {
+    right: 3%;
+    top: 32%;
+}
+
+.gold6 {
+    top: 15%;
+    right: 17%;
+}
+
+@media(max-width: 870px) {
+    .gold4,.gold5 {
+        right:0;
+    }
+
+    .gold3 {
+        right:7%;
+        bottom: 33%;
+    }
+
+    .gold2 {
+        right: 16%;
+        bottom: 16%;
+    }
+
+    // .black6,.black7 {
+    //     left: 7%;
+    // }
+
+    // .black2 {
+    //     left: 7%;
+    // }
 }
 
 .heart-text {
@@ -356,4 +417,8 @@ margin-top: 1px;
         font-size: 1.2em;
         margin: 90px auto;
         line-height: 1.3em;
+
+        @media(max-width: 767px) {
+            font-size: 1em;
+        }
     }
