@@ -39,7 +39,7 @@ left: 6%;
 }
 
 .black6 {
-    top: 74%;
+    top: 73%;
 left: 14%;
 }
 
@@ -163,10 +163,46 @@ margin-top: 1px;
 }
 
 .label-cre {
-    right: 120px;
-    bottom: 60px;
+    right: 10%;
+    bottom: 3%;
     padding: 5px 17px;
     border: 2px solid #daa250;
+}
+
+@media(max-width: 605px) {
+    .label-str {
+        left: 0;
+    }
+
+    .label-com {
+        bottom:0;
+    }
+
+    .label-cre {
+        right:0;
+        bottom:0;
+    }
+}
+
+@media(max-width: 500px) {
+    .label-str {
+        top:-9%;
+        padding: 3px 6px;
+        font-size: 13px;
+    }
+
+    .label-com {
+        bottom:-10%;
+        padding: 3px 6px;
+        font-size: 13px;
+    }
+
+    .label-cre {
+        
+        bottom:-10%;
+        padding: 3px 6px;
+        font-size: 13px;
+    }
 }
 
 

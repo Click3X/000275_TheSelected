@@ -2233,7 +2233,7 @@ p {
 
 /* line 41, ../scss/modules/pages/_services.scss */
 .black6 {
-  top: 74%;
+  top: 73%;
   left: 14%;
 }
 
@@ -2367,25 +2367,64 @@ p {
 
 /* line 165, ../scss/modules/pages/_services.scss */
 .label-cre {
-  right: 120px;
-  bottom: 60px;
+  right: 10%;
+  bottom: 3%;
   padding: 5px 17px;
   border: 2px solid #daa250;
 }
 
-/* line 174, ../scss/modules/pages/_services.scss */
+@media (max-width: 605px) {
+  /* line 173, ../scss/modules/pages/_services.scss */
+  .label-str {
+    left: 0;
+  }
+
+  /* line 177, ../scss/modules/pages/_services.scss */
+  .label-com {
+    bottom: 0;
+  }
+
+  /* line 181, ../scss/modules/pages/_services.scss */
+  .label-cre {
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  /* line 188, ../scss/modules/pages/_services.scss */
+  .label-str {
+    top: -9%;
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  /* line 194, ../scss/modules/pages/_services.scss */
+  .label-com {
+    bottom: -10%;
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  /* line 200, ../scss/modules/pages/_services.scss */
+  .label-cre {
+    bottom: -10%;
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+}
+/* line 210, ../scss/modules/pages/_services.scss */
 .circle-wrapper {
   position: relative;
 }
 
-/* line 180, ../scss/modules/pages/_services.scss */
+/* line 216, ../scss/modules/pages/_services.scss */
 .circle {
   margin: auto !important;
   max-width: 80% !important;
   display: block;
 }
 
-/* line 188, ../scss/modules/pages/_services.scss */
+/* line 224, ../scss/modules/pages/_services.scss */
 .heart-container {
   position: absolute;
   top: 20%;
@@ -2393,13 +2432,13 @@ p {
   right: 0;
 }
 @media (max-width: 560px) {
-  /* line 188, ../scss/modules/pages/_services.scss */
+  /* line 224, ../scss/modules/pages/_services.scss */
   .heart-container {
     top: 10%;
   }
 }
 
-/* line 213, ../scss/modules/pages/_services.scss */
+/* line 249, ../scss/modules/pages/_services.scss */
 .cubeWrapper {
   position: relative;
   margin: 50px auto;
@@ -2411,7 +2450,7 @@ p {
   height: 70%;
 }
 
-/* line 227, ../scss/modules/pages/_services.scss */
+/* line 263, ../scss/modules/pages/_services.scss */
 .cubeWrapper .rotator {
   -webkit-animation: rotateWen 4s linear 0s infinite normal;
   animation: rotateWen 4s linear 0s infinite normal;
@@ -2420,14 +2459,14 @@ p {
   transform-style: preserve-3d;
 }
 
-/* line 235, ../scss/modules/pages/_services.scss */
+/* line 271, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube {
   text-align: center;
   width: 70%;
   height: 70%;
   margin: auto;
 }
-/* line 243, ../scss/modules/pages/_services.scss */
+/* line 279, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube img {
   margin: 0 0 0 0 !important;
 }
@@ -2492,7 +2531,7 @@ p {
     transform-origin: 50% 50%;
   }
 }
-/* line 315, ../scss/modules/pages/_services.scss */
+/* line 351, ../scss/modules/pages/_services.scss */
 .bottom-text {
   width: 80%;
   text-align: center;
