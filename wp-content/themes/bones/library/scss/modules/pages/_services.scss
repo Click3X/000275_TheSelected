@@ -10,8 +10,10 @@
     position: absolute;
 }
 
+
+
 .black1 {
-    top: 25px;
+    top: 1%;
 left: -20px;
 right: 0;
 }
@@ -44,6 +46,37 @@ left: 14%;
 .black7 {
     bottom: 11%;
 left: 26%;
+}
+
+@media(max-width: 870px) {
+        .black3,.black4,.black5 {
+            left:0;
+            p{
+                            // font-size: 12px;
+            
+            }
+
+        }
+
+        .black6,.black7 {
+            left: 7%;
+        }
+
+        .black2 {
+            left: 7%;
+        }
+}
+
+@media(max-width: 685px) {
+        .black1,.black2,.black3,.black4,.black5,.black6,.black7 {
+            
+            p{
+                font-size: 12px;
+            
+            }
+
+        }
+
 }
 
 .heart-text {
@@ -112,24 +145,31 @@ margin-top: 1px;
 
 .label-str {
     top: 15px;
-    left: 190px;
+    left: 10%;
     padding: 5px 17px;
-border: 2px solid black;
+    border: 2px solid black;
 }
 
 .label-com {
-bottom: 11%;
-left: 5%;
+    bottom: 11%;
+    left: 5%;
     padding: 5px 17px;
-border: 2px solid black;
+    border: 2px solid black;
+
+    @media(max-width: 870px) {
+        left: 0;
+        bottom: 3%;
+    }
 }
 
 .label-cre {
     right: 120px;
-bottom: 60px;
+    bottom: 60px;
     padding: 5px 17px;
-border: 2px solid #daa250;
+    border: 2px solid #daa250;
 }
+
+
 
 .circle-wrapper {
     position: relative;
