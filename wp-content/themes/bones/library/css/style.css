@@ -2194,141 +2194,148 @@ p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 399px) {
+  /* line 1, ../scss/modules/pages/_services.scss */
+  .short-divider {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+}
 
-/* line 9, ../scss/modules/pages/_services.scss */
+/* line 14, ../scss/modules/pages/_services.scss */
 .float-text {
   position: absolute;
 }
 
-/* line 15, ../scss/modules/pages/_services.scss */
+/* line 20, ../scss/modules/pages/_services.scss */
 .black1 {
   top: 1%;
   left: -20px;
   right: 0;
 }
 
-/* line 21, ../scss/modules/pages/_services.scss */
+/* line 26, ../scss/modules/pages/_services.scss */
 .black2 {
   top: 18%;
   left: 20%;
 }
 
-/* line 26, ../scss/modules/pages/_services.scss */
+/* line 31, ../scss/modules/pages/_services.scss */
 .black3 {
   top: 33%;
   left: 6%;
 }
 
-/* line 31, ../scss/modules/pages/_services.scss */
+/* line 36, ../scss/modules/pages/_services.scss */
 .black4 {
   top: 48%;
   left: 6%;
 }
 
-/* line 36, ../scss/modules/pages/_services.scss */
+/* line 41, ../scss/modules/pages/_services.scss */
 .black5 {
   top: 61%;
   left: 6%;
 }
 
-/* line 41, ../scss/modules/pages/_services.scss */
+/* line 46, ../scss/modules/pages/_services.scss */
 .black6 {
   top: 73%;
   left: 14%;
 }
 
-/* line 46, ../scss/modules/pages/_services.scss */
+/* line 51, ../scss/modules/pages/_services.scss */
 .black7 {
   bottom: 11%;
   left: 26%;
 }
 
 @media (max-width: 870px) {
-  /* line 52, ../scss/modules/pages/_services.scss */
+  /* line 57, ../scss/modules/pages/_services.scss */
   .black3, .black4, .black5 {
     left: 0;
   }
 
-  /* line 56, ../scss/modules/pages/_services.scss */
+  /* line 61, ../scss/modules/pages/_services.scss */
   .black6, .black7 {
     left: 7%;
   }
 
-  /* line 60, ../scss/modules/pages/_services.scss */
+  /* line 65, ../scss/modules/pages/_services.scss */
   .black2 {
     left: 7%;
   }
 }
 @media (max-width: 685px) {
-  /* line 68, ../scss/modules/pages/_services.scss */
+  /* line 73, ../scss/modules/pages/_services.scss */
   .black1 p, .black2 p, .black3 p, .black4 p, .black5 p, .black6 p, .black7 p, .gold1 p, .gold2 p, .gold3 p, .gold4 p, .gold5 p, .gold6 p {
     font-size: 12px;
     line-height: 16px;
   }
 }
 @media (max-width: 560px) {
-  /* line 79, ../scss/modules/pages/_services.scss */
+  /* line 84, ../scss/modules/pages/_services.scss */
   .black1 p, .black2 p, .black3 p, .black4 p, .black5 p, .black6 p, .black7 p, .gold1 p, .gold2 p, .gold3 p, .gold4 p, .gold5 p, .gold6 p {
     font-size: 10px;
     line-height: 11px;
   }
 }
-/* line 88, ../scss/modules/pages/_services.scss */
+/* line 93, ../scss/modules/pages/_services.scss */
 .gold1 {
   left: 0;
   right: 0;
   bottom: 3%;
 }
 
-/* line 94, ../scss/modules/pages/_services.scss */
+/* line 99, ../scss/modules/pages/_services.scss */
 .gold2 {
   right: 20%;
   bottom: 19%;
 }
 
-/* line 99, ../scss/modules/pages/_services.scss */
+/* line 104, ../scss/modules/pages/_services.scss */
 .gold3 {
   right: 12%;
   bottom: 35%;
 }
 
-/* line 104, ../scss/modules/pages/_services.scss */
+/* line 109, ../scss/modules/pages/_services.scss */
 .gold4 {
   right: 2%;
   top: 47%;
 }
 
-/* line 109, ../scss/modules/pages/_services.scss */
+/* line 114, ../scss/modules/pages/_services.scss */
 .gold5 {
   right: 3%;
   top: 32%;
 }
 
-/* line 114, ../scss/modules/pages/_services.scss */
+/* line 119, ../scss/modules/pages/_services.scss */
 .gold6 {
   top: 15%;
   right: 17%;
 }
 
 @media (max-width: 870px) {
-  /* line 120, ../scss/modules/pages/_services.scss */
+  /* line 125, ../scss/modules/pages/_services.scss */
   .gold4, .gold5 {
     right: 0;
   }
 
-  /* line 124, ../scss/modules/pages/_services.scss */
+  /* line 129, ../scss/modules/pages/_services.scss */
   .gold3 {
     right: 7%;
     bottom: 33%;
   }
 
-  /* line 129, ../scss/modules/pages/_services.scss */
+  /* line 134, ../scss/modules/pages/_services.scss */
   .gold2 {
     right: 16%;
     bottom: 16%;
   }
 }
-/* line 143, ../scss/modules/pages/_services.scss */
+/* line 148, ../scss/modules/pages/_services.scss */
 .heart-text {
   position: absolute;
   border: 2px solid white;
@@ -2344,7 +2351,7 @@ p {
   padding: 10px;
 }
 @media (max-width: 995px) {
-  /* line 143, ../scss/modules/pages/_services.scss */
+  /* line 148, ../scss/modules/pages/_services.scss */
   .heart-text {
     font-size: 0.88em;
     width: 220px;
@@ -2352,7 +2359,7 @@ p {
   }
 }
 @media (max-width: 875px) {
-  /* line 143, ../scss/modules/pages/_services.scss */
+  /* line 148, ../scss/modules/pages/_services.scss */
   .heart-text {
     font-size: 0.75em;
     width: 190px;
@@ -2360,7 +2367,7 @@ p {
   }
 }
 @media (max-width: 560px) {
-  /* line 143, ../scss/modules/pages/_services.scss */
+  /* line 148, ../scss/modules/pages/_services.scss */
   .heart-text {
     font-size: 0.55em;
     width: 140px;
@@ -2369,13 +2376,13 @@ p {
   }
 }
 @media (max-width: 450px) {
-  /* line 143, ../scss/modules/pages/_services.scss */
+  /* line 148, ../scss/modules/pages/_services.scss */
   .heart-text {
     width: 80px;
   }
 }
 
-/* line 183, ../scss/modules/pages/_services.scss */
+/* line 188, ../scss/modules/pages/_services.scss */
 .lines {
   position: absolute;
   top: 0;
@@ -2387,14 +2394,14 @@ p {
   max-height: 80%;
 }
 
-/* line 194, ../scss/modules/pages/_services.scss */
+/* line 199, ../scss/modules/pages/_services.scss */
 .circle-labels {
   position: absolute;
   text-transform: uppercase;
   font-weight: 800;
   color: black;
 }
-/* line 200, ../scss/modules/pages/_services.scss */
+/* line 205, ../scss/modules/pages/_services.scss */
 .circle-labels div {
   width: 20px;
   height: 20px;
@@ -2404,8 +2411,15 @@ p {
   vertical-align: top;
   margin-top: 1px;
 }
+@media (max-width: 399px) {
+  /* line 205, ../scss/modules/pages/_services.scss */
+  .circle-labels div {
+    width: 15px;
+    height: 15px;
+  }
+}
 
-/* line 207, ../scss/modules/pages/_services.scss */
+/* line 217, ../scss/modules/pages/_services.scss */
 .label-str {
   top: 15px;
   left: 10%;
@@ -2413,7 +2427,7 @@ p {
   border: 2px solid black;
 }
 
-/* line 214, ../scss/modules/pages/_services.scss */
+/* line 224, ../scss/modules/pages/_services.scss */
 .label-com {
   bottom: 11%;
   left: 5%;
@@ -2421,14 +2435,14 @@ p {
   border: 2px solid black;
 }
 @media (max-width: 870px) {
-  /* line 214, ../scss/modules/pages/_services.scss */
+  /* line 224, ../scss/modules/pages/_services.scss */
   .label-com {
     left: 0;
     bottom: 3%;
   }
 }
 
-/* line 226, ../scss/modules/pages/_services.scss */
+/* line 236, ../scss/modules/pages/_services.scss */
 .label-cre {
   right: 10%;
   bottom: 3%;
@@ -2437,57 +2451,63 @@ p {
 }
 
 @media (max-width: 605px) {
-  /* line 234, ../scss/modules/pages/_services.scss */
+  /* line 244, ../scss/modules/pages/_services.scss */
   .label-str {
     left: 0;
   }
 
-  /* line 238, ../scss/modules/pages/_services.scss */
+  /* line 248, ../scss/modules/pages/_services.scss */
   .label-com {
     bottom: 0;
   }
 
-  /* line 242, ../scss/modules/pages/_services.scss */
+  /* line 252, ../scss/modules/pages/_services.scss */
   .label-cre {
     right: 0;
     bottom: 0;
   }
 }
 @media (max-width: 500px) {
-  /* line 249, ../scss/modules/pages/_services.scss */
+  /* line 259, ../scss/modules/pages/_services.scss */
   .label-str {
     top: -9%;
     padding: 3px 6px;
     font-size: 13px;
   }
 
-  /* line 255, ../scss/modules/pages/_services.scss */
+  /* line 265, ../scss/modules/pages/_services.scss */
   .label-com {
     bottom: -10%;
     padding: 3px 6px;
     font-size: 13px;
   }
 
-  /* line 261, ../scss/modules/pages/_services.scss */
+  /* line 271, ../scss/modules/pages/_services.scss */
   .label-cre {
     bottom: -10%;
     padding: 3px 6px;
     font-size: 13px;
   }
 }
-/* line 271, ../scss/modules/pages/_services.scss */
+@media (max-width: 399px) {
+  /* line 280, ../scss/modules/pages/_services.scss */
+  .label-str, .label-com, .label-cre {
+    font-size: 11px;
+  }
+}
+/* line 287, ../scss/modules/pages/_services.scss */
 .circle-wrapper {
   position: relative;
 }
 
-/* line 277, ../scss/modules/pages/_services.scss */
+/* line 293, ../scss/modules/pages/_services.scss */
 .circle {
   margin: auto !important;
   max-width: 80% !important;
   display: block;
 }
 
-/* line 285, ../scss/modules/pages/_services.scss */
+/* line 301, ../scss/modules/pages/_services.scss */
 .heart-container {
   position: absolute;
   top: 20%;
@@ -2495,13 +2515,13 @@ p {
   right: 0;
 }
 @media (max-width: 560px) {
-  /* line 285, ../scss/modules/pages/_services.scss */
+  /* line 301, ../scss/modules/pages/_services.scss */
   .heart-container {
     top: 10%;
   }
 }
 
-/* line 310, ../scss/modules/pages/_services.scss */
+/* line 326, ../scss/modules/pages/_services.scss */
 .cubeWrapper {
   position: relative;
   margin: 50px auto;
@@ -2513,7 +2533,7 @@ p {
   height: 70%;
 }
 
-/* line 324, ../scss/modules/pages/_services.scss */
+/* line 340, ../scss/modules/pages/_services.scss */
 .cubeWrapper .rotator {
   -webkit-animation: rotateWen 4s linear 0s infinite normal;
   animation: rotateWen 4s linear 0s infinite normal;
@@ -2522,14 +2542,14 @@ p {
   transform-style: preserve-3d;
 }
 
-/* line 332, ../scss/modules/pages/_services.scss */
+/* line 348, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube {
   text-align: center;
   width: 70%;
   height: 70%;
   margin: auto;
 }
-/* line 340, ../scss/modules/pages/_services.scss */
+/* line 356, ../scss/modules/pages/_services.scss */
 .cubeWrapper .cube img {
   margin: 0 0 0 0 !important;
 }
@@ -2594,7 +2614,7 @@ p {
     transform-origin: 50% 50%;
   }
 }
-/* line 412, ../scss/modules/pages/_services.scss */
+/* line 428, ../scss/modules/pages/_services.scss */
 .bottom-text {
   width: 80%;
   text-align: center;
@@ -2605,7 +2625,7 @@ p {
   line-height: 1.3em;
 }
 @media (max-width: 767px) {
-  /* line 412, ../scss/modules/pages/_services.scss */
+  /* line 428, ../scss/modules/pages/_services.scss */
   .bottom-text {
     font-size: 1em;
   }
