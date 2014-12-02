@@ -14,15 +14,14 @@
     <h3><?php echo $case_vars['tagline']; ?></h3>
 </div>
 
-
-<!-- PANEL FUNCTION -->
+<!-- PANELS -->
 <?php 
     $panels = $case_vars['panels'];
-    // helper($panels);
     $num = 1;
     foreach ($panels as $key => $panel) {
         $panelClass = ' panel-'.$num;
         $format =' '.cleanString($panel['format']);
+
         // CONTAINER DIV
         echo '<div class="panel-container cf'.$panelClass.$format.'">';
             echo '<div class="panel-inner cf">';
@@ -36,23 +35,42 @@
                         echo $panel['description'];
                     echo '</div>';
 
-
                     // IMAGE HOLDER
-                    if( $format == ' gallery') { echo '<div class="img-holder cf">'; }
+                    // IF GRID
+                    if( $format == ' grid') { 
+                        echo '<div class="img-holder cf">'; 
+                        $events = $panel['events'];
+                        
+                        foreach ($events as $key => $event) {
+                            // STORE VARS
+                            $title = $event['event_title'];
+                            $pics = $event['event_gallery'];
+                            $id = cleanString($title);
+                            echo '<ul id="'.$id.'" class="event-gallery clearfix">';
+
+                            foreach ($pics as $key => $pic) {
+                                echo '<li class="pic pic-'.$key.'">';
+                                    echo '<img src="'.$pic['image']['url'].'">';
+                                echo '</li>';
+                            }
+
+                            echo '</ul>';
+                        }
+
+                        echo '</div>';
+
+                    // IF NOT GRID:
+                    } else {
                         $pics = $panel['pics'];
                         foreach ($pics as $key => $pic) {
-                            // helper($pic);
                             echo '<div class="pic pic-'.$key.'">';
                                 echo '<img src="'.$pic['pic']['url'].'">';
                             echo '</div>';
                         }
-                    
-                    if( $format == ' grid') { echo '</div>'; }
-
+                    }
+                    // CLOSE OUT PANEL
             echo '</div>';
         echo '</div>';
-
-        // helper($panel);
 
         // INCREMENT PANEL NUMBER
         $num++;
