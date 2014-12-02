@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 02, 2014 at 06:09 PM
+-- Generation Time: Dec 02, 2014 at 06:12 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -110,7 +110,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=392 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=394 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -170,7 +170,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (51, 'upload_path', '', 'yes'),
 (52, 'blog_public', '0', 'yes'),
 (53, 'default_link_category', '2', 'yes'),
-(54, 'show_on_front', 'posts', 'yes'),
+(54, 'show_on_front', 'page', 'yes'),
 (55, 'tag_base', '', 'yes'),
 (56, 'show_avatars', '1', 'yes'),
 (57, 'avatar_rating', 'G', 'yes'),
@@ -201,7 +201,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (82, 'uninstall_plugins', 'a:0:{}', 'no'),
 (83, 'timezone_string', '', 'yes'),
 (84, 'page_for_posts', '0', 'yes'),
-(85, 'page_on_front', '0', 'yes'),
+(85, 'page_on_front', '44', 'yes'),
 (86, 'default_post_format', '0', 'yes'),
 (87, 'link_manager_enabled', '0', 'yes'),
 (88, 'initial_db_version', '29630', 'yes'),
@@ -213,7 +213,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (94, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:8:"sidebar1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
 (96, 'cron', 'a:5:{i:1417590697;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1417591620;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1417633914;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1417635928;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(103, '_transient_random_seed', '7da688d33396688f6766790a1b14bf51', 'yes'),
+(103, '_transient_random_seed', '91b090ec56de2904a1b33996a7571d0e', 'yes'),
 (104, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1417549478;s:7:"checked";a:2:{s:5:"bones";s:3:"1.7";s:14:"twentyfourteen";s:3:"1.2";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
 (107, 'can_compress_scripts', '1', 'yes'),
 (125, '_site_transient_timeout_wporg_theme_feature_list', '1415830320', 'yes'),
@@ -499,7 +499,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (199, 54, 'position', 'acf_after_title'),
 (200, 54, 'layout', 'no_box'),
 (201, 54, 'hide_on_screen', ''),
-(202, 54, '_edit_lock', '1417560111:1'),
+(202, 54, '_edit_lock', '1417561783:1'),
 (203, 55, '_edit_last', '1'),
 (204, 55, 'logo', '56'),
 (205, 55, '_logo', 'field_54662564d7ff2'),
