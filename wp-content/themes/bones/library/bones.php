@@ -146,6 +146,12 @@ function bones_scripts_and_styles() {
         // STICKY NAV
         wp_register_script( 'sticky-nav', get_stylesheet_directory_uri() . '/library/js/sticky-nav.js', array( 'jquery' ), '', true );
 
+        // SWIPEBOX CSS
+        wp_register_style( 'swipebox-css', get_stylesheet_directory_uri() . '/library/css/swipebox/css/swipebox.css', array(), '' );
+        // SWIPEBOX JS
+        wp_register_script( 'swipebox-js', get_stylesheet_directory_uri() . '/library/js/libs/swipebox/jquery.swipebox.min.js', array( 'jquery' ), '', true );
+        wp_register_script( 'swipebox', get_stylesheet_directory_uri() . '/library/js/libs/swipebox/swipe.js', array( 'jquery', 'swipebox-js' ), '', true );
+
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -166,6 +172,12 @@ function bones_scripts_and_styles() {
             wp_enqueue_script( 'sticky-nav' );
         }
 
+        // ENQUEUE SWIPEBOX IF CASE STUDY PAGE
+        if ( is_singular( 'case_study' ) ) {
+            wp_enqueue_style( 'swipebox-css' );
+            wp_enqueue_script( 'swipebox-js' );
+            wp_enqueue_script( 'swipebox' );
+        }
 	}
 }
 
