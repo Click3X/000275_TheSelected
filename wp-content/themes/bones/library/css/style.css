@@ -1924,6 +1924,51 @@ p {
   line-height: 1.3em;
 }
 
+/* line 56, ../scss/modules/pages/_home.scss */
+.marquee-holder {
+  text-align: center;
+}
+/* line 59, ../scss/modules/pages/_home.scss */
+.marquee-holder .marquee-tagline {
+  margin: 0 auto;
+}
+/* line 62, ../scss/modules/pages/_home.scss */
+.marquee-holder .marquee-tagline li h2 {
+  margin: 0 auto;
+  line-height: 1em;
+}
+/* line 66, ../scss/modules/pages/_home.scss */
+.marquee-holder .marquee-tagline li h2 span {
+  font-size: 14px !important;
+}
+@media (min-width: 620px) {
+  /* line 66, ../scss/modules/pages/_home.scss */
+  .marquee-holder .marquee-tagline li h2 span {
+    font-size: 18px !important;
+  }
+}
+/* line 75, ../scss/modules/pages/_home.scss */
+.marquee-holder .marquee-tagline li:first-child:after {
+  content: "\25CF";
+  color: #fff;
+  display: inline-block;
+  margin: 0 2em;
+}
+@media (min-width: 620px) {
+  /* line 86, ../scss/modules/pages/_home.scss */
+  .marquee-holder .marquee-tagline {
+    display: inline-block;
+  }
+  /* line 89, ../scss/modules/pages/_home.scss */
+  .marquee-holder .marquee-tagline li {
+    display: inline-block;
+  }
+  /* line 92, ../scss/modules/pages/_home.scss */
+  .marquee-holder .marquee-tagline li h2 {
+    display: inline-block;
+  }
+}
+
 /* line 2, ../scss/modules/pages/_marquee.scss */
 .marquee {
   background: black;
@@ -1932,14 +1977,80 @@ p {
   background-size: 266px 192px;
   height: 100vh;
 }
-/* line 13, ../scss/modules/pages/_marquee.scss */
-.marquee h1 span strong span {
+/* line 9, ../scss/modules/pages/_marquee.scss */
+.marquee h1 {
+  font-family: brandon-grotesque,sans-serif;
   font-weight: 800;
   letter-spacing: .08em;
   color: #fff;
+  margin: 0 auto;
+}
+/* line 17, ../scss/modules/pages/_marquee.scss */
+.marquee h2 {
+  font-family: brandon-grotesque,sans-serif;
+}
+
+/* line 21, ../scss/modules/pages/_marquee.scss */
+.gold-headline span,
+.marq-2 span {
+  font-style: italic;
+  text-transform: lowercase;
+  font-weight: 400;
 }
 
 /* line 27, ../scss/modules/pages/_marquee.scss */
+.gold-headline span {
+  padding: 0 .25em;
+}
+
+/* line 31, ../scss/modules/pages/_marquee.scss */
+.marq-2 {
+  margin-bottom: 0;
+}
+/* line 34, ../scss/modules/pages/_marquee.scss */
+.marq-2 span {
+  color: #fff;
+}
+
+/* line 38, ../scss/modules/pages/_marquee.scss */
+.white-headline,
+.gold-headline {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* line 44, ../scss/modules/pages/_marquee.scss */
+.gold-headline {
+  color: #daa250;
+  margin-bottom: .75em;
+  font-size: 18px;
+}
+
+/* line 50, ../scss/modules/pages/_marquee.scss */
+.white-headline {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* line 54, ../scss/modules/pages/_marquee.scss */
+.white-headline span {
+  display: block;
+  width: 100%;
+  line-height: .65em;
+}
+@media (min-width: 720px) {
+  /* line 54, ../scss/modules/pages/_marquee.scss */
+  .white-headline span {
+    line-height: auto;
+    display: inline-block;
+    width: auto;
+    line-height: auto;
+    margin: auto 1.5em;
+  }
+}
+
+/* line 71, ../scss/modules/pages/_marquee.scss */
 .marquee hr,
 .entry-content hr {
   width: 5.5em;
@@ -1949,51 +2060,20 @@ p {
   border: 0;
 }
 
-/* line 35, ../scss/modules/pages/_marquee.scss */
+/* line 79, ../scss/modules/pages/_marquee.scss */
 .marquee hr {
+  margin: 1.2em auto;
   background-color: white;
 }
 
-/* line 40, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h1, #container > div.marquee.comment-respond > div > h1 {
-  background-color: transparent;
-  margin-top: 0;
-}
-/* line 44, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h1 span, #container > div.marquee.comment-respond > div > h1 span {
-  background-color: transparent;
-}
-
-/* line 48, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2:nth-child(2), #container > div.marquee.comment-respond > div > h2:nth-child(2),
-#container > div.marquee.cf > div > h1,
-#container > div.marquee.comment-respond > div > h1 {
+/* line 85, ../scss/modules/pages/_marquee.scss */
+#container h2:nth-child(2),
+#container h1 {
   position: relative;
   z-index: 1;
 }
 
-/* line 50, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
-  background-color: transparent !important;
-}
-
-/* line 53, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2:nth-child(6) > span > strong, #container > div.marquee.comment-respond > div > h2:nth-child(6) > span > strong,
-#container > div.marquee.cf > div > h2:nth-child(5) > span > span > strong,
-#container > div.marquee.comment-respond > div > h2:nth-child(5) > span > span > strong {
-  font-weight: 800;
-}
-
-/* line 59, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2:nth-child(7) > span, #container > div.marquee.comment-respond > div > h2:nth-child(7) > span,
-#container > div.marquee.cf > div > h2:nth-child(6) > span,
-#container > div.marquee.comment-respond > div > h2:nth-child(6) > span,
-#container > div.marquee.cf > div > h2:nth-child(2) > span,
-#container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
-  background-color: transparent !important;
-}
-
-/* line 63, ../scss/modules/pages/_marquee.scss */
+/* line 87, ../scss/modules/pages/_marquee.scss */
 .marquee-holder {
   position: absolute;
   top: 0;
@@ -2006,77 +2086,61 @@ p {
   max-width: 1010px;
 }
 
-/* line 73, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
-  margin-bottom: 0;
+/* line 96, ../scss/modules/pages/_marquee.scss */
+#container h1 {
+  font-size: 50px;
+  margin-top: 0;
 }
 
-/* line 76, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
-  font-size: 50px !important;
+/* line 101, ../scss/modules/pages/_marquee.scss */
+#container h2 {
+  font-weight: 800;
+  line-height: 1.5rem;
 }
 
-/* line 77, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
-  font-size: 14px !important;
-}
-
-/* line 78, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
-  font-size: 35px !important;
-}
-
-/* line 81, ../scss/modules/pages/_marquee.scss */
-#container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
-#container > div.marquee.cf > div > h2 > span > span > strong > span,
-#container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
-  font-size: 16px !important;
+/* line 106, ../scss/modules/pages/_marquee.scss */
+#container h2:nth-child(2) {
+  font-size: 35px;
 }
 
 @media (min-width: 620px) {
-  /* line 83, ../scss/modules/pages/_marquee.scss */
-  .marquee-holder {
+  /* line 109, ../scss/modules/pages/_marquee.scss */
+  #container .marquee-holder {
     height: 320px;
   }
 
-  /* line 86, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
+  /* line 110, ../scss/modules/pages/_marquee.scss */
+  #container .white-headline {
+    font-size: 18px;
+    margin-top: 1.5em;
+  }
+
+  /* line 115, ../scss/modules/pages/_marquee.scss */
+  #container .gold-headline {
+    font-size: 24px;
     margin-bottom: 0.375em;
   }
 
-  /* line 89, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h2 > span, #container > div.marquee.comment-respond > div > h2 > span {
-    font-size: 18px !important;
+  /* line 119, ../scss/modules/pages/_marquee.scss */
+  #container h1 {
+    font-size: 78px;
   }
 
-  /* line 93, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h2 > span > span > em, #container > div.marquee.comment-respond > div > h2 > span > span > em,
-  #container > div.marquee.cf > div > h2 > span > span > strong > span,
-  #container > div.marquee.comment-respond > div > h2 > span > span > strong > span {
-    font-size: 24px !important;
+  /* line 120, ../scss/modules/pages/_marquee.scss */
+  .marq-2 span {
+    font-size: 55px;
   }
 
-  /* line 97, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h1 > span, #container > div.marquee.comment-respond > div > h1 > span {
-    font-size: 78px !important;
-  }
-
-  /* line 101, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h2:nth-child(2) > span, #container > div.marquee.comment-respond > div > h2:nth-child(2) > span {
-    font-size: 55px !important;
-  }
-
-  /* line 106, ../scss/modules/pages/_marquee.scss */
-  .marquee hr,
+  /* line 122, ../scss/modules/pages/_marquee.scss */
   .entry-content hr {
     width: 7.5em;
     margin: 2.6em auto 1.45em;
   }
-}
-@media (max-width: 619px) {
-  /* line 114, ../scss/modules/pages/_marquee.scss */
-  #container > div.marquee.cf > div > h2, #container > div.marquee.comment-respond > div > h2 {
-    line-height: 1.5rem;
+
+  /* line 127, ../scss/modules/pages/_marquee.scss */
+  .marquee hr {
+    width: 7.5em;
+    margin: 1.45em auto 2.6em;
   }
 }
 /* line 5, ../scss/modules/pages/_who-we-are.scss */

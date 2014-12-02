@@ -1,0 +1,117 @@
+// MARQUEE SCSS FOR HOME PAGE MARQUEE
+.marquee {
+    background: black;
+    background-image:url('../../../../../img/background/bg.png');
+    background-repeat: repeat;
+    background-size:266px 192px;
+    height: 100vh;
+    // max-height: 1200px;
+
+    h1 {
+        span {
+            strong {
+                span {
+                    font-weight: 800;
+                    letter-spacing: .08em;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+
+
+// CHARLES STYLES
+// HR ELEMENT STYLES IN WYSIWYG
+.marquee hr,
+.entry-content hr { 
+    width: 5.5em;
+    margin: 1.2em auto 0;
+    background: black;
+    height:3px;
+    border: 0;
+}
+
+.marquee hr {
+    background-color: white;
+}
+
+
+#container > div.marquee.cf > div > h1 {
+    background-color: transparent;
+    margin-top:0;
+
+    span { background-color: transparent; }
+}
+
+#container > div.marquee.cf > div > h2:nth-child(2),
+#container > div.marquee.cf > div > h1 { position: relative; z-index: 1; }
+
+#container > div.marquee.cf > div > h1 > span { background-color: transparent !important; }
+
+#container > div.marquee.cf > div > h2:nth-child(6) > span > strong,
+#container > div.marquee.cf > div > h2:nth-child(5) > span > span > strong {
+    font-weight: 800;
+}
+
+#container > div.marquee.cf > div > h2:nth-child(7) > span,
+#container > div.marquee.cf > div > h2:nth-child(6) > span,
+#container > div.marquee.cf > div > h2:nth-child(2) > span {
+    background-color:transparent !important;
+}
+
+.marquee-holder {
+    position: absolute;
+    top:0; bottom:0; left:0; right:0;
+    margin:auto;
+    padding:.5em;
+
+    height: 240px;
+    max-width: 1010px;
+}
+
+#container > div.marquee.cf > div > h2 { margin-bottom: 0; }
+
+
+#container > div.marquee.cf > div > h1 > span { font-size: 50px !important; }
+#container > div.marquee.cf > div > h2 > span { font-size: 14px !important;}
+#container > div.marquee.cf > div > h2:nth-child(2) > span { font-size: 35px !important; }
+
+#container > div.marquee.cf > div > h2 > span > span > em,
+#container > div.marquee.cf > div > h2 > span > span > strong > span { font-size: 16px !important;       }
+@media(min-width: 620px) {
+    .marquee-holder {
+        height: 320px;
+    }
+    #container > div.marquee.cf > div > h2 {
+        margin-bottom: 0.375em;
+    }
+    #container > div.marquee.cf > div > h2 > span {
+        font-size: 18px !important;  
+    }
+    #container > div.marquee.cf > div > h2 > span > span > em,
+    #container > div.marquee.cf > div > h2 > span > span > strong > span {
+        font-size: 24px !important;      
+    }
+    
+    #container > div.marquee.cf > div > h1 > span {
+        font-size: 78px !important;   
+    }
+
+    #container > div.marquee.cf > div > h2:nth-child(2) > span {
+        font-size: 55px !important;
+    }
+
+    .marquee hr,
+    .entry-content hr { 
+        width: 7.5em;
+        margin: 2.6em auto 1.45em;
+    }
+
+}
+
+@media(max-width: 619px) {
+    #container > div.marquee.cf > div > h2 {
+        line-height: 1.5rem;
+    }
+}
