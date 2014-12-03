@@ -27,7 +27,7 @@
             content: "";
             display: block;
             width: 5em;
-            height: 3px;
+            height: 2px;
             background-color: #000;
             margin:1em auto 1.5em;
         }
@@ -72,7 +72,7 @@
                 content: "";
                 display: block;
                 width: 4em;
-                height: 3px;
+                height: 2px;
                 background-color: #000;
                 margin:1em auto 1.5em;
             }
@@ -86,6 +86,17 @@
     }
 }
 
+// PANEL 1 
+.panel-1 {
+    .title-holder {
+        p { 
+            max-width: 17em;
+            margin: 0 auto;
+        }
+    }
+}
+
+
 // PANEL STYLES BY FORMAT
 .panel-container.intro {
     img {
@@ -96,20 +107,24 @@
         margin:0 auto;
     }
 
-    @media(min-width: 768px) {
-        .pic-1,
-        .title-holder {
-            float:right;
-            width: 42%;
-            padding:2.5em 1em;
-        }
-        .pic-0 {
-            float:left;
-            width:58%;
-
-            img { padding:0 0 0 5em; }
-        }        
+    .pic-1,
+    .title-holder {
+        float:right;
+        width: 42%;
+        padding:2.5em 1em;
     }
+    .pic-1 {
+        width: 40%;
+        padding:0;
+        @media(min-width: 769px) {
+            padding-right: 2em;
+        }
+    }
+    .pic-0 {
+        float:left;
+        width:58%;
+        padding-top: 2.5em;
+    }        
 }
 
 // GALLERY SCSS
