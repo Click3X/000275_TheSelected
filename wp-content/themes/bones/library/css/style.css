@@ -1779,11 +1779,31 @@ html, body {
   min-height: 100vh;
 }
 
-/* line 7, ../scss/modules/pages/_all.scss */
+@media (min-width: 768px) {
+  /* line 7, ../scss/modules/pages/_all.scss */
+  .page-id-44 .header {
+    margin-top: -46px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 12, ../scss/modules/pages/_all.scss */
+  .page-id-44.fixed-header .header {
+    margin-top: 0px;
+  }
+}
+
+/* line 19, ../scss/modules/pages/_all.scss */
 .fixed-header {
   padding-top: 46px;
 }
-/* line 10, ../scss/modules/pages/_all.scss */
+@media (min-width: 768px) {
+  /* line 19, ../scss/modules/pages/_all.scss */
+  .fixed-header {
+    margin-top: 0;
+  }
+}
+/* line 26, ../scss/modules/pages/_all.scss */
 .fixed-header #site-header {
   width: 100%;
   position: fixed;
@@ -1796,7 +1816,7 @@ html, body {
   transform: translateZ(10);
 }
 @media (min-width: 768px) {
-  /* line 10, ../scss/modules/pages/_all.scss */
+  /* line 26, ../scss/modules/pages/_all.scss */
   .fixed-header #site-header {
     -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
@@ -1806,12 +1826,12 @@ html, body {
   }
 }
 
-/* line 23, ../scss/modules/pages/_all.scss */
+/* line 39, ../scss/modules/pages/_all.scss */
 .mobile-fixed {
   padding-top: 46px;
 }
 @media (max-width: 767px) {
-  /* line 26, ../scss/modules/pages/_all.scss */
+  /* line 42, ../scss/modules/pages/_all.scss */
   .mobile-fixed #site-header {
     width: 100%;
     position: fixed;
@@ -1826,7 +1846,7 @@ html, body {
 }
 
 @media (max-width: 767px) {
-  /* line 40, ../scss/modules/pages/_all.scss */
+  /* line 56, ../scss/modules/pages/_all.scss */
   #inner-header {
     background-color: black;
     -webkit-transition: background-color 200ms;
@@ -1836,7 +1856,7 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 45, ../scss/modules/pages/_all.scss */
+  /* line 61, ../scss/modules/pages/_all.scss */
   .black-bg {
     -webkit-transition: background-color 200ms;
     -moz-transition: background-color 200ms;
@@ -1845,41 +1865,41 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 49, ../scss/modules/pages/_all.scss */
+  /* line 65, ../scss/modules/pages/_all.scss */
   #inner-header.black-bg {
     background-color: black;
   }
 
-  /* line 56, ../scss/modules/pages/_all.scss */
+  /* line 72, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header {
     background-color: transparent;
   }
-  /* line 59, ../scss/modules/pages/_all.scss */
+  /* line 75, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header.black-bg {
     background-color: black;
   }
 }
-/* line 67, ../scss/modules/pages/_all.scss */
+/* line 83, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.mobile-fixed,
 .page-template-page-template-home-php.fixed-header {
   padding-top: 0;
 }
 
-/* line 72, ../scss/modules/pages/_all.scss */
+/* line 88, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.fixed-header #inner-content {
   padding-top: 46px;
 }
 
-/* line 78, ../scss/modules/pages/_all.scss */
+/* line 94, ../scss/modules/pages/_all.scss */
 .nav .current-menu-item a {
   border-bottom: 4px solid #daa250;
 }
 
-/* line 85, ../scss/modules/pages/_all.scss */
+/* line 101, ../scss/modules/pages/_all.scss */
 .fix-footer #content {
   background-color: #ffffff;
 }
-/* line 87, ../scss/modules/pages/_all.scss */
+/* line 103, ../scss/modules/pages/_all.scss */
 .fix-footer .footer {
   position: fixed;
   width: 100%;
@@ -1892,7 +1912,7 @@ html, body {
   transform: translateZ(-1);
 }
 
-/* line 97, ../scss/modules/pages/_all.scss */
+/* line 113, ../scss/modules/pages/_all.scss */
 .shadow {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;

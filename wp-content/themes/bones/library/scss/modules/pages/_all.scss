@@ -3,9 +3,25 @@
 // ALWAYS HAVE CONTENT DIV BE MIN HEIGHT OF 100VH -- ALL PAGES
 #content { min-height: 100vh; }
 
+// HAVE HEADER APPEAR AT BOTTOM OF PAGE ON HOME PAGE
+.page-id-44 .header {
+    @media(min-width: 768px) {
+        margin-top:-46px;
+    }
+}
+.page-id-44.fixed-header .header {
+    @media(min-width: 768px) {
+        margin-top:0px;
+    }
+}
+
 // FIXED HEADER - ATTACHED TO BODY
 .fixed-header {
     padding-top:46px;
+    
+    @media(min-width: 768px) {
+        margin-top:0;
+    }
     
     #site-header {
         width:100%;
