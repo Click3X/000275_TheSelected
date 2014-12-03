@@ -1778,7 +1778,7 @@ html, body {
 .fixed-header {
   padding-top: 46px;
 }
-/* line 7, ../scss/modules/pages/_all.scss */
+/* line 6, ../scss/modules/pages/_all.scss */
 .fixed-header #site-header {
   width: 100%;
   position: fixed;
@@ -1791,7 +1791,7 @@ html, body {
   transform: translateZ(10);
 }
 @media (min-width: 768px) {
-  /* line 7, ../scss/modules/pages/_all.scss */
+  /* line 6, ../scss/modules/pages/_all.scss */
   .fixed-header #site-header {
     -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
@@ -1801,12 +1801,12 @@ html, body {
   }
 }
 
-/* line 20, ../scss/modules/pages/_all.scss */
+/* line 19, ../scss/modules/pages/_all.scss */
 .mobile-fixed {
   padding-top: 46px;
 }
 @media (max-width: 767px) {
-  /* line 23, ../scss/modules/pages/_all.scss */
+  /* line 22, ../scss/modules/pages/_all.scss */
   .mobile-fixed #site-header {
     width: 100%;
     position: fixed;
@@ -1821,7 +1821,7 @@ html, body {
 }
 
 @media (max-width: 767px) {
-  /* line 37, ../scss/modules/pages/_all.scss */
+  /* line 36, ../scss/modules/pages/_all.scss */
   #inner-header {
     background-color: black;
     -webkit-transition: background-color 200ms;
@@ -1831,7 +1831,7 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 42, ../scss/modules/pages/_all.scss */
+  /* line 41, ../scss/modules/pages/_all.scss */
   .black-bg {
     -webkit-transition: background-color 200ms;
     -moz-transition: background-color 200ms;
@@ -1840,41 +1840,41 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 46, ../scss/modules/pages/_all.scss */
+  /* line 45, ../scss/modules/pages/_all.scss */
   #inner-header.black-bg {
     background-color: black;
   }
 
-  /* line 53, ../scss/modules/pages/_all.scss */
+  /* line 52, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header {
     background-color: transparent;
   }
-  /* line 56, ../scss/modules/pages/_all.scss */
+  /* line 55, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header.black-bg {
     background-color: black;
   }
 }
-/* line 64, ../scss/modules/pages/_all.scss */
+/* line 63, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.mobile-fixed,
 .page-template-page-template-home-php.fixed-header {
   padding-top: 0;
 }
 
-/* line 69, ../scss/modules/pages/_all.scss */
+/* line 68, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.fixed-header #inner-content {
   padding-top: 46px;
 }
 
-/* line 75, ../scss/modules/pages/_all.scss */
+/* line 74, ../scss/modules/pages/_all.scss */
 .nav .current-menu-item a {
   border-bottom: 4px solid #daa250;
 }
 
-/* line 82, ../scss/modules/pages/_all.scss */
+/* line 81, ../scss/modules/pages/_all.scss */
 .fix-footer #content {
   background-color: #ffffff;
 }
-/* line 84, ../scss/modules/pages/_all.scss */
+/* line 83, ../scss/modules/pages/_all.scss */
 .fix-footer .footer {
   position: fixed;
   width: 100%;
@@ -1887,7 +1887,7 @@ html, body {
   transform: translateZ(-1);
 }
 
-/* line 94, ../scss/modules/pages/_all.scss */
+/* line 93, ../scss/modules/pages/_all.scss */
 .shadow {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
@@ -2779,13 +2779,21 @@ p {
   color: white;
   font-weight: 800;
   text-transform: uppercase;
+  line-height: 1.1em;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   margin: -1.5em auto auto;
+  font-size: 1em;
 }
-/* line 36, ../scss/modules/pages/_case-study.scss */
+@media (min-width: 481px) {
+  /* line 25, ../scss/modules/pages/_case-study.scss */
+  .case-study-link a .case-overlay h3 {
+    font-size: 1.125em;
+  }
+}
+/* line 42, ../scss/modules/pages/_case-study.scss */
 .case-study-link a .case-overlay h3:after {
   content: "";
   display: block;
@@ -2796,17 +2804,17 @@ p {
   width: 4em;
   padding-top: 1em;
 }
-/* line 52, ../scss/modules/pages/_case-study.scss */
+/* line 58, ../scss/modules/pages/_case-study.scss */
 .case-study-link a:hover .case-overlay {
   opacity: 1;
 }
-/* line 58, ../scss/modules/pages/_case-study.scss */
+/* line 64, ../scss/modules/pages/_case-study.scss */
 .case-study-link .case-study-logo {
   width: 80%;
   max-width: 80%;
   padding: 1em 0;
 }
-/* line 63, ../scss/modules/pages/_case-study.scss */
+/* line 69, ../scss/modules/pages/_case-study.scss */
 .case-study-link img {
   display: block;
   margin: 0 auto;
@@ -2816,17 +2824,13 @@ p {
   max-width: 100%;
 }
 
-/* line 74, ../scss/modules/pages/_case-study.scss */
-.page-id-10 #content {
-  margin-top: 2em;
-}
-/* line 76, ../scss/modules/pages/_case-study.scss */
+/* line 80, ../scss/modules/pages/_case-study.scss */
 .page-id-10 #inner-content.wrap {
   width: 100%;
   max-width: 1040px;
 }
 
-/* line 83, ../scss/modules/pages/_case-study.scss */
+/* line 87, ../scss/modules/pages/_case-study.scss */
 #content {
   min-height: 100vh;
 }

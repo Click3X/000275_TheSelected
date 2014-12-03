@@ -27,11 +27,17 @@
                 color: white;
                 font-weight: 800;
                 text-transform: uppercase;
+                line-height: 1.1em;
                 position: absolute;
                 top: 50%;
                 left: 0;
                 right: 0;
                 margin:-1.5em auto auto;
+                font-size: 1em;
+                
+                @media(min-width: 481px) {
+                    font-size: 1.125em;
+                }
 
                 &:after {
                     content: "";
@@ -71,8 +77,6 @@
 }
 
 .page-id-10 {
-    #content { margin-top:2em; }
-
     #inner-content.wrap {
         width:100%;
         max-width:1040px;

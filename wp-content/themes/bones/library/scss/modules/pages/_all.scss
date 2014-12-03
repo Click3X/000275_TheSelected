@@ -1,9 +1,8 @@
 // ALL SCSS
 // FIXED HEADER - ATTACHED TO BODY
 .fixed-header {
-    // @media(min-width: 768px) {
-        padding-top:46px;
-    // }
+    padding-top:46px;
+    
     #site-header {
         width:100%;
         position: fixed;

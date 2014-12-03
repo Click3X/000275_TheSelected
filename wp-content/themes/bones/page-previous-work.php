@@ -19,12 +19,13 @@ $query = new WP_Query($args);
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'cf case-study-link' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<a href="<?php echo get_the_permalink();?>" class="cf">								
 								<?php 
+								echo '<div class="overlay-holder cf">';
 									// LOGO IMAGE
 									$logo = get_field('logo');
 									if($logo) {
 										echo '<img src="'.$logo['sizes']['case-study-logo'].'" class="case-study-logo">';
 									}
-									echo '<div class="overlay-holder cf">';
+									// echo '<div class="overlay-holder cf">';
 										// FEATURED IMAGE
 										the_post_thumbnail('case-study-mobile');
 										// OVERLAY 
