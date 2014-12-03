@@ -147,6 +147,120 @@
     }
 }
 
+// MIDDLE PANEL
+.middle {
+    @media(min-width: 768px) {
+        margin-top: 2.5em;
+    }
+
+    .title-holder {
+        @media(min-width: 768px) {
+            float: left;
+            // width:42%;
+            // max-width:437px;
+            width:50%;
+            max-width:520px;
+
+            position: absolute;
+        }
+        p {
+            max-width: 17em;
+            margin: 0 auto 1em;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .middle-div-holder {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding-bottom:115%;
+        // background-color: rgba(255, 0,0,0.5);
+
+        @media(min-width: 768px) {
+            width: 64%;
+            padding-bottom: 72%;
+            float: right;
+        }
+    }
+
+    .pic {
+        display: inline-block;
+        position: absolute;
+
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .pic-0 { z-index: 2; }
+    .pic-1 { z-index: 1; }
+    .pic-2 { z-index: 0; }
+
+    .pic-0 {
+        top:0; right: 26.3%;
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .pic-1 {
+        top: 34%;
+        right: 0%;
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .pic-2 {
+        top: 40%;
+        right: 53%;
+        width: 46%;
+
+        @media(min-width: 768px) {
+            top:auto;
+            bottom:0;
+        }
+
+        @media(min-width: 1040px) {
+            top:40%;
+            bottom:auto;
+        }
+    }
+
+}
+
+
+// LOGO
+.panel-inner {
+    position: relative;
+}
+.panel-inner .panel-logo {
+    width: 20%;
+    max-width: 174px;
+    padding-bottom: 18%;
+    height: auto;
+    position: absolute;
+    bottom: 46%;
+    left:0;
+
+    @media(min-width: 768px) {
+        bottom: 10%;
+        left:5%;
+    }
+
+    @include prefix(transform, rotate(-20deg));
+}
+
+
+
+// OUTRO PANEL
+.outro {
+    padding-bottom: 5em;
+    margin-top: 2em;
+}
+
 // GALLERY SCSS
 .event-gallery {
     position: relative;

@@ -51,8 +51,6 @@
 
                             foreach ($pics as $key => $pic) {
                                 echo '<li class="pic pic-'.$key.'">';
-                                
-                                    // echo '<img src="'.$pic['image']['url'].'">';
                                     echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
                                     // IF FIRST SLIDE - ECHO OVERLAY
                                     if($key==0) {
@@ -60,13 +58,32 @@
                                     }
                                 echo '</li>';
                             }
-
                             echo '</ul>';
                         }
-
                         echo '</div>';
 
-                    // IF NOT GRID:
+                        // IF MIDDLE:
+                     } elseif( $format == ' middle') {
+                        $pics = $panel['pics'];
+
+                        echo '<div class="cf middle-div-holder">';
+                        foreach ($pics as $key => $pic) {
+                            if($key == 2) {
+                                $img_src = $pic['pic']['url'];    
+                            } else {
+                                $img_src = $pic['pic']['sizes']['square-300'];    
+                            }
+                            
+                            echo '<div class="pic pic-'.$key.'">';
+                                echo '<img src="'.$img_src.'">';
+                            echo '</div>';
+                        }
+                        echo '</div>'; // /.middle-div-holder
+                        
+                        // LOGO
+                        echo '<div class="panel-logo"></div>';
+
+                    // IF NOT GRID OR INTRO:
                     } else {
                         $pics = $panel['pics'];
                         foreach ($pics as $key => $pic) {

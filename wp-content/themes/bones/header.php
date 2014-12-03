@@ -86,7 +86,8 @@
                     -webkit-transform: rotate(10deg);
                     transform: rotate(10deg);
                 }
-                .logo {
+                .logo,
+                .panel-logo {
                     background-repeat:no-repeat;
                     background-size:cover;
                     width:100%;
@@ -99,7 +100,10 @@
             if($pngLogo) { 
                 $pngLogo = $pngLogo['url'];
                 echo "\n";
-                echo '.logo {
+                echo '.logo, 
+                      .panel-logo {
+                          background-repeat:no-repeat;
+                          background-size:cover;
                           background-position: 50% 50%;';
                     echo 'background-image:url("'.$pngLogo.'");';
                 echo '}';
@@ -110,7 +114,11 @@
             if($svgLogo) { 
                 $svgLogo = $svgLogo['url']; 
                 echo "\n";
-                echo '.svg .logo {';
+                echo '.svg .logo, 
+                      .svg .panel-logo {
+                          background-repeat:no-repeat;
+                          background-size:cover;
+                          background-position: 50% 50%;';
                     echo 'background-image:url("'.$svgLogo.'");';
                 echo '}';
                 echo "\n";

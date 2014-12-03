@@ -78,10 +78,11 @@ add_image_size( 'bones-thumb-300', 300, 100, true );
 
 add_image_size( 'case-study-mobile', 264, 368, true );
 add_image_size( 'case-study', 670, 865, true );
-
 add_image_size( 'case-study-logo', 300, 200, true );
-
 add_image_size( 'case-study-lightbox', 800, 600, true );
+add_image_size( 'square-300', 300, 300, false );
+
+
 
 /*
 to add more sizes, simply copy a line from above
