@@ -2755,7 +2755,7 @@ p {
 .case-study-link a .overlay-holder {
   position: relative;
 }
-/* line 17, ../scss/modules/pages/_case-study.scss */
+/* line 15, ../scss/modules/pages/_case-study.scss */
 .case-study-link a .case-overlay {
   text-align: center;
   position: absolute;
@@ -2773,7 +2773,7 @@ p {
   -ms-transition: opacity 250ms;
   transition: opacity 250ms;
 }
-/* line 25, ../scss/modules/pages/_case-study.scss */
+/* line 23, ../scss/modules/pages/_case-study.scss */
 .case-study-link a .case-overlay h3 {
   max-width: 90%;
   color: white;
@@ -2785,15 +2785,15 @@ p {
   left: 0;
   right: 0;
   margin: -1.5em auto auto;
-  font-size: 1em;
+  font-size: .9em;
 }
 @media (min-width: 481px) {
-  /* line 25, ../scss/modules/pages/_case-study.scss */
+  /* line 23, ../scss/modules/pages/_case-study.scss */
   .case-study-link a .case-overlay h3 {
     font-size: 1.125em;
   }
 }
-/* line 42, ../scss/modules/pages/_case-study.scss */
+/* line 40, ../scss/modules/pages/_case-study.scss */
 .case-study-link a .case-overlay h3:after {
   content: "";
   display: block;
@@ -2804,17 +2804,17 @@ p {
   width: 4em;
   padding-top: 1em;
 }
-/* line 58, ../scss/modules/pages/_case-study.scss */
+/* line 56, ../scss/modules/pages/_case-study.scss */
 .case-study-link a:hover .case-overlay {
   opacity: 1;
 }
-/* line 64, ../scss/modules/pages/_case-study.scss */
+/* line 62, ../scss/modules/pages/_case-study.scss */
 .case-study-link .case-study-logo {
   width: 80%;
   max-width: 80%;
   padding: 1em 0;
 }
-/* line 69, ../scss/modules/pages/_case-study.scss */
+/* line 67, ../scss/modules/pages/_case-study.scss */
 .case-study-link img {
   display: block;
   margin: 0 auto;
@@ -2824,13 +2824,13 @@ p {
   max-width: 100%;
 }
 
-/* line 80, ../scss/modules/pages/_case-study.scss */
+/* line 78, ../scss/modules/pages/_case-study.scss */
 .page-id-10 #inner-content.wrap {
   width: 100%;
   max-width: 1040px;
 }
 
-/* line 87, ../scss/modules/pages/_case-study.scss */
+/* line 85, ../scss/modules/pages/_case-study.scss */
 #content {
   min-height: 100vh;
 }

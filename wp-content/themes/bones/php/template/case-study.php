@@ -50,7 +50,8 @@
 
                             foreach ($pics as $key => $pic) {
                                 echo '<li class="pic pic-'.$key.'">';
-                                    echo '<img src="'.$pic['image']['url'].'">';
+                                    // echo '<img src="'.$pic['image']['url'].'">';
+                                echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
                                 echo '</li>';
                             }
 

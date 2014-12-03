@@ -10,9 +10,7 @@
         text-align: center;
         position: relative;
 
-        .overlay-holder {
-            position: relative;
-        }
+        .overlay-holder { position: relative; }
 
         .case-overlay {
             text-align: center;
@@ -33,8 +31,8 @@
                 left: 0;
                 right: 0;
                 margin:-1.5em auto auto;
-                font-size: 1em;
-                
+                font-size: .9em;
+
                 @media(min-width: 481px) {
                     font-size: 1.125em;
                 }
@@ -84,6 +82,4 @@
 }
 
 // ALWAYS HAVE CONTENT DIV BE MIN HEIGHT OF 100VH -- ALL PAGES
-#content {
-    min-height: 100vh;
-}
+#content { min-height: 100vh; }

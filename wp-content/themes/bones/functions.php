@@ -81,6 +81,8 @@ add_image_size( 'case-study', 670, 865, true );
 
 add_image_size( 'case-study-logo', 300, 200, true );
 
+add_image_size( 'case-study-lightbox', 800, 600, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
