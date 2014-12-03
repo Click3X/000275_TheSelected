@@ -86,18 +86,12 @@
     }
 }
 
-// PANEL 1 
-.panel-1 {
-    .title-holder {
-        p { 
-            max-width: 17em;
-            margin: 0 auto;
-        }
-    }
-}
-
 
 // PANEL STYLES BY FORMAT
+.panel-container { 
+    margin-bottom: 1em;
+}
+
 .panel-container.intro {
     img {
         display: block;
@@ -107,24 +101,50 @@
         margin:0 auto;
     }
 
-    .pic-1,
-    .title-holder {
+    .pic-1 {
         float:right;
         width: 42%;
         padding:2.5em 1em;
     }
+
+    .title-holder {
+        @media(min-width: 768px) {
+            float:right;
+            width: 42%;
+            padding:2.5em 1em;    
+        }
+        
+        p { 
+            max-width: 17em;
+            margin: 0 auto 1em;
+            @media(min-width: 768px) {
+                margin: 0 auto;
+            }
+        }
+    }
+
     .pic-1 {
         width: 40%;
         padding:0;
-        @media(min-width: 769px) {
-            padding-right: 2em;
-        }
+        @media(min-width: 768px) { padding-right: 4em; }
     }
     .pic-0 {
         float:left;
         width:58%;
-        padding-top: 2.5em;
+        @media(min-width: 768px) { padding-top: 2.5em; }
     }        
+}
+
+// GRID PANEL STYLES FOR COPY
+.grid {
+    @media(min-width: 768px) {
+        margin-top: -8.5%;
+    }
+
+    .title-holder p {
+        max-width: 46.5em;
+        margin: 0 auto 1em;
+    }
 }
 
 // GALLERY SCSS
