@@ -1,8 +1,8 @@
         </div> <!-- END CONTAINER -->
 
-		<footer class="footer cf" role="contentinfo">
+		<footer class="footer cf shadow" role="contentinfo">
 
-			<div id="inner-footer" class="cf shadow">
+			<div id="inner-footer" class="cf">
 
                 <?php
                     // LOGO - STAMP CODE
@@ -22,8 +22,7 @@
 
                         // SOCIAL MEDIA LINKS
                         $social_links = get_field('social_links', 'options');
-
-                        // helper($social_links);
+                        
                         echo '<ul class="social-links">';
                             foreach ($social_links as $key => $social_link) {
                                 $class=cleanString($social_link['name']);

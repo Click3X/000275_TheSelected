@@ -8,8 +8,10 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -278px;
+  margin-bottom: -100vh;
   @media(min-width: 620px) {
         margin-bottom: -330px; 
+        margin-bottom: -100vh;
     }
 }
 #container:after {
@@ -17,9 +19,22 @@ html, body {
   display: block;
 }
 .footer, #container:after {
-  // height: 142px; 
   height:278px;
+  height: 100vh;
     @media(min-width: 620px) {
         height:330px;
+        height: 100vh;
     }
+}
+
+#inner-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -139px;
+  
+  @media(min-width: 620px) {
+    margin-top: -165px;
+  }
 }

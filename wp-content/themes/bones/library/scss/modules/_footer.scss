@@ -4,16 +4,21 @@
     text-transform: uppercase;
 }
 
-.footer { position: relative; }
-
-#inner-footer {
-    // padding-bottom: 2em;
-    padding-bottom:1.5em;
-    padding-top:.5em;
+.footer { 
+    position: relative; 
     background-color: black;
     background-image:url('../../../../../img/background/bg.png');
     background-repeat: repeat;
     background-size:266px 192px;
+}
+
+#inner-footer {
+    padding-bottom:1.5em;
+    padding-top:.5em;
+    // background-color: black;
+    // background-image:url('../../../../../img/background/bg.png');
+    // background-repeat: repeat;
+    // background-size:266px 192px;
 
 
     .logo-holder {

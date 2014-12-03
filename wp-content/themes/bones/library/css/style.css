@@ -1658,28 +1658,47 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -278px;
+  margin-bottom: -100vh;
 }
 @media (min-width: 620px) {
   /* line 7, ../scss/modules/_sticky-footer.scss */
   #container {
     margin-bottom: -330px;
+    margin-bottom: -100vh;
   }
 }
 
-/* line 15, ../scss/modules/_sticky-footer.scss */
+/* line 17, ../scss/modules/_sticky-footer.scss */
 #container:after {
   content: "";
   display: block;
 }
 
-/* line 19, ../scss/modules/_sticky-footer.scss */
+/* line 21, ../scss/modules/_sticky-footer.scss */
 .footer, #container:after {
   height: 278px;
+  height: 100vh;
 }
 @media (min-width: 620px) {
-  /* line 19, ../scss/modules/_sticky-footer.scss */
+  /* line 21, ../scss/modules/_sticky-footer.scss */
   .footer, #container:after {
     height: 330px;
+    height: 100vh;
+  }
+}
+
+/* line 30, ../scss/modules/_sticky-footer.scss */
+#inner-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -139px;
+}
+@media (min-width: 620px) {
+  /* line 30, ../scss/modules/_sticky-footer.scss */
+  #inner-footer {
+    margin-top: -165px;
   }
 }
 
@@ -1693,18 +1712,18 @@ html, body {
 /* line 7, ../scss/modules/_footer.scss */
 .footer {
   position: relative;
-}
-
-/* line 9, ../scss/modules/_footer.scss */
-#inner-footer {
-  padding-bottom: 1.5em;
-  padding-top: .5em;
   background-color: black;
   background-image: url("../../../../../img/background/bg.png");
   background-repeat: repeat;
   background-size: 266px 192px;
 }
-/* line 19, ../scss/modules/_footer.scss */
+
+/* line 15, ../scss/modules/_footer.scss */
+#inner-footer {
+  padding-bottom: 1.5em;
+  padding-top: .5em;
+}
+/* line 24, ../scss/modules/_footer.scss */
 #inner-footer .logo-holder {
   position: static;
   margin: 1.5em auto;
@@ -1716,7 +1735,7 @@ html, body {
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 28, ../scss/modules/_footer.scss */
+/* line 33, ../scss/modules/_footer.scss */
 #inner-footer h2 {
   font-weight: 800;
   font-size: 14px;
@@ -1724,31 +1743,31 @@ html, body {
   font-family: brandon-grotesque,sans-serif;
 }
 @media (min-width: 620px) {
-  /* line 28, ../scss/modules/_footer.scss */
+  /* line 33, ../scss/modules/_footer.scss */
   #inner-footer h2 {
     font-size: 18px;
   }
 }
 
-/* line 38, ../scss/modules/_footer.scss */
+/* line 43, ../scss/modules/_footer.scss */
 #inner-footer > div.wrap.cf > h2 > span > strong > span, #inner-footer > div.wrap.comment-respond > h2 > span > strong > span {
   font-weight: 800;
 }
 
-/* line 42, ../scss/modules/_footer.scss */
+/* line 47, ../scss/modules/_footer.scss */
 .social-links {
   width: 100%;
   max-width: 80px;
   margin: .3em auto;
 }
-/* line 47, ../scss/modules/_footer.scss */
+/* line 52, ../scss/modules/_footer.scss */
 .social-links li {
   width: 50%;
   position: relative;
   float: left;
   padding: 8px 6px;
 }
-/* line 53, ../scss/modules/_footer.scss */
+/* line 58, ../scss/modules/_footer.scss */
 .social-links li a {
   display: block;
   width: 100%;
@@ -2800,12 +2819,16 @@ p {
 /* line 74, ../scss/modules/pages/_case-study.scss */
 .page-id-10 #content {
   margin-top: 2em;
-  margin-bottom: 4em;
 }
-/* line 79, ../scss/modules/pages/_case-study.scss */
+/* line 76, ../scss/modules/pages/_case-study.scss */
 .page-id-10 #inner-content.wrap {
   width: 100%;
   max-width: 1040px;
+}
+
+/* line 83, ../scss/modules/pages/_case-study.scss */
+#content {
+  min-height: 100vh;
 }
 
 /* line 5, ../scss/modules/pages/_single-case-study.scss */

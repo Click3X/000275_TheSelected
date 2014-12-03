@@ -165,21 +165,8 @@
             <?php
                 // IF IS HOME PAGE, GET MARQUEE TEXT
                 if( is_page(44) ) {
-                    // $post_id =4;
-                    // $post_object = get_post( $post_id );
-
-                    // echo '<div class="marquee cf shadow">';
-                    //     echo '<div class="marquee-holder cf">';
-                    //         // LOGO - STAMP CODE
-                    //         echo '<div class="logo-holder"><div class="logo marquee-logo"></div></div>';
-                    //         // CONTENT FROM MARQUEE PAGE
-                    //         echo $post_object->post_content;
-                    //     echo '</div>';
-                    // echo '</div>';
-
                     include('php/marquee/marquee.php');
                 }
-
             ?>
 
 			<header id="site-header" class="header" role="banner">

@@ -71,13 +71,15 @@
 }
 
 .page-id-10 {
-    #content {
-        margin-top:2em;
-        margin-bottom:4em;
-    }
+    #content { margin-top:2em; }
 
     #inner-content.wrap {
         width:100%;
         max-width:1040px;
     }
+}
+
+// ALWAYS HAVE CONTENT DIV BE MIN HEIGHT OF 100VH -- ALL PAGES
+#content {
+    min-height: 100vh;
 }
