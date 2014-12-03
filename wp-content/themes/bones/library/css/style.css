@@ -3125,9 +3125,11 @@ p {
 
 /* line 239, ../scss/modules/pages/_single-case-study.scss */
 .panel-inner .panel-logo {
+  background-image: url("../../../../../img/logos/logo-case.png") !important;
+  background-size: contain !important;
   width: 20%;
-  max-width: 174px;
-  padding-bottom: 18%;
+  max-width: 214px;
+  padding-bottom: 20%;
   height: auto;
   position: absolute;
   bottom: 46%;
@@ -3146,13 +3148,18 @@ p {
   }
 }
 
-/* line 259, ../scss/modules/pages/_single-case-study.scss */
+/* line 258, ../scss/modules/pages/_single-case-study.scss */
+.svg .panel-inner .panel-logo {
+  background-image: url("../../../../../img/logos/logo-case.svg") !important;
+}
+
+/* line 265, ../scss/modules/pages/_single-case-study.scss */
 .outro {
   padding-bottom: 5em;
   margin-top: 2em;
 }
 
-/* line 265, ../scss/modules/pages/_single-case-study.scss */
+/* line 271, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery {
   position: relative;
   float: left;
@@ -3160,12 +3167,12 @@ p {
   padding: .15em;
 }
 @media (min-width: 481px) {
-  /* line 265, ../scss/modules/pages/_single-case-study.scss */
+  /* line 271, ../scss/modules/pages/_single-case-study.scss */
   .event-gallery {
     padding: .3em;
   }
 }
-/* line 273, ../scss/modules/pages/_single-case-study.scss */
+/* line 279, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic {
   position: relative;
   margin: 0;
@@ -3173,7 +3180,7 @@ p {
   float: left;
   width: 100%;
 }
-/* line 280, ../scss/modules/pages/_single-case-study.scss */
+/* line 286, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic .case-overlay {
   text-align: center;
   position: absolute;
@@ -3192,7 +3199,7 @@ p {
   -ms-transition: opacity 250ms;
   transition: opacity 250ms;
 }
-/* line 293, ../scss/modules/pages/_single-case-study.scss */
+/* line 299, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic .case-overlay h3 {
   color: #fff;
   text-align: center;
@@ -3207,7 +3214,7 @@ p {
   margin: -1.5em auto auto;
   font-size: .9em;
 }
-/* line 307, ../scss/modules/pages/_single-case-study.scss */
+/* line 313, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic .case-overlay h3::after {
   content: "";
   display: block;
@@ -3219,48 +3226,48 @@ p {
   padding-top: 1em;
 }
 @media (min-width: 481px) {
-  /* line 293, ../scss/modules/pages/_single-case-study.scss */
+  /* line 299, ../scss/modules/pages/_single-case-study.scss */
   .event-gallery .pic .case-overlay h3 {
     font-size: 1.125em;
   }
 }
-/* line 322, ../scss/modules/pages/_single-case-study.scss */
+/* line 328, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic .case-overlay:hover {
   opacity: 1;
 }
-/* line 325, ../scss/modules/pages/_single-case-study.scss */
+/* line 331, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic img {
   display: block;
   height: auto;
   width: 100%;
   max-width: 100%;
 }
-/* line 333, ../scss/modules/pages/_single-case-study.scss */
+/* line 339, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic {
   display: none;
 }
-/* line 335, ../scss/modules/pages/_single-case-study.scss */
+/* line 341, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic-0 {
   display: block;
 }
 
-/* line 340, ../scss/modules/pages/_single-case-study.scss */
+/* line 346, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery {
   width: 50%;
 }
-/* line 341, ../scss/modules/pages/_single-case-study.scss */
+/* line 347, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(3) {
   width: 55%;
 }
-/* line 342, ../scss/modules/pages/_single-case-study.scss */
+/* line 348, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(4) {
   width: 45%;
 }
-/* line 343, ../scss/modules/pages/_single-case-study.scss */
+/* line 349, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(3n+4) {
   width: 55%;
 }
-/* line 344, ../scss/modules/pages/_single-case-study.scss */
+/* line 350, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(4n+4) {
   width: 45%;
 }

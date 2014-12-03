@@ -237,9 +237,11 @@
     position: relative;
 }
 .panel-inner .panel-logo {
+    background-image:url("../../../../../img/logos/logo-case.png") !important;
+    background-size: contain !important;
     width: 20%;
-    max-width: 174px;
-    padding-bottom: 18%;
+    max-width: 214px;
+    padding-bottom: 20%;
     height: auto;
     position: absolute;
     bottom: 46%;
@@ -251,6 +253,10 @@
     }
 
     @include prefix(transform, rotate(-20deg));
+}
+
+.svg .panel-inner .panel-logo {
+    background-image:url("../../../../../img/logos/logo-case.svg") !important;
 }
 
 
