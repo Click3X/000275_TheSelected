@@ -1723,7 +1723,15 @@ html, body {
   padding-bottom: 1.5em;
   padding-top: .5em;
 }
-/* line 24, ../scss/modules/_footer.scss */
+/* line 23, ../scss/modules/_footer.scss */
+#inner-footer p {
+  color: #fff;
+}
+/* line 26, ../scss/modules/_footer.scss */
+#inner-footer p span {
+  color: #fff !important;
+}
+/* line 31, ../scss/modules/_footer.scss */
 #inner-footer .logo-holder {
   position: static;
   margin: 1.5em auto;
@@ -1735,7 +1743,7 @@ html, body {
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 33, ../scss/modules/_footer.scss */
+/* line 40, ../scss/modules/_footer.scss */
 #inner-footer h2 {
   font-weight: 800;
   font-size: 14px;
@@ -1743,31 +1751,31 @@ html, body {
   font-family: brandon-grotesque,sans-serif;
 }
 @media (min-width: 620px) {
-  /* line 33, ../scss/modules/_footer.scss */
+  /* line 40, ../scss/modules/_footer.scss */
   #inner-footer h2 {
     font-size: 18px;
   }
 }
 
-/* line 43, ../scss/modules/_footer.scss */
+/* line 50, ../scss/modules/_footer.scss */
 #inner-footer > div.wrap.cf > h2 > span > strong > span, #inner-footer > div.wrap.comment-respond > h2 > span > strong > span {
   font-weight: 800;
 }
 
-/* line 47, ../scss/modules/_footer.scss */
+/* line 54, ../scss/modules/_footer.scss */
 .social-links {
   width: 100%;
   max-width: 80px;
   margin: .3em auto;
 }
-/* line 52, ../scss/modules/_footer.scss */
+/* line 59, ../scss/modules/_footer.scss */
 .social-links li {
   width: 50%;
   position: relative;
   float: left;
   padding: 8px 6px;
 }
-/* line 58, ../scss/modules/_footer.scss */
+/* line 65, ../scss/modules/_footer.scss */
 .social-links li a {
   display: block;
   width: 100%;
@@ -3255,6 +3263,17 @@ p {
 /* line 344, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(4n+4) {
   width: 45%;
+}
+
+/* line 6, ../scss/modules/pages/_contact.scss */
+.page-id-13 #content {
+  padding-top: 0;
+  background-color: transparent;
+}
+
+/* line 14, ../scss/modules/pages/_contact.scss */
+.contact-content p {
+  color: #fff;
 }
 
 /*********************
