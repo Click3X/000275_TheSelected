@@ -1774,11 +1774,16 @@ html, body {
   padding-bottom: 100%;
 }
 
-/* line 3, ../scss/modules/pages/_all.scss */
+/* line 4, ../scss/modules/pages/_all.scss */
+#content {
+  min-height: 100vh;
+}
+
+/* line 7, ../scss/modules/pages/_all.scss */
 .fixed-header {
   padding-top: 46px;
 }
-/* line 6, ../scss/modules/pages/_all.scss */
+/* line 10, ../scss/modules/pages/_all.scss */
 .fixed-header #site-header {
   width: 100%;
   position: fixed;
@@ -1791,7 +1796,7 @@ html, body {
   transform: translateZ(10);
 }
 @media (min-width: 768px) {
-  /* line 6, ../scss/modules/pages/_all.scss */
+  /* line 10, ../scss/modules/pages/_all.scss */
   .fixed-header #site-header {
     -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.5);
@@ -1801,12 +1806,12 @@ html, body {
   }
 }
 
-/* line 19, ../scss/modules/pages/_all.scss */
+/* line 23, ../scss/modules/pages/_all.scss */
 .mobile-fixed {
   padding-top: 46px;
 }
 @media (max-width: 767px) {
-  /* line 22, ../scss/modules/pages/_all.scss */
+  /* line 26, ../scss/modules/pages/_all.scss */
   .mobile-fixed #site-header {
     width: 100%;
     position: fixed;
@@ -1821,7 +1826,7 @@ html, body {
 }
 
 @media (max-width: 767px) {
-  /* line 36, ../scss/modules/pages/_all.scss */
+  /* line 40, ../scss/modules/pages/_all.scss */
   #inner-header {
     background-color: black;
     -webkit-transition: background-color 200ms;
@@ -1831,7 +1836,7 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 41, ../scss/modules/pages/_all.scss */
+  /* line 45, ../scss/modules/pages/_all.scss */
   .black-bg {
     -webkit-transition: background-color 200ms;
     -moz-transition: background-color 200ms;
@@ -1840,41 +1845,41 @@ html, body {
     transition: background-color 200ms;
   }
 
-  /* line 45, ../scss/modules/pages/_all.scss */
+  /* line 49, ../scss/modules/pages/_all.scss */
   #inner-header.black-bg {
     background-color: black;
   }
 
-  /* line 52, ../scss/modules/pages/_all.scss */
+  /* line 56, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header {
     background-color: transparent;
   }
-  /* line 55, ../scss/modules/pages/_all.scss */
+  /* line 59, ../scss/modules/pages/_all.scss */
   .page-template-page-template-home-php #inner-header.black-bg {
     background-color: black;
   }
 }
-/* line 63, ../scss/modules/pages/_all.scss */
+/* line 67, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.mobile-fixed,
 .page-template-page-template-home-php.fixed-header {
   padding-top: 0;
 }
 
-/* line 68, ../scss/modules/pages/_all.scss */
+/* line 72, ../scss/modules/pages/_all.scss */
 .page-template-page-template-home-php.fixed-header #inner-content {
   padding-top: 46px;
 }
 
-/* line 74, ../scss/modules/pages/_all.scss */
+/* line 78, ../scss/modules/pages/_all.scss */
 .nav .current-menu-item a {
   border-bottom: 4px solid #daa250;
 }
 
-/* line 81, ../scss/modules/pages/_all.scss */
+/* line 85, ../scss/modules/pages/_all.scss */
 .fix-footer #content {
   background-color: #ffffff;
 }
-/* line 83, ../scss/modules/pages/_all.scss */
+/* line 87, ../scss/modules/pages/_all.scss */
 .fix-footer .footer {
   position: fixed;
   width: 100%;
@@ -1887,7 +1892,7 @@ html, body {
   transform: translateZ(-1);
 }
 
-/* line 93, ../scss/modules/pages/_all.scss */
+/* line 97, ../scss/modules/pages/_all.scss */
 .shadow {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
@@ -2830,27 +2835,23 @@ p {
   max-width: 1040px;
 }
 
-/* line 85, ../scss/modules/pages/_case-study.scss */
-#content {
-  min-height: 100vh;
-}
-
 /* line 5, ../scss/modules/pages/_single-case-study.scss */
 .single-case_study .c-tagline,
 .single-case_study .c-logo {
   text-align: center;
 }
-/* line 9, ../scss/modules/pages/_single-case-study.scss */
+/* line 7, ../scss/modules/pages/_single-case-study.scss */
 .single-case_study .c-logo {
   margin: 1em auto;
+  width: 50%;
 }
-/* line 12, ../scss/modules/pages/_single-case-study.scss */
+/* line 11, ../scss/modules/pages/_single-case-study.scss */
 .single-case_study .c-logo img {
   height: auto;
   width: 100%;
   max-width: 300px;
 }
-/* line 19, ../scss/modules/pages/_single-case-study.scss */
+/* line 18, ../scss/modules/pages/_single-case-study.scss */
 .single-case_study .c-tagline h3 {
   text-align: center;
   color: #000;
@@ -2859,7 +2860,7 @@ p {
   max-width: 39em;
   margin: 0 auto;
 }
-/* line 27, ../scss/modules/pages/_single-case-study.scss */
+/* line 26, ../scss/modules/pages/_single-case-study.scss */
 .single-case_study .c-tagline h3:after {
   content: "";
   display: block;
@@ -2869,11 +2870,11 @@ p {
   margin: 1em auto 1.5em;
 }
 
-/* line 39, ../scss/modules/pages/_single-case-study.scss */
+/* line 38, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder {
   text-align: center;
 }
-/* line 42, ../scss/modules/pages/_single-case-study.scss */
+/* line 41, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .num-title-holder {
   position: relative;
   display: inline-block;
@@ -2883,7 +2884,7 @@ p {
   max-width: 300px;
   margin-bottom: 1.7em;
 }
-/* line 51, ../scss/modules/pages/_single-case-study.scss */
+/* line 50, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .num-holder {
   font-family: brandon-grotesque, sans-serif;
   color: #daa250;
@@ -2894,7 +2895,7 @@ p {
   max-width: 300px;
   width: 100%;
 }
-/* line 62, ../scss/modules/pages/_single-case-study.scss */
+/* line 61, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .c-title {
   color: #000;
   text-transform: uppercase;
@@ -2905,7 +2906,7 @@ p {
   right: 0;
   bottom: -1.25em;
 }
-/* line 72, ../scss/modules/pages/_single-case-study.scss */
+/* line 71, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder .c-title:after {
   content: "";
   display: block;
@@ -2914,14 +2915,14 @@ p {
   background-color: #000;
   margin: 1em auto 1.5em;
 }
-/* line 82, ../scss/modules/pages/_single-case-study.scss */
+/* line 81, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder p {
   font-size: 19px;
   line-height: 1.3em;
   font-family: brandon-grotesque, sans-serif;
 }
 
-/* line 92, ../scss/modules/pages/_single-case-study.scss */
+/* line 91, ../scss/modules/pages/_single-case-study.scss */
 .panel-container.intro img {
   display: block;
   height: auto;
@@ -2930,22 +2931,135 @@ p {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 102, ../scss/modules/pages/_single-case-study.scss */
+  /* line 101, ../scss/modules/pages/_single-case-study.scss */
   .panel-container.intro .pic-1,
   .panel-container.intro .title-holder {
     float: right;
     width: 42%;
     padding: 2.5em 1em;
   }
-  /* line 107, ../scss/modules/pages/_single-case-study.scss */
+  /* line 106, ../scss/modules/pages/_single-case-study.scss */
   .panel-container.intro .pic-0 {
     float: left;
     width: 58%;
   }
-  /* line 111, ../scss/modules/pages/_single-case-study.scss */
+  /* line 110, ../scss/modules/pages/_single-case-study.scss */
   .panel-container.intro .pic-0 img {
     padding: 0 0 0 5em;
   }
+}
+
+/* line 116, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: .15em;
+}
+@media (min-width: 481px) {
+  /* line 116, ../scss/modules/pages/_single-case-study.scss */
+  .event-gallery {
+    padding: .3em;
+  }
+}
+/* line 124, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic {
+  position: relative;
+  margin: 0;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 131, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic .case-overlay {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 250ms;
+  -moz-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
+  -ms-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+/* line 144, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic .case-overlay h3 {
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -1.5em auto auto;
+  font-size: .9em;
+}
+/* line 158, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic .case-overlay h3::after {
+  content: "";
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 0;
+  border-bottom: 2px solid #FFFFFF;
+  width: 4em;
+  padding-top: 1em;
+}
+@media (min-width: 481px) {
+  /* line 144, ../scss/modules/pages/_single-case-study.scss */
+  .event-gallery .pic .case-overlay h3 {
+    font-size: 1.125em;
+  }
+}
+/* line 173, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic .case-overlay:hover {
+  opacity: 1;
+}
+/* line 176, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+/* line 184, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic {
+  display: none;
+}
+/* line 186, ../scss/modules/pages/_single-case-study.scss */
+.event-gallery .pic-0 {
+  display: block;
+}
+
+/* line 191, ../scss/modules/pages/_single-case-study.scss */
+.grid-1 .event-gallery {
+  width: 50%;
+}
+/* line 192, ../scss/modules/pages/_single-case-study.scss */
+.grid-1 .event-gallery:nth-of-type(3) {
+  width: 55%;
+}
+/* line 193, ../scss/modules/pages/_single-case-study.scss */
+.grid-1 .event-gallery:nth-of-type(4) {
+  width: 45%;
+}
+/* line 194, ../scss/modules/pages/_single-case-study.scss */
+.grid-1 .event-gallery:nth-of-type(3n+4) {
+  width: 55%;
+}
+/* line 195, ../scss/modules/pages/_single-case-study.scss */
+.grid-1 .event-gallery:nth-of-type(4n+4) {
+  width: 45%;
 }
 
 /*********************

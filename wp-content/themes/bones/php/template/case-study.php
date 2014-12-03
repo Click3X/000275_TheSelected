@@ -37,8 +37,9 @@
 
                     // IMAGE HOLDER
                     // IF GRID
-                    if( $format == ' grid') { 
-                        echo '<div class="img-holder cf">'; 
+                    if( $format == ' grid') {
+                        $grid_style = ' grid-'.$panel['grid_style'];
+                        echo '<div class="img-holder cf'.$grid_style.'">'; 
                         $events = $panel['events'];
                         
                         foreach ($events as $key => $event) {
@@ -50,8 +51,13 @@
 
                             foreach ($pics as $key => $pic) {
                                 echo '<li class="pic pic-'.$key.'">';
+                                
                                     // echo '<img src="'.$pic['image']['url'].'">';
-                                echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                    echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                    // IF FIRST SLIDE - ECHO OVERLAY
+                                    if($key==0) {
+                                        echo '<div class="case-overlay"><h3>'.$title.'</h3></div>';
+                                    }
                                 echo '</li>';
                             }
 

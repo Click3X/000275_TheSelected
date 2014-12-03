@@ -1,4 +1,8 @@
 // ALL SCSS
+
+// ALWAYS HAVE CONTENT DIV BE MIN HEIGHT OF 100VH -- ALL PAGES
+#content { min-height: 100vh; }
+
 // FIXED HEADER - ATTACHED TO BODY
 .fixed-header {
     padding-top:46px;
