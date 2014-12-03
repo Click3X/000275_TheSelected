@@ -38,7 +38,11 @@
                     // IMAGE HOLDER
                     // IF GRID
                     if( $format == ' grid') {
-                        $grid_style = ' grid-'.$panel['grid_style'];
+                        $panel_class = $panel['grid_style'];
+                        if(!$panel_class) {
+                            $panel_class = 1;
+                        }
+                        $grid_style = ' grid-'.$panel_class;
                         echo '<div class="img-holder cf'.$grid_style.'">'; 
                         $events = $panel['events'];
                         
