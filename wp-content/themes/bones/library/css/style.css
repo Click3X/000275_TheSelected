@@ -3265,13 +3265,27 @@ p {
   width: 45%;
 }
 
-/* line 6, ../scss/modules/pages/_contact.scss */
+/* line 8, ../scss/modules/pages/_contact.scss */
 .page-id-13 #content {
   padding-top: 0;
   background-color: transparent;
 }
+@media (min-width: 620px) {
+  /* line 14, ../scss/modules/pages/_contact.scss */
+  .page-id-13 #container .marquee-holder {
+    height: 420px;
+  }
+}
+/* line 20, ../scss/modules/pages/_contact.scss */
+.page-id-13 #main > div > div > div.contact-content.cf > p:nth-child(2), .page-id-13 #main > div > div > div.contact-content.comment-respond > p:nth-child(2) {
+  margin-top: 1em;
+}
 
-/* line 14, ../scss/modules/pages/_contact.scss */
+/* line 26, ../scss/modules/pages/_contact.scss */
+.contact-content {
+  margin-top: 3.5em;
+}
+/* line 28, ../scss/modules/pages/_contact.scss */
 .contact-content p {
   color: #fff;
 }

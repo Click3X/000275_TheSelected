@@ -1,16 +1,30 @@
 // CONTACT SCSS
 .page-id-13 {
+    
     #container {
         // background-color: #000;
     }
+
     #content {
         padding-top:0;
         background-color: transparent;
+    }
+
+    @media(min-width: 620px) {
+        #container .marquee-holder {
+            height: 420px;
+        }
+    }
+
+
+    #main > div > div > div.contact-content.cf > p:nth-child(2) {
+        margin-top: 1em;
     }
 }
 
 // ALWAYS MAKE TEXT OUTPUT WHITE
 .contact-content {
+    margin-top: 3.5em;
     p {
         color:#fff;
     }
