@@ -116,7 +116,7 @@ jQuery(document).ready(function($) {
           var mBottom = '-'+height;
           console.log('This is height'+height);
           console.log('This is height'+mBottom);
-          $("#container .marquee, .footer").css('height', height);
+          $("#container .marquee, .footer, #container::after").css('height', height);
           $("#content").css('minHeight', height);
           $("#container").css('marginBottom', mBottom);
       }
