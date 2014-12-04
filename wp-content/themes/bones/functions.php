@@ -303,7 +303,7 @@ add_filter( 'tiny_mce_before_init', 'wpex_mce_text_sizes' );
 // Add custom Fonts to the Fonts list
 if ( ! function_exists( 'wpex_mce_google_fonts_array' ) ) {
   function wpex_mce_google_fonts_array( $initArray ) {
-      $initArray['font_formats'] = 'Brandon Grotesque=brandon-grotesque,sans-serif;Minion Pro=minion-pro,serif;';
+      $initArray['font_formats'] = 'Brandon Grotesque=brandon-grotesque,sans-serif;Minion Pro=minion-pro,serif;Proxima Nova=proxima-nova-alt,sans-serif;';
             return $initArray;
   }
 }

@@ -72,9 +72,12 @@
     width: 5.5em;
     margin: 1.2em auto 0;
     background: black;
-    height:3px;
     border: 0;
 }
+
+.entry-content hr { height: 2px; }
+.marquee hr { height: 3px; }
+
 
 .marquee hr { 
     margin: 1.2em auto;
@@ -99,10 +102,10 @@
 }
 
 #container h2 { 
-    // font-size: 14px;
     font-weight: 800;
     line-height: 1.5rem;
 }
+
 #container h2:nth-child(2) { font-size: 35px; }
 
 @media(min-width: 620px) {
@@ -116,12 +119,13 @@
         font-size: 24px; 
         margin-bottom: 0.375em;
     }
+    
     #container h1 { font-size: 78px; }
     .marq-2 span { font-size: 55px; }
 
     .entry-content hr { 
         width: 7.5em;
-        margin: 2.6em auto 1.45em;
+        margin:  1.25em auto;
     }
 
     .marquee hr { 

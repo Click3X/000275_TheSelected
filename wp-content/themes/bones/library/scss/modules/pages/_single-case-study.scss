@@ -79,9 +79,11 @@
         }
 
         p {
-            font-size: 19px;
-            line-height:1.3em;
-            font-family: brandon-grotesque, sans-serif;
+            // font-size: 19px;
+            // line-height:1.3em;
+            font-size: 1rem;
+            line-height: 1.19rem;
+            font-family:proxima-nova-alt,sans-serif;
         }
     }
 }
@@ -137,32 +139,28 @@
 
 // GRID PANEL STYLES FOR COPY
 .grid {
-    @media(min-width: 768px) {
-        margin-top: -8.5%;
-    }
+    @media(min-width: 768px) { margin-top: -8.5%; }
 
     .title-holder p {
         max-width: 46.5em;
-        margin: 0 auto 1em;
+        margin: 0 auto 2em;
     }
 }
 
 // MIDDLE PANEL
 .middle {
-    @media(min-width: 768px) {
-        margin-top: 2.5em;
-    }
+    @media(min-width: 768px) { margin-top: 2.5em; }
 
     .title-holder {
         @media(min-width: 768px) {
             float: left;
             width:50%;
             max-width:520px;
-
             position: absolute;
         }
+        
         p {
-            max-width: 17em;
+            max-width: 17.5em;
             margin: 0 auto 1.5em;
             position: relative;
             z-index: 1;
