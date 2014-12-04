@@ -113,8 +113,10 @@ jQuery(document).ready(function($) {
 
       function iosVhHeightBug() {
           var height = $(window).height();
+          var mBottom = '-'+height;
           $("#container .marquee, .footer").css('height', height);
           $("#content").css('minHeight', height);
+          $("#container").css('marginBottom', mBottom);
       }
 
       iosVhHeightBug();
