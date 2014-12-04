@@ -31,8 +31,20 @@ get_header(); ?>
 								if($text_mods) {
 									echo '<div class="checker-holder clearfix">';
 									foreach ($text_mods as $key => $text_mod) { 
+										$copy = $text_mod['text_module'];
+										$img = $text_mod['image'];
+										$url = $img['url'];
+
+										// helper($img);
+
+										$maxW = $img['width'].'px';
+                            			$maxH = $img['height'].'px';
+
+										echo '<div class="check-img">
+											<img src="'.$url.'" class="checker-image" style="max-width:'.$maxH.'; max-height:'.$maxH.';">
+										</div>';
 										echo '<div class="entry-content checkered clearfix">';
-											echo '<div class="child">'.$text_mod['text_module'].'</div>';
+											echo '<div class="child">'.$copy.'</div>';
 										echo '</div>';
 									}
 									echo '</div>';

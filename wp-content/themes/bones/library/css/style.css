@@ -2209,67 +2209,110 @@ p {
 .page-id-6 .article-holder .entry-content {
   padding-left: 0;
   padding-right: 0;
+  background: #fff;
 }
 @media (min-width: 620px) {
   /* line 9, ../scss/modules/pages/_who-we-are.scss */
   .page-id-6 .article-holder .entry-content {
     padding-left: 1em;
     padding-right: 1em;
+    z-index: 1;
   }
 }
-/* line 19, ../scss/modules/pages/_who-we-are.scss */
+/* line 21, ../scss/modules/pages/_who-we-are.scss */
 .page-id-6 .article-holder h2 {
   margin-bottom: 0;
 }
-/* line 23, ../scss/modules/pages/_who-we-are.scss */
+/* line 25, ../scss/modules/pages/_who-we-are.scss */
 .page-id-6 .article-holder p {
   margin: 1em 0;
   line-height: 1.5em;
 }
 
-/* line 30, ../scss/modules/pages/_who-we-are.scss */
+/* line 32, ../scss/modules/pages/_who-we-are.scss */
 .checkered {
   padding: 3em 0;
   background: #ebebeb;
 }
 
-/* line 45, ../scss/modules/pages/_who-we-are.scss */
+/* line 37, ../scss/modules/pages/_who-we-are.scss */
 .checker-holder {
-  background-color: #ebebeb;
   margin: 3em 0 4.5em;
 }
 
 @media (min-width: 481px) {
-  /* line 51, ../scss/modules/pages/_who-we-are.scss */
+  /* line 43, ../scss/modules/pages/_who-we-are.scss */
   .checkered .child {
     width: 75%;
     margin: 0 auto;
   }
 
-  /* line 55, ../scss/modules/pages/_who-we-are.scss */
+  /* line 47, ../scss/modules/pages/_who-we-are.scss */
   .entry-content {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 62, ../scss/modules/pages/_who-we-are.scss */
+/* line 54, ../scss/modules/pages/_who-we-are.scss */
 .entry-content.checkered:nth-of-type(even) {
   background-color: #ffffff;
 }
 
+/* line 57, ../scss/modules/pages/_who-we-are.scss */
+.check-img {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 100%;
+}
+/* line 63, ../scss/modules/pages/_who-we-are.scss */
+.check-img img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
-  /* line 70, ../scss/modules/pages/_who-we-are.scss */
+  /* line 74, ../scss/modules/pages/_who-we-are.scss */
+  .checker-image {
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  /* line 79, ../scss/modules/pages/_who-we-are.scss */
+  .check-img {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  /* line 83, ../scss/modules/pages/_who-we-are.scss */
+  .check-img:first-of-type {
+    float: left;
+  }
+  /* line 84, ../scss/modules/pages/_who-we-are.scss */
+  .check-img:nth-of-type(3) {
+    float: right;
+  }
+  /* line 85, ../scss/modules/pages/_who-we-are.scss */
+  .check-img:nth-of-type(5) {
+    float: left;
+  }
+
+  /* line 88, ../scss/modules/pages/_who-we-are.scss */
   .entry-content {
     background-color: #ffffff;
   }
 
-  /* line 74, ../scss/modules/pages/_who-we-are.scss */
+  /* line 90, ../scss/modules/pages/_who-we-are.scss */
   .checker-holder {
-    background-color: #ebebeb;
     margin: 3em 0 4.5em;
   }
 
-  /* line 79, ../scss/modules/pages/_who-we-are.scss */
+  /* line 95, ../scss/modules/pages/_who-we-are.scss */
   .checkered {
     position: relative;
     width: 50%;
@@ -2277,17 +2320,15 @@ p {
     padding-top: 0;
     padding-bottom: 50%;
   }
-  /* line 86, ../scss/modules/pages/_who-we-are.scss */
+  /* line 102, ../scss/modules/pages/_who-we-are.scss */
   .checkered:nth-of-type(odd) {
     float: right;
-    clear: left;
   }
-  /* line 90, ../scss/modules/pages/_who-we-are.scss */
+  /* line 106, ../scss/modules/pages/_who-we-are.scss */
   .checkered:nth-of-type(even) {
     float: left;
-    clear: right;
   }
-  /* line 95, ../scss/modules/pages/_who-we-are.scss */
+  /* line 111, ../scss/modules/pages/_who-we-are.scss */
   .checkered .child {
     width: 75%;
     position: absolute;
