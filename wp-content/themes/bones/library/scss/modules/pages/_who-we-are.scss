@@ -115,10 +115,58 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            // @include prefix(transform, translateX(-50%) );
-            // @include prefix(transform, translateY(-50%) );
+            @include prefix(transform, translateX(-50%) );
+            @include prefix(transform, translateY(-50%) );
             // -webkit-transform: translate(-50%, -50%);
             @include prefix(transform, translate(-50% -50%));
         }
     }
+}
+
+
+.who-case-logo {
+    background-image: url('../../../../../img/logos/logo-case.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width:22%; max-width: 144px;
+    // height: auto; max-height: 144px;
+    // min-width: 87px; min-height: 87px;
+    padding-bottom:22%; margin:1em auto 3em;
+
+    @include prefix(transform, rotate(-15deg));
+}
+
+.svg .who-case-logo {
+    background-image: url('../../../../../img/logos/logo-case.svg');
+}
+
+
+#post-6 { position: relative;}
+.checker-holder:after {
+    content: "";
+    background-image: url('../../../../../img/logos/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 10%; max-width: 144px;
+    height: auto; max-height: 144px;
+    min-width: 87px; min-height: 87px;
+    padding-bottom: 10%;
+    position: absolute;
+    top:38.5%; left:0; right:0;
+    z-index: 1;
+    margin:auto;
+
+    @include prefix(transform, rotate(-20deg));
+
+    display: none;
+
+    @media(min-width: 768px) {
+        display: block;
+    }
+}
+
+.svg .checker-holder:after {
+    background-image: url('../../../../../img/logos/logo.svg');
 }

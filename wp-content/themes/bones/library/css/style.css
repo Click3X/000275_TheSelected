@@ -2335,6 +2335,16 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     -webkit-transform: translate(-50% -50%);
     -moz-transform: translate(-50% -50%);
     -o-transform: translate(-50% -50%);
@@ -2342,6 +2352,72 @@ p {
     transform: translate(-50% -50%);
   }
 }
+/* line 127, ../scss/modules/pages/_who-we-are.scss */
+.who-case-logo {
+  background-image: url("../../../../../img/logos/logo-case.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 22%;
+  max-width: 144px;
+  padding-bottom: 22%;
+  margin: 1em auto 3em;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+/* line 140, ../scss/modules/pages/_who-we-are.scss */
+.svg .who-case-logo {
+  background-image: url("../../../../../img/logos/logo-case.svg");
+}
+
+/* line 145, ../scss/modules/pages/_who-we-are.scss */
+#post-6 {
+  position: relative;
+}
+
+/* line 146, ../scss/modules/pages/_who-we-are.scss */
+.checker-holder:after {
+  content: "";
+  background-image: url("../../../../../img/logos/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 10%;
+  max-width: 144px;
+  height: auto;
+  max-height: 144px;
+  min-width: 87px;
+  min-height: 87px;
+  padding-bottom: 10%;
+  position: absolute;
+  top: 38.5%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 146, ../scss/modules/pages/_who-we-are.scss */
+  .checker-holder:after {
+    display: block;
+  }
+}
+
+/* line 170, ../scss/modules/pages/_who-we-are.scss */
+.svg .checker-holder:after {
+  background-image: url("../../../../../img/logos/logo.svg");
+}
+
 /* line 1, ../scss/modules/pages/_services.scss */
 .short-divider {
   border-bottom: 2px solid black;

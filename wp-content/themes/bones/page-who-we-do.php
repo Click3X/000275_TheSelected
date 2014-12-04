@@ -13,6 +13,9 @@ get_header(); ?>
 
 					<div id="main" class="m-all t-3of3 d-7of7 cf" role="main">
 
+						<!-- LOGO (CASE - VERSION) -->
+						<div id="who-case-logo" class="who-case-logo"></div>
+
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 						<?php 
@@ -30,19 +33,18 @@ get_header(); ?>
 							<?php
 								if($text_mods) {
 									echo '<div class="checker-holder clearfix">';
+
 									foreach ($text_mods as $key => $text_mod) { 
 										$copy = $text_mod['text_module'];
 										$img = $text_mod['image'];
 										$url = $img['url'];
 
-										// helper($img);
-
 										$maxW = $img['width'].'px';
                             			$maxH = $img['height'].'px';
 
 										echo '<div class="check-img">
-											<img src="'.$url.'" class="checker-image" style="max-width:'.$maxH.'; max-height:'.$maxH.';">
-										</div>';
+												<img src="'.$url.'" class="checker-image" style="max-width:'.$maxH.'; max-height:'.$maxH.';">
+											</div>';
 										echo '<div class="entry-content checkered clearfix">';
 											echo '<div class="child">'.$copy.'</div>';
 										echo '</div>';
