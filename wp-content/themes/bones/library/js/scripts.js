@@ -119,7 +119,9 @@ jQuery(document).ready(function($) {
           $("#container .marquee, .footer").css('height', height);
           $("#content").css('minHeight', height);
           $("#container").css('marginBottom', mBottom);
-          $("#container:after").css('height', height);
+          // $("#container:after").css('height', height);
+
+          $('head').append('<style>#container:after {height:'+height+' !important; }</style>');
       }
 
       iosVhHeightBug();
