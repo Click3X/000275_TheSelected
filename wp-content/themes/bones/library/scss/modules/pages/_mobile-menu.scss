@@ -1,8 +1,6 @@
 // MOBILE MENU STYLES
 .menu-icon {
-    width:44px;
-    // height:44px;
-    height:40px;
+    width:44px; height:40px;
     cursor: pointer;
     margin: 0 auto;
     float: none;
@@ -10,14 +8,11 @@
 
     position: absolute;
     z-index: 11;
-    left:8px;
-    top:0;
+    left:8px; top:0;
     @include prefix(transform, translateZ(11));
     @include prefix(transition, all 0.3s);
 
-    @media(min-width: 768px) {
-      display: none;
-    }
+    @media(min-width: 768px) { display: none; }
 }
 
 .menu-icon > span {
@@ -66,12 +61,14 @@
 // SLIDE DOWN MENU
 @media(max-width:767px) {
   #nav-logo {
+    width:100%; height: 46px;
     position: absolute;
-    z-index: 11;
-    width:100%;
-    height: 46px;
-    background-color:black;
     top:0;
+    z-index: 11;
+    background-color: black;
+    background-image: url("../../../../../img/background/bg.png");
+    background-repeat: repeat;
+    background-size: 266px 192px;
 
     @include prefix(transform, translateZ(11));
     @include prefix(transform, translateY(0));
@@ -82,24 +79,18 @@
       height: 32px;
       margin:7px 0 0 7px;
       background-color:black;
-      background-image:url('../../../../../img/logos/logo.png');
+      background-image:url('../../../../../img/logos/logo-s.png');
       background-position:50% 50%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       float: right;
       margin-right:8px;
     }
   }
 
-  .page-template-page-template-home-php {
-    #nav-logo {
-      display: none;
-    }
-  }
+  .page-template-page-template-home-php #nav-logo { display: none; }
 
-  .svg #nav-logo:after {
-      background-image:url('../../../../../img/logos/logo.svg');
-  }
+  .svg #nav-logo:after { background-image:url('../../../../../img/logos/logo-s.svg'); }
 
   #inner-header.wrap { 
     height: 46px; 
@@ -108,7 +99,12 @@
 
   #main-menu-nav {
     width: 100%;
-    background: black;
+    
+    background-color: black;
+    background-image: url("../../../../../img/background/bg.png");
+    background-repeat: repeat;
+    background-size: 266px 192px;
+
     position: absolute;
     z-index: 10;
     @include prefix(transform, translateZ(10));
@@ -126,7 +122,5 @@
 }
 
 @media(min-width: 768px) {
-  #nav-logo {
-    display: none;
-  }
+  #nav-logo { display: none; }
 }

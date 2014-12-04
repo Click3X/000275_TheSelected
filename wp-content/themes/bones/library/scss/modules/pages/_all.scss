@@ -5,23 +5,17 @@
 
 // HAVE HEADER APPEAR AT BOTTOM OF PAGE ON HOME PAGE
 .page-id-44 .header {
-    @media(min-width: 768px) {
-        margin-top:-46px;
-    }
+    @media(min-width: 768px) { margin-top:-46px; }
 }
 .page-id-44.fixed-header .header {
-    @media(min-width: 768px) {
-        margin-top:0px;
-    }
+    @media(min-width: 768px) { margin-top:0px; }
 }
 
 // FIXED HEADER - ATTACHED TO BODY
 .fixed-header {
     padding-top:46px;
     
-    @media(min-width: 768px) {
-        margin-top:0;
-    }
+    @media(min-width: 768px) { margin-top:0; }
     
     #site-header {
         width:100%;
@@ -54,7 +48,8 @@
 // INNER HEADER BG COLORS FOR MOBILE MENU
 @media(max-width: 767px){
     #inner-header {
-        background-color: black;
+        // background-color: black;
+        background-color:none;
         @include prefix(transition, background-color 200ms);
     }
 
@@ -62,33 +57,20 @@
         @include prefix(transition, background-color 200ms);
     }
 
-    #inner-header.black-bg {
-        background-color: black;
-    }
-
+    #inner-header.black-bg { background-color: black; }
 
     // NAV BG IS TRANSPARENT ON HOME PAGE
     .page-template-page-template-home-php {
-        #inner-header {
-            background-color:transparent;
-        }
-        #inner-header.black-bg {
-            background-color: black;
-        }
+        #inner-header { background-color:transparent; }
+        #inner-header.black-bg { background-color: black; }
     }
 }
 
 
 .page-template-page-template-home-php.mobile-fixed,
-.page-template-page-template-home-php.fixed-header {
-    padding-top:0;
-}
+.page-template-page-template-home-php.fixed-header { padding-top:0; }
 
-.page-template-page-template-home-php.fixed-header {
-    #inner-content {
-        padding-top:46px;
-    }
-}
+.page-template-page-template-home-php.fixed-header #inner-content { padding-top:46px; }
 
 .nav .current-menu-item {
     a { border-bottom: 4px solid $gold; }
