@@ -55,10 +55,17 @@
 
                             foreach ($pics as $key => $pic) {
                                 echo '<li class="pic pic-'.$key.'">';
-                                    echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                    // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
                                     // IF FIRST SLIDE - ECHO OVERLAY
                                     if($key==0) {
-                                        echo '<div class="case-overlay"><h3>'.$title.'</h3></div>';
+                                        echo '<a href="'.$pic['image']['sizes']['case-study-lightbox'].'" class="swipebox" title="'.$title.'">';
+                                            echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                            echo '<div class="case-overlay"><h3>'.$title.'</h3></div>';
+                                        echo '</a>';
+                                    } else {
+                                        echo '<a href="'.$pic['image']['sizes']['case-study-lightbox'].'" class="swipebox" title="'.$title.'">';
+                                            // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                        echo '</a>';
                                     }
                                 echo '</li>';
                             }
