@@ -112,8 +112,8 @@ jQuery(document).ready(function($) {
   if(iOS){
 
       function iosVhHeightBug() {
-          var height = $(window).height();
-          var mBottom = '-'+height;
+          var height = $(window).height() + 'px';
+          var mBottom = '-'+height+'px';
           console.log('This is height'+height);
           console.log('This is height'+mBottom);
           $("#container .marquee, .footer").css('height', height);
