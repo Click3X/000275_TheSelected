@@ -203,14 +203,14 @@
     .pic-0 {
         top:0; right: 26.3%;
         width: 45%;
-        max-width: 300px;
+        // max-width: 300px;
     }
 
     .pic-1 {
         top: 34%;
         right: 0%;
         width: 45%;
-        max-width: 300px;
+        // max-width: 300px;
     }
 
     .pic-2 {
@@ -348,4 +348,20 @@
     .event-gallery:nth-of-type(4) { width: 45%; }
     .event-gallery:nth-of-type(3n+4) { width: 55%; }
     .event-gallery:nth-of-type(4n+4) { width: 45%; }
+}
+
+// OUTRO
+#main .outro {
+    .pic {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 1em;
+    }
+}
+
+#main .middle {
+    .pic {
+        text-align: center;
+    }
 }

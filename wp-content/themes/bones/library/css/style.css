@@ -3088,14 +3088,12 @@ p {
   top: 0;
   right: 26.3%;
   width: 45%;
-  max-width: 300px;
 }
 /* line 209, ../scss/modules/pages/_single-case-study.scss */
 .middle .pic-1 {
   top: 34%;
   right: 0%;
   width: 45%;
-  max-width: 300px;
 }
 /* line 216, ../scss/modules/pages/_single-case-study.scss */
 .middle .pic-2 {
@@ -3270,6 +3268,20 @@ p {
 /* line 350, ../scss/modules/pages/_single-case-study.scss */
 .grid-1 .event-gallery:nth-of-type(4n+4) {
   width: 45%;
+}
+
+/* line 355, ../scss/modules/pages/_single-case-study.scss */
+#main .outro .pic {
+  text-align: center;
+}
+/* line 358, ../scss/modules/pages/_single-case-study.scss */
+#main .outro p {
+  margin-bottom: 1em;
+}
+
+/* line 364, ../scss/modules/pages/_single-case-study.scss */
+#main .middle .pic {
+  text-align: center;
 }
 
 /* line 8, ../scss/modules/pages/_contact.scss */

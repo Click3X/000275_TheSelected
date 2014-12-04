@@ -69,17 +69,22 @@
                         // IF MIDDLE:
                      } elseif( $format == ' middle') {
                         $pics = $panel['pics'];
-
+                        // helper($pics);
                         echo '<div class="cf middle-div-holder">';
                         foreach ($pics as $key => $pic) {
+
+                            $maxW = $pic['pic']['sizes']['square-300-width'].'px';
+                            $maxH = $pic['pic']['sizes']['square-300-height'].'px';
+
                             if($key == 2) {
-                                $img_src = $pic['pic']['url'];    
+                                // $img_src = $pic['pic']['url'];    
+                                $img_src = $pic['pic']['sizes']['square-300'];  
                             } else {
                                 $img_src = $pic['pic']['sizes']['square-300'];    
                             }
                             
                             echo '<div class="pic pic-'.$key.'">';
-                                echo '<img src="'.$img_src.'">';
+                                echo '<img src="'.$img_src.'" style="max-width:'.$maxW.'; max-height:'.$maxH.'; ">';
                             echo '</div>';
                         }
                         echo '</div>'; // /.middle-div-holder
