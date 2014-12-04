@@ -3298,6 +3298,14 @@ p {
   transform: translate3d(0, 0, 0) !important;
 }
 
+/* line 384, ../scss/modules/pages/_single-case-study.scss */
+#swipebox-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: brandon-grotesque, sans-serif;
+  letter-spacing: .0618em;
+}
+
 /* line 8, ../scss/modules/pages/_contact.scss */
 .page-id-13 #content {
   padding-top: 0;

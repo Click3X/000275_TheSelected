@@ -375,8 +375,15 @@
 }
 
 #swipebox-bottom-bar.visible-bars {
-// -webkit-transform: translate3d(0, -50px, 0);
-// transform: translate3d(0, -50px, 0);
--webkit-transform: translate3d(0, 0, 0) !important;
-transform: translate3d(0, 0, 0) !important;
+    // -webkit-transform: translate3d(0, -50px, 0);
+    // transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+#swipebox-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: .0618em;
 }
