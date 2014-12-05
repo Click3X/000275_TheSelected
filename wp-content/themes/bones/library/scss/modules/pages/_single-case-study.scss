@@ -434,3 +434,46 @@
     font-family: brandon-grotesque, sans-serif;
     letter-spacing: .0618em;
 }
+
+
+// PAGE SPECIFIC STYLES
+.postid-135  {
+    .middle .title-holder p {
+        max-width: 31.5em;
+    }
+
+    .middle .middle-div-holder {
+        padding-bottom: 47%;
+        @media (min-width: 768px) {
+            padding-bottom: 30%;
+        }
+    }
+
+    .middle .pic-0 {
+        width: 11%;
+
+        @media(max-width: 767px) {
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+    }
+
+    .panel-inner {
+
+        .panel-logo {
+            top: 70%;
+            right: 60%;
+            left: auto;
+
+            @media(min-width: 768px) {
+                bottom: -33%;
+                right: 0;
+                left: auto;
+                z-index: 2;
+            }
+        }
+    }
+
+}

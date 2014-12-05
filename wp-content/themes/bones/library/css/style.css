@@ -3565,6 +3565,48 @@ p {
   letter-spacing: .0618em;
 }
 
+/* line 441, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .middle .title-holder p {
+  max-width: 31.5em;
+}
+/* line 445, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .middle .middle-div-holder {
+  padding-bottom: 47%;
+}
+@media (min-width: 768px) {
+  /* line 445, ../scss/modules/pages/_single-case-study.scss */
+  .postid-135 .middle .middle-div-holder {
+    padding-bottom: 30%;
+  }
+}
+/* line 452, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .middle .pic-0 {
+  width: 11%;
+}
+@media (max-width: 767px) {
+  /* line 452, ../scss/modules/pages/_single-case-study.scss */
+  .postid-135 .middle .pic-0 {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+/* line 465, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .panel-inner .panel-logo {
+  top: 70%;
+  right: 60%;
+  left: auto;
+}
+@media (min-width: 768px) {
+  /* line 465, ../scss/modules/pages/_single-case-study.scss */
+  .postid-135 .panel-inner .panel-logo {
+    bottom: -33%;
+    right: 0;
+    left: auto;
+    z-index: 2;
+  }
+}
+
 /* line 8, ../scss/modules/pages/_contact.scss */
 .page-id-13 #content {
   padding-top: 0;
