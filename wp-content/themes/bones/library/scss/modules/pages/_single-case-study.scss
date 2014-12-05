@@ -337,12 +337,28 @@
 }
 
 // GRID 1
+// .grid-1 {
+//     .event-gallery { width: 50%; }
+//     .event-gallery:nth-of-type(3) { width: 55%; }
+//     .event-gallery:nth-of-type(4) { width: 45%; }
+//     .event-gallery:nth-of-type(3n+4) { width: 55%; }
+//     .event-gallery:nth-of-type(4n+4) { width: 45%; }
+// }
+
+// GRID 1 - CONTREAU
 .grid-1 {
     .event-gallery { width: 50%; }
-    .event-gallery:nth-of-type(3) { width: 55%; }
-    .event-gallery:nth-of-type(4) { width: 45%; }
-    .event-gallery:nth-of-type(3n+4) { width: 55%; }
-    .event-gallery:nth-of-type(4n+4) { width: 45%; }
+    .event-gallery:first-of-type { width:26.042%; }
+    .event-gallery:nth-of-type(2) { width: 33.333%; }
+    .event-gallery:nth-of-type(3) { width: 40.625%; }
+    .event-gallery:nth-of-type(4) { width: 55%;  clear:left;}
+    .event-gallery:nth-of-type(5) { width: 45%; }
+
+    .event-gallery:nth-of-type(1n+5) { width:26.042%; }
+    .event-gallery:nth-of-type(2n+5) { width: 33.333%; }
+    .event-gallery:nth-of-type(3n+5) { width: 40.625%; }
+    .event-gallery:nth-of-type(4n+5) { width: 55%;}
+    .event-gallery:nth-of-type(5n+5) { width: 45%; }
 }
 
 // OUTRO
