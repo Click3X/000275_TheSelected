@@ -3478,20 +3478,72 @@ p {
 }
 
 /* line 366, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery {
+  width: 50%;
+}
+/* line 368, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:first-of-type {
+  width: 41.666%;
+}
+/* line 369, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(2) {
+  width: 18.751%;
+}
+/* line 370, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(3) {
+  width: 39.583%;
+  float: right;
+}
+/* line 371, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(4) {
+  width: 41.666%;
+}
+/* line 372, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(5) {
+  width: 18.751%;
+}
+/* line 374, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(1n+5) {
+  width: 41.666%;
+}
+/* line 375, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(2n+5) {
+  width: 18.751%;
+}
+/* line 376, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(3n+5) {
+  width: 39.583%;
+  float: right;
+}
+/* line 377, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(4n+5) {
+  width: 41.666%;
+}
+/* line 378, ../scss/modules/pages/_single-case-study.scss */
+.grid-2 .event-gallery:nth-of-type(5n+5) {
+  width: 18.751%;
+}
+
+/* line 383, ../scss/modules/pages/_single-case-study.scss */
+.grid-3 .event-gallery {
+  width: 33.333333%;
+}
+
+/* line 402, ../scss/modules/pages/_single-case-study.scss */
 #main .outro .pic {
   text-align: center;
 }
-/* line 369, ../scss/modules/pages/_single-case-study.scss */
+/* line 405, ../scss/modules/pages/_single-case-study.scss */
 #main .outro p {
   margin-bottom: 1em;
 }
 
-/* line 375, ../scss/modules/pages/_single-case-study.scss */
+/* line 411, ../scss/modules/pages/_single-case-study.scss */
 #main .middle .pic {
   text-align: center;
 }
 
-/* line 381, ../scss/modules/pages/_single-case-study.scss */
+/* line 417, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-bottom-bar {
   bottom: 0;
   top: 0;
@@ -3499,13 +3551,13 @@ p {
   background: transparent !important;
 }
 
-/* line 388, ../scss/modules/pages/_single-case-study.scss */
+/* line 424, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-bottom-bar.visible-bars {
   -webkit-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
 
-/* line 395, ../scss/modules/pages/_single-case-study.scss */
+/* line 431, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-title {
   text-transform: uppercase;
   font-weight: 800;
