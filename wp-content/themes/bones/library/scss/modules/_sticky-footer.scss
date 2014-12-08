@@ -8,10 +8,10 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -278px;
-  margin-bottom: -100vh;
+  // margin-bottom: -100vh;
   @media(min-width: 620px) {
         margin-bottom: -330px; 
-        margin-bottom: -100vh;
+        // margin-bottom: -100vh;
     }
 }
 #container:after {
@@ -20,10 +20,10 @@ html, body {
 }
 .footer, #container:after {
   height:278px;
-  height: 100vh;
+  // height: 100vh;
     @media(min-width: 620px) {
         height:330px;
-        height: 100vh;
+        // height: 100vh;
     }
 }
 

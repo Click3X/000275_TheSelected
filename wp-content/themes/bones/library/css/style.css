@@ -1663,13 +1663,11 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -278px;
-  margin-bottom: -100vh;
 }
 @media (min-width: 620px) {
   /* line 7, ../scss/modules/_sticky-footer.scss */
   #container {
     margin-bottom: -330px;
-    margin-bottom: -100vh;
   }
 }
 
@@ -1682,13 +1680,11 @@ html, body {
 /* line 21, ../scss/modules/_sticky-footer.scss */
 .footer, #container:after {
   height: 278px;
-  height: 100vh;
 }
 @media (min-width: 620px) {
   /* line 21, ../scss/modules/_sticky-footer.scss */
   .footer, #container:after {
     height: 330px;
-    height: 100vh;
   }
 }
 
@@ -1950,7 +1946,7 @@ html, body {
 
 /* line 9, ../scss/modules/pages/_home.scss */
 .page-id-44 #content {
-  padding-top: 0;
+  padding-top: 1.5em;
 }
 
 /* line 11, ../scss/modules/pages/_home.scss */
@@ -1960,11 +1956,16 @@ p {
 }
 
 /* line 24, ../scss/modules/pages/_home.scss */
+.page-template-page-template-home-php section p {
+  max-width: 50em;
+  margin: 0 auto;
+}
+/* line 30, ../scss/modules/pages/_home.scss */
 .page-template-page-template-home-php .article-header p {
   max-width: 47em;
   margin: 0 auto;
 }
-/* line 28, ../scss/modules/pages/_home.scss */
+/* line 34, ../scss/modules/pages/_home.scss */
 .page-template-page-template-home-php .article-header p:after {
   content: "";
   display: block;
@@ -1973,7 +1974,7 @@ p {
   height: 4px;
   width: 7.5em;
 }
-/* line 39, ../scss/modules/pages/_home.scss */
+/* line 45, ../scss/modules/pages/_home.scss */
 .page-template-page-template-home-php article .wp-post-image {
   display: block;
   margin: 0 auto;
@@ -1981,36 +1982,36 @@ p {
   width: 100%;
   max-width: 870px;
 }
-/* line 48, ../scss/modules/pages/_home.scss */
+/* line 54, ../scss/modules/pages/_home.scss */
 .page-template-page-template-home-php article .article-footer p {
   max-width: 45em;
   margin: 0 auto;
 }
 
-/* line 62, ../scss/modules/pages/_home.scss */
+/* line 68, ../scss/modules/pages/_home.scss */
 .marquee-holder {
   text-align: center;
 }
-/* line 65, ../scss/modules/pages/_home.scss */
+/* line 71, ../scss/modules/pages/_home.scss */
 .marquee-holder .marquee-tagline {
   margin: 0 auto;
 }
-/* line 68, ../scss/modules/pages/_home.scss */
+/* line 74, ../scss/modules/pages/_home.scss */
 .marquee-holder .marquee-tagline li h2 {
   margin: 0 auto;
   line-height: 1em;
 }
-/* line 72, ../scss/modules/pages/_home.scss */
+/* line 78, ../scss/modules/pages/_home.scss */
 .marquee-holder .marquee-tagline li h2 span {
   font-size: 14px !important;
 }
 @media (min-width: 620px) {
-  /* line 72, ../scss/modules/pages/_home.scss */
+  /* line 78, ../scss/modules/pages/_home.scss */
   .marquee-holder .marquee-tagline li h2 span {
     font-size: 18px !important;
   }
 }
-/* line 81, ../scss/modules/pages/_home.scss */
+/* line 87, ../scss/modules/pages/_home.scss */
 .marquee-holder .marquee-tagline li:first-child:after {
   content: "\25CF";
   color: #fff;
@@ -2018,15 +2019,15 @@ p {
   margin: 0 2em;
 }
 @media (min-width: 620px) {
-  /* line 92, ../scss/modules/pages/_home.scss */
+  /* line 98, ../scss/modules/pages/_home.scss */
   .marquee-holder .marquee-tagline {
     display: inline-block;
   }
-  /* line 95, ../scss/modules/pages/_home.scss */
+  /* line 101, ../scss/modules/pages/_home.scss */
   .marquee-holder .marquee-tagline li {
     display: inline-block;
   }
-  /* line 98, ../scss/modules/pages/_home.scss */
+  /* line 104, ../scss/modules/pages/_home.scss */
   .marquee-holder .marquee-tagline li h2 {
     display: inline-block;
   }
@@ -2272,26 +2273,38 @@ p {
   position: relative;
   max-width: 712px;
 }
+@media (min-width: 768px) {
+  /* line 44, ../scss/modules/pages/_who-we-are.scss */
+  .checker-holder {
+    padding-bottom: 120%;
+  }
+}
+@media (min-width: 1020px) {
+  /* line 44, ../scss/modules/pages/_who-we-are.scss */
+  .checker-holder {
+    padding-bottom: 108%;
+  }
+}
 
 @media (min-width: 481px) {
-  /* line 51, ../scss/modules/pages/_who-we-are.scss */
+  /* line 59, ../scss/modules/pages/_who-we-are.scss */
   .checkered .child {
     width: 75%;
     margin: 0 auto;
   }
 
-  /* line 55, ../scss/modules/pages/_who-we-are.scss */
+  /* line 63, ../scss/modules/pages/_who-we-are.scss */
   .entry-content {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 62, ../scss/modules/pages/_who-we-are.scss */
+/* line 70, ../scss/modules/pages/_who-we-are.scss */
 .entry-content.checkered:nth-of-type(even) {
   background-color: #ffffff;
 }
 
-/* line 65, ../scss/modules/pages/_who-we-are.scss */
+/* line 73, ../scss/modules/pages/_who-we-are.scss */
 .check-img {
   width: 100%;
   height: 0;
@@ -2299,12 +2312,12 @@ p {
   padding-bottom: 100%;
 }
 @media (min-width: 430px) {
-  /* line 65, ../scss/modules/pages/_who-we-are.scss */
+  /* line 73, ../scss/modules/pages/_who-we-are.scss */
   .check-img {
     padding-bottom: 391px;
   }
 }
-/* line 73, ../scss/modules/pages/_who-we-are.scss */
+/* line 81, ../scss/modules/pages/_who-we-are.scss */
 .check-img img {
   display: block;
   position: absolute;
@@ -2316,21 +2329,21 @@ p {
   width: 100%;
 }
 
-/* line 82, ../scss/modules/pages/_who-we-are.scss */
+/* line 90, ../scss/modules/pages/_who-we-are.scss */
 .page-id-6 .entry-content h3 {
   line-height: 1.4em;
 }
 
-/* line 83, ../scss/modules/pages/_who-we-are.scss */
+/* line 91, ../scss/modules/pages/_who-we-are.scss */
 #post-6 > section > hr {
   margin: .75em auto;
 }
 
-/* line 89, ../scss/modules/pages/_who-we-are.scss */
+/* line 97, ../scss/modules/pages/_who-we-are.scss */
 .child h3 {
   line-height: 1em;
 }
-/* line 90, ../scss/modules/pages/_who-we-are.scss */
+/* line 98, ../scss/modules/pages/_who-we-are.scss */
 .child p {
   line-height: 1.2em;
   max-width: 19em;
@@ -2338,36 +2351,36 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 99, ../scss/modules/pages/_who-we-are.scss */
+  /* line 107, ../scss/modules/pages/_who-we-are.scss */
   .checker-image {
     max-width: none !important;
     max-height: none !important;
   }
 
-  /* line 104, ../scss/modules/pages/_who-we-are.scss */
+  /* line 112, ../scss/modules/pages/_who-we-are.scss */
   .check-img {
     width: 50%;
     padding-bottom: 50%;
   }
-  /* line 108, ../scss/modules/pages/_who-we-are.scss */
+  /* line 116, ../scss/modules/pages/_who-we-are.scss */
   .check-img:first-of-type {
     float: left;
   }
-  /* line 109, ../scss/modules/pages/_who-we-are.scss */
+  /* line 117, ../scss/modules/pages/_who-we-are.scss */
   .check-img:nth-of-type(3) {
     float: right;
   }
-  /* line 110, ../scss/modules/pages/_who-we-are.scss */
+  /* line 118, ../scss/modules/pages/_who-we-are.scss */
   .check-img:nth-of-type(5) {
     float: left;
   }
 
-  /* line 113, ../scss/modules/pages/_who-we-are.scss */
+  /* line 121, ../scss/modules/pages/_who-we-are.scss */
   .entry-content {
     background-color: #ffffff;
   }
 
-  /* line 115, ../scss/modules/pages/_who-we-are.scss */
+  /* line 123, ../scss/modules/pages/_who-we-are.scss */
   .checkered {
     position: relative;
     width: 50%;
@@ -2375,15 +2388,15 @@ p {
     padding-top: 0;
     padding-bottom: 50%;
   }
-  /* line 122, ../scss/modules/pages/_who-we-are.scss */
+  /* line 130, ../scss/modules/pages/_who-we-are.scss */
   .checkered:nth-of-type(odd) {
     float: right;
   }
-  /* line 123, ../scss/modules/pages/_who-we-are.scss */
+  /* line 131, ../scss/modules/pages/_who-we-are.scss */
   .checkered:nth-of-type(even) {
     float: left;
   }
-  /* line 125, ../scss/modules/pages/_who-we-are.scss */
+  /* line 133, ../scss/modules/pages/_who-we-are.scss */
   .checkered .child {
     width: 75%;
     position: absolute;
@@ -2397,7 +2410,7 @@ p {
     transform: translate(-50% -50%);
   }
 }
-/* line 141, ../scss/modules/pages/_who-we-are.scss */
+/* line 149, ../scss/modules/pages/_who-we-are.scss */
 .who-case-logo {
   background-image: url("../../../../../img/logos/logo-case.png");
   background-size: contain;
@@ -2414,27 +2427,31 @@ p {
   transform: rotate(-15deg);
   position: absolute;
   z-index: 2;
-  right: 9%;
-  top: 20%;
+  right: 2%;
+  top: 18%;
 }
 @media (min-width: 768px) {
-  /* line 141, ../scss/modules/pages/_who-we-are.scss */
+  /* line 149, ../scss/modules/pages/_who-we-are.scss */
   .who-case-logo {
     margin: 0 auto;
+    padding-bottom: 144px;
+    top: 200px;
+    left: 0;
+    left: 750px;
   }
 }
 
-/* line 161, ../scss/modules/pages/_who-we-are.scss */
+/* line 177, ../scss/modules/pages/_who-we-are.scss */
 .svg .who-case-logo {
   background-image: url("../../../../../img/logos/logo-case.svg");
 }
 
-/* line 163, ../scss/modules/pages/_who-we-are.scss */
+/* line 179, ../scss/modules/pages/_who-we-are.scss */
 #post-6 {
   position: relative;
 }
 
-/* line 165, ../scss/modules/pages/_who-we-are.scss */
+/* line 181, ../scss/modules/pages/_who-we-are.scss */
 .checker-holder:after {
   content: "";
   background-image: url("../../../../../img/logos/logo.png");
@@ -2449,7 +2466,7 @@ p {
   min-height: 87px;
   padding-bottom: 10%;
   position: absolute;
-  top: 38.5%;
+  top: 26.5%;
   left: 0;
   right: 0;
   z-index: 1;
@@ -2462,18 +2479,18 @@ p {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 165, ../scss/modules/pages/_who-we-are.scss */
+  /* line 181, ../scss/modules/pages/_who-we-are.scss */
   .checker-holder:after {
     display: block;
   }
 }
 
-/* line 187, ../scss/modules/pages/_who-we-are.scss */
+/* line 205, ../scss/modules/pages/_who-we-are.scss */
 .svg .checker-holder:after {
   background-image: url("../../../../../img/logos/logo.svg");
 }
 
-/* line 190, ../scss/modules/pages/_who-we-are.scss */
+/* line 208, ../scss/modules/pages/_who-we-are.scss */
 .page-id-6 #content {
   padding-top: 0;
 }

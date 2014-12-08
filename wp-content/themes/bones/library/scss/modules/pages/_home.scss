@@ -6,7 +6,7 @@
     }
 }
 
-.page-id-44 #content { padding-top:0; }
+.page-id-44 #content { padding-top:1.5em; }
 
 p {
     font-size: 12px;
@@ -20,6 +20,12 @@ p {
 }
 
 .page-template-page-template-home-php {
+
+    section p { 
+        max-width: 50em; 
+        margin:0 auto;
+    }
+
     .article-header {
         p {
             max-width: 47em;

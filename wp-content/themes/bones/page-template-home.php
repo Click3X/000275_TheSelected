@@ -16,9 +16,9 @@ Template Name: Home Template
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-							<header class="article-header">
+							<section class="entry-content cf">
 								<?php the_content(); ?>
-							</header> <?php // end article header ?>
+							</section> <?php // end article header ?>
 
 							<section class="entry-content cf" itemprop="articleBody">
 								

@@ -108,7 +108,9 @@ function loadGravatars() {
 jQuery(document).ready(function($) {
 
   // IOS VIEWPORT HEIGHT FIX
-  var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/);
+  // var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/); 
+  var iOS = navigator.userAgent.match(/(iPod|iPhone)/); 
+  
   if(iOS){
 
       function iosVhHeightBug() {

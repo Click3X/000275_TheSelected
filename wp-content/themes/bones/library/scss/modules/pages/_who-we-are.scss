@@ -45,6 +45,14 @@
     margin:3em auto 4.5em; 
     position: relative;
     max-width: 712px;
+
+    @media(min-width: 768px) {
+        padding-bottom: 120%;
+    }
+
+    @media(min-width: 1020px) {
+        padding-bottom: 108%;
+    }
 }
 
 @media(min-width: 481px) {
@@ -150,12 +158,20 @@
 
     @include prefix(transform, rotate(-15deg));
 
-    @media(min-width: 768px) { margin:0 auto; }
-
     position: absolute;
     z-index: 2;
-    right: 9%;
-    top: 20%;
+    right: 2%;
+    top: 18%;
+
+    @media(min-width: 768px) { 
+        margin:0 auto; 
+        // right: 9%;
+        // top: 20%;
+        padding-bottom: 144px;
+        top: 200px;
+        left: 0;
+        left: 750px;
+    }
 }
 
 .svg .who-case-logo { background-image: url('../../../../../img/logos/logo-case.svg'); }
@@ -173,7 +189,9 @@
     min-width: 87px; min-height: 87px;
     padding-bottom: 10%;
     position: absolute;
-    top:38.5%; left:0; right:0;
+    // top:38.5%; 
+    top: 26.5%;
+    left:0; right:0;
     z-index: 1;
     margin:auto;
 
