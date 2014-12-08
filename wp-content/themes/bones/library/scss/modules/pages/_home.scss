@@ -129,6 +129,40 @@ p {
             width: 100%;
             text-align: center;
             display: inline-block;
+            padding:1em;
         }
     }
+}
+
+.header-title {
+    font-size: 8px;
+    line-height: 12px;
+    color:#000;
+    width: 10.5em;
+    margin:1em auto;
+    font-weight: 800;
+    background-color: transparent;
+    // cursor: pointer;
+
+    &:hover {
+        color:#fff;
+        background-color: #000;
+    }
+
+    @include prefix(transition, all 300ms);
+
+  @media (min-width: 400px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media (min-width: 685px) {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
