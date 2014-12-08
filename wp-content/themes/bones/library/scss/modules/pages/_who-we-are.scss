@@ -140,7 +140,7 @@
             // @include prefix(transform, translateX(-50%) );
             // @include prefix(transform, translateY(-50%) );
             // -webkit-transform: translate(-50%, -50%);
-            @include prefix(transform, translate(-50% -50%));
+            @include prefix(transform, translate(-50%,-50%));
         }
     }
 }
