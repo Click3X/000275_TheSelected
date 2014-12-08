@@ -2033,6 +2033,26 @@ p {
   }
 }
 
+/* line 115, ../scss/modules/pages/_home.scss */
+.header-image-box .header-image {
+  width: 33.333%;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+/* line 121, ../scss/modules/pages/_home.scss */
+.header-image-box .header-image .header-title {
+  text-transform: uppercase;
+  border: 2px solid #000;
+  text-align: center;
+}
+/* line 128, ../scss/modules/pages/_home.scss */
+.header-image-box .header-image .header-image-holder {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
 /* line 2, ../scss/modules/pages/_marquee.scss */
 .marquee {
   background: black;

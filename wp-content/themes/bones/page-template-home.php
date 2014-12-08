@@ -23,8 +23,29 @@ Template Name: Home Template
 							<section class="entry-content cf" itemprop="articleBody">
 								
 								<?php 
-									// the_content(); 
-									the_post_thumbnail('full');
+									// NO THUMB - USE NEW INDIVIDUAL FIELDS
+									// the_post_thumbnail('full');
+									$header_image_box = get_field('header_image_box');
+
+									echo '<ul class="header-image-box cf">';
+									foreach ($header_image_box as $key => $header_image) {
+										// helper($header_image);
+										$header_title = $header_image['header_text'];
+										// $img_url = $header_image['header_image']['url'];
+										$img_url = $header_image['header_image']['sizes']['home-header-image'];
+										// $maxW = $header_image['header_image']['width'].'px';
+										// $maxH = $header_image['header_image']['height'].'px';
+										$maxW = $header_image['header_image']['sizes']['home-header-image-width'].'px';
+										$maxH = $header_image['header_image']['sizes']['home-header-image-height'].'px';
+
+										echo '<li class="header-image cf">';
+											echo '<h3 class="header-title">'.$header_title.'</h3>';
+											echo '<div class="header-image-holder" style="max-width:'.$maxW.'; max-height:'.$maxH.';">';
+												echo '<img src="'.$img_url.'" class="">';
+											echo '</div>';
+										echo '</li>';
+									}
+									echo '</ul>';
 								?>
 
 							</section> <?php // end article section ?>

@@ -81,6 +81,8 @@ add_image_size( 'case-study', 670, 865, true );
 add_image_size( 'case-study-logo', 300, 200, true );
 add_image_size( 'case-study-lightbox', 800, 600, true );
 add_image_size( 'square-300', 300, 300, false );
+add_image_size( 'home-header-image', 276, 409, false );
+
 
 
 
