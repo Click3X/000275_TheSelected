@@ -3256,8 +3256,6 @@ p {
 }
 /* line 81, ../scss/modules/pages/_single-case-study.scss */
 .panel-container .title-holder p {
-  font-size: 1rem;
-  line-height: 1.19rem;
   font-family: proxima-nova-alt,sans-serif;
 }
 
