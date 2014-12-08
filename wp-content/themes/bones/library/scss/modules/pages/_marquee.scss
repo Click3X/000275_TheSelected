@@ -77,6 +77,18 @@
     border: 0;
 }
 
+#main {
+    .entry-content hr { 
+        width: 5.5em;
+        margin: .75em auto;
+        background: black;
+        border: 0;
+    }
+    .entry-content hr + h3 {
+        margin-bottom: 1em;
+    }    
+}
+
 .entry-content hr { height: 2px; }
 .marquee hr { height: 3px; }
 
