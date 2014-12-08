@@ -110,25 +110,43 @@ jQuery(document).ready(function($) {
   // IOS VIEWPORT HEIGHT FIX
   // var iOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/); 
   var iOS = navigator.userAgent.match(/(iPod|iPhone)/); 
-  
-  if(iOS){
+  var iOSiPad = navigator.userAgent.match(/(iPad)/); 
+  var styleChange = $('<style/>', {id:"style-change"});
 
+  if(iOS){
       function iosVhHeightBug() {
           var height = $(window).height() + 'px';
           var mBottom = '-'+height;
-          console.log('This is height'+height);
-          console.log('This is height'+mBottom);
+          // console.log('This is height'+height);
+          // console.log('This is height'+mBottom);
           $("#container .marquee, .footer").css('height', height);
           $("#content").css('minHeight', height);
           $("#container").css('marginBottom', mBottom);
           // $("#container:after").css('height', height);
+
+          $('head').append(styleChange);
 
           $('head').append('<style>#container:after {height:'+height+' !important; }</style>');
       }
 
       iosVhHeightBug();
       $(window).bind('resize', iosVhHeightBug);
+  } 
 
+  if(iOSiPad){
+      function iosIpadVhHeightBug() {
+          var height = $(window).height() + 'px';
+          var mBottom = '-'+height;
+          $("#container .marquee").css('height', height);
+          $("#content").css('minHeight', height);
+
+          $('head').append(styleChange);
+          
+          $('head').append('<style>#container:after {height:'+height+' !important; }</style>');
+      }
+
+      iosIpadVhHeightBug();
+      $(window).bind('resize', iosIpadVhHeightBug);
   } 
 
 
