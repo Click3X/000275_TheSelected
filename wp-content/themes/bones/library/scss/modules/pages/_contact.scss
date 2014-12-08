@@ -1,5 +1,11 @@
 // CONTACT SCSS
 .page-id-13 {
+
+    .marquee hr {
+        width: 6em;
+        margin: 1em auto 1.75em;
+        height: 2px;
+    }
     
     #container {
         // background-color: #000;
@@ -12,7 +18,8 @@
 
     @media(min-width: 620px) {
         #container .marquee-holder {
-            height: 420px;
+            // height: 420px;
+            height: 314px;
         }
     }
 
@@ -24,7 +31,8 @@
 
 // ALWAYS MAKE TEXT OUTPUT WHITE
 .contact-content {
-    margin-top: 3.5em;
+    // margin-top: 3.5em;
+    margin-top: 2em;
     p {
         color:#fff;
         font-family:proxima-nova-alt,sans-serif;

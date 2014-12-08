@@ -5,7 +5,10 @@
 
 // HAVE HEADER APPEAR AT BOTTOM OF PAGE ON HOME PAGE
 .page-id-44 .header {
-    @media(min-width: 768px) { margin-top:-46px; }
+    @media(min-width: 768px) { 
+        // margin-top:-46px; 
+        margin-top:-35px; 
+    }
 }
 .page-id-44.fixed-header .header {
     @media(min-width: 768px) { margin-top:0px; }
@@ -13,7 +16,9 @@
 
 // FIXED HEADER - ATTACHED TO BODY
 .fixed-header {
-    padding-top:46px;
+    // padding-top:46px;
+    // padding-top:40px;
+    padding-top:35px;
     
     @media(min-width: 768px) { margin-top:0; }
     
@@ -32,6 +37,7 @@
 
 .mobile-fixed {
     padding-top:46px;
+    // padding-top:35px;
     @media(max-width: 767px) {
         #site-header {
             width:100%;
@@ -70,7 +76,12 @@
 .page-template-page-template-home-php.mobile-fixed,
 .page-template-page-template-home-php.fixed-header { padding-top:0; }
 
-.page-template-page-template-home-php.fixed-header #inner-content { padding-top:46px; }
+.page-template-page-template-home-php.fixed-header #inner-content {
+    @media(min-width: 768px) {
+        // padding-top:46px; 
+        padding-top:35px; 
+    }
+}
 
 .nav .current-menu-item {
     a { border-bottom: 4px solid $gold; }
@@ -99,7 +110,9 @@
 }
 
 .entry-content .bottom-text {
-    font-size: 1rem;
-    line-height: 1.19rem;
+    // font-size: 1em;
+    font-size: .85em;
+    line-height: 1.2em;
     font-family:proxima-nova-alt,sans-serif;
+    max-width: 52em;
 }

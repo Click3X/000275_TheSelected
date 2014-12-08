@@ -1,6 +1,8 @@
 // WHO WE ARE
 
 .page-id-6 {
+    
+    #main { padding-top:1.5em; }
 
     .article-holder {
         width: 95%;
@@ -22,7 +24,8 @@
 
         p {
             margin: 1em auto;
-            line-height: 1.2rem;
+            // line-height: 1.2rem;
+            line-height: 1.2em;
         }
     }
 }
@@ -38,7 +41,11 @@
     }
 }
 
-.checker-holder { margin:3em 0 4.5em; }
+.checker-holder { 
+    margin:3em auto 4.5em; 
+    position: relative;
+    max-width: 712px;
+}
 
 @media(min-width: 481px) {
     .checkered .child {
@@ -73,7 +80,10 @@
 }
 
 .page-id-6 .entry-content h3 { line-height: 1.4em; }
-#post-6 > section > hr { margin:1em auto;}
+#post-6 > section > hr { 
+    // margin:1em auto;
+    margin: .75em auto;
+}
 
 .child{
     h3 { line-height: 1em; }
@@ -101,8 +111,6 @@
     }
 
     .entry-content { background-color: #ffffff; }
-
-    .checker-holder { margin:3em 0 4.5em; }
 
     .checkered {    
         position: relative;
@@ -143,6 +151,11 @@
     @include prefix(transform, rotate(-15deg));
 
     @media(min-width: 768px) { margin:0 auto; }
+
+    position: absolute;
+    z-index: 2;
+    right: 9%;
+    top: 20%;
 }
 
 .svg .who-case-logo { background-image: url('../../../../../img/logos/logo-case.svg'); }

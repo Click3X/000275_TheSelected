@@ -44,12 +44,14 @@
 .gold-headline { 
     color:$gold; 
     margin-bottom: .75em;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 13px;
 }
 
 .white-headline { 
     color:#fff; 
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 10px;
 }
 .white-headline span {
     display:block;
@@ -97,7 +99,8 @@
 }
 
 #container h1 { 
-    font-size: 50px; 
+    // font-size: 50px; 
+    font-size: 37px; 
     margin-top:0;
 }
 
@@ -106,31 +109,53 @@
     line-height: 1.5rem;
 }
 
-#container h2:nth-child(2) { font-size: 35px; }
+#container h2:nth-child(2) { 
+    // font-size: 35px; 
+    font-size: 27px; 
+}
 
 @media(min-width: 620px) {
-    #container .marquee-holder { height: 320px; }
+    #container .marquee-holder { 
+        // height: 320px; 
+        height: 280px;
+    }
     #container .white-headline {
-        font-size: 18px;
-        margin-top: 1.5em;
+        // font-size: 18px;
+        font-size: 13px;
+        // margin-top: 1.5em;
+        margin-top: 1em;
     }
 
     #container .gold-headline  { 
-        font-size: 24px; 
+        // font-size: 24px; 
+        font-size: 16px; 
         margin-bottom: 0.375em;
     }
     
-    #container h1 { font-size: 78px; }
-    .marq-2 span { font-size: 55px; }
+    #container h1 { 
+        // font-size: 78px; 
+        font-size: 58px; 
+    }
+    .marq-2 span { 
+        // font-size: 55px; 
+        font-size: 41px; 
+    }
 
     .entry-content hr { 
-        width: 7.5em;
-        margin:  1.25em auto;
+        // width: 7.5em;
+        // margin:  1.25em auto;
+        width: 5.5em;
+        margin: .75em auto 1em;
     }
 
     .marquee hr { 
-        width: 7.5em;
-        margin:  1.45em auto 2.6em;
+        // width: 7.5em;
+        // // margin:  1.45em auto 2.6em;
+        // margin: 1.45em auto 1.5em;
+
+        width: 6em;
+        margin: 1em auto 1.75em;
+        height: 2px;
     }
 
 }

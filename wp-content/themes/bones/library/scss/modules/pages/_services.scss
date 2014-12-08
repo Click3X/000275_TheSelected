@@ -174,8 +174,11 @@ left: 26%;
     text-align: center;
     padding: 10px;
 
+    font-size: .85em;
+    max-width: 17em;
+
     @media(max-width: 995px) {
-        font-size: 0.88em;
+        font-size: 0.85em;
         width: 220px;
         padding: 8px;
     }
@@ -217,30 +220,36 @@ width: 80px;
     font-weight: 800;
     color: black;
 
-    div {
-        width: 20px; height: 20px; border-radius: 50%; background: black; display: inline-block;
-        vertical-align: top;
-        margin-top: 1px;
+    font-size:12px;
 
-        @media(max-width: 399px) {
-            width: 15px;
-            height: 15px;
-        }
+    div {
+        // width: 20px; height: 20px; 
+        width: 15px; height: 15px;
+        border-radius: 50%; background: black; display: inline-block;
+        vertical-align: top;
+        margin-top: 2   px;
+
+        // @media(max-width: 399px) {
+        //     width: 15px;
+        //     height: 15px;
+        // }
     }
 }
 
 .label-str {
     top: 15px;
     left: 10%;
-    padding: 5px 17px;
-    border: 2px solid black;
+    // padding: 5px 17px;
+    padding: 6px 17px 5px;
+    border: 1px solid black;
 }
 
 .label-com {
     bottom: 11%;
     left: 5%;
-    padding: 5px 17px;
-    border: 2px solid black;
+    // padding: 5px 17px;
+    padding: 6px 17px 5px;
+    border: 1px solid black;
 
     @media(max-width: 870px) {
         left: 0;
@@ -251,8 +260,9 @@ width: 80px;
 .label-cre {
     right: 10%;
     bottom: 3%;
-    padding: 5px 17px;
-    border: 2px solid #daa250;
+    // padding: 5px 17px;
+    padding: 6px 17px 5px;
+    border: 1px solid #daa250;
 }
 
 @media(max-width: 620px) {
@@ -301,8 +311,9 @@ width: 80px;
 
 .circle-wrapper {
     position: relative;
-
-
+    margin:0 auto;
+    // max-width: 621px;
+    max-width: 776px;
 }
 
 .circle {

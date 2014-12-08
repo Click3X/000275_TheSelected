@@ -294,7 +294,7 @@ add_filter( 'mce_buttons_2', 'wpex_mce_buttons' );
 if ( ! function_exists( 'wpex_mce_text_sizes' ) ) {
   function wpex_mce_text_sizes( $initArray ){
     // $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 19px 21px 24px 29px 34px 38px 88px";
-    $initArray['fontsize_formats'] = "9px 10px 12px 13px 16px 18px 21px 24px 29px 34px 38px 55px 78px";
+    $initArray['fontsize_formats'] = "9px 10px 12px 14px 16px 18px 21px 24px 29px 34px 38px 55px 78px";
     return $initArray;
   }
 }

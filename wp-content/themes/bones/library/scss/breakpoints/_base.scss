@@ -199,10 +199,12 @@ and more scalable.
 			display: block;
 			color: $white;
 			text-decoration: none;
-			padding: 12px 12px 8px;
+			// padding: 12px 12px 8px;
+			padding: 9px 12px 6px;
 			text-transform: uppercase;
 			border-bottom: 4px solid transparent;
-			font-size: .9em;
+			// font-size: .9em;
+			font-size: .675em;
 			font-weight: 600;
 
 			@include prefix(transition, all 400ms);

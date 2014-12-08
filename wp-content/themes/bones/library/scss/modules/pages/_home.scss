@@ -10,12 +10,13 @@
 
 p {
     font-size: 12px;
-    line-height: 18px;
+    // line-height: 18px;
+    line-height: 1.3em;
 
-    @media(min-width: 620px) {
-        font-size: 16px;
-        line-height: 24px;
-    }
+    // @media(min-width: 620px) {
+    //     font-size: 16px;
+    //     line-height: 24px;
+    // }
 }
 
 .page-template-page-template-home-php {
@@ -50,8 +51,8 @@ p {
                 // font-size: 1.2em;
                 // line-height: 1.3em;
 
-                font-size: 1.2em;
-                line-height: 1.2rem;
+                // font-size: 1.2em;
+                // line-height: 1.2rem;
             }
         }
     }

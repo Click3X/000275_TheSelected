@@ -70,7 +70,7 @@
 
             echo '
                 .logo-holder {
-                    width: 17%;
+                    width: 12.5%;
                     height:auto;
                     position:absolute;
 
@@ -80,8 +80,8 @@
                     left:0;
 
                     margin: auto;
-                    margin-top: -7%;
-                    margin-right: 22%;
+                    margin-top: -4.35%;
+                    margin-right: 29.5%;
 
                     -webkit-transform: rotate(10deg);
                     transform: rotate(10deg);
