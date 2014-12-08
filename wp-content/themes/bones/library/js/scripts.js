@@ -115,12 +115,12 @@ jQuery(document).ready(function($) {
 
       function iosVhHeightBug() {
           var height = $(window).height() + 'px';
-          var mBottom = '-'+height;
-          console.log('This is height'+height);
-          console.log('This is height'+mBottom);
+          // var mBottom = '-'+height;
+          // console.log('This is height'+height);
+          // console.log('This is height'+mBottom);
           $("#container .marquee, .footer").css('height', height);
           $("#content").css('minHeight', height);
-          $("#container").css('marginBottom', mBottom);
+          // $("#container").css('marginBottom', mBottom);
           // $("#container:after").css('height', height);
 
           $('head').append('<style>#container:after {height:'+height+' !important; }</style>');
