@@ -282,9 +282,9 @@
     position: relative;
     float: left;
     margin:0;
-    padding:.15em;
+    // padding:.15em;
 
-    @media(min-width: 481px) { padding:.3em; }
+    // @media(min-width: 481px) { padding:.3em; }
 
     .pic {
         position: relative;
@@ -490,5 +490,88 @@
             }
         }
     }
+}
+
+
+
+// ALBUM COVER PICS
+.img-holder { position: relative; }
+.album-cover {
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:100%; height: auto;
+    padding-bottom: 50%;
+}
+
+// COINTREAU
+.postid-110 {
+
+    .pic-0, .album-cover-0, 
+    .album-cover-1, .album-cover-2, 
+    .album-cover-3, .album-cover-4 { overflow: hidden;}
+
+    .album-cover-0 { padding-bottom: 120%; }
+    .album-cover-1 { padding-bottom: 93%; }
+    .album-cover-2 { padding-bottom: 76%; }
+    .album-cover-3 { padding-bottom: 61%; }
+    .album-cover-4 { padding-bottom: 74.9%; }
+
+    #ambassadors .pic-0,
+    #sampling .pic-0,
+    #events .pic-0 {max-height: 313px;}
+
+    #media .pic-0,
+    #experimental .pic-0 { max-height: 343px;}
+}
+
+// SAILOR JERRY 
+.postid-55 {
+    .pic-0, .album-cover-0, 
+    .album-cover-1, .album-cover-2, 
+    .album-cover-3, .album-cover-4 { overflow: hidden;}
+
+    .album-cover-0 { padding-bottom: 76.6%; }
+    .album-cover-1 { padding-bottom: 132.5%; }
+    .album-cover-2 { padding-bottom: 65%; }
+    .album-cover-3 { padding-bottom: 56%; }
+    .album-cover-4 { padding-bottom: 67.1%; }
+
+    #partnership .pic-0 {max-height: 265px;}
+    #key-influencers .pic-0 {max-height: 450px;}
+    #advertising .pic-0 {max-height: 225px;}
+    #events .pic-0 {max-height: 185px;}
+    #experimental .pic-0 {max-height: 225px;}
+
+    // MOVE PHOTO OVER
+    #events {
+        position: absolute;
+        top: 57.8%;
+
+        @media(min-width: 1030px) {
+            top: 58.9%;
+        }
+    }
+
+}
+
+
+// SMART WATER
+.postid-135 {
+    .pic-0, .album-cover-0, 
+    .album-cover-1, .album-cover-2, 
+    .album-cover-3, .album-cover-4 { overflow: hidden;}
+
+    .album-cover-0 { padding-bottom: 63%; }
+    .album-cover-1 {padding-bottom: 143.5%; }
+    .album-cover-2 {padding-bottom: 124.4%; }
+    .album-cover-3 {padding-bottom: 53.1%; }
+    .album-cover-4 {padding-bottom: 118.7%; }
+
+    ul[id^="ambassadors"] .pic-0 { max-height: 270px; }
+    #experimental .pic-0 { max-height: 270px; }
+    #partnerships .pic-0 { max-height: 500px; }
+    #viral .pic-0 { max-height: 230px; }
+    #events .pic-0 { max-height: 230px; }
 
 }

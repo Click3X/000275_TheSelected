@@ -3560,13 +3560,6 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   position: relative;
   float: left;
   margin: 0;
-  padding: .15em;
-}
-@media (min-width: 481px) {
-  /* line 281, ../scss/modules/pages/_single-case-study.scss */
-  .event-gallery {
-    padding: .3em;
-  }
 }
 /* line 289, ../scss/modules/pages/_single-case-study.scss */
 .event-gallery .pic {
@@ -3821,6 +3814,164 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
     left: auto;
     z-index: 2;
   }
+}
+
+/* line 498, ../scss/modules/pages/_single-case-study.scss */
+.img-holder {
+  position: relative;
+}
+
+/* line 499, ../scss/modules/pages/_single-case-study.scss */
+.album-cover {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50%;
+}
+
+/* line 512, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .pic-0, .postid-110 .album-cover-0,
+.postid-110 .album-cover-1, .postid-110 .album-cover-2,
+.postid-110 .album-cover-3, .postid-110 .album-cover-4 {
+  overflow: hidden;
+}
+/* line 514, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .album-cover-0 {
+  padding-bottom: 120%;
+}
+/* line 515, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .album-cover-1 {
+  padding-bottom: 93%;
+}
+/* line 516, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .album-cover-2 {
+  padding-bottom: 76%;
+}
+/* line 517, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .album-cover-3 {
+  padding-bottom: 61%;
+}
+/* line 518, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 .album-cover-4 {
+  padding-bottom: 74.9%;
+}
+/* line 522, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 #ambassadors .pic-0,
+.postid-110 #sampling .pic-0,
+.postid-110 #events .pic-0 {
+  max-height: 313px;
+}
+/* line 525, ../scss/modules/pages/_single-case-study.scss */
+.postid-110 #media .pic-0,
+.postid-110 #experimental .pic-0 {
+  max-height: 343px;
+}
+
+/* line 532, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .pic-0, .postid-55 .album-cover-0,
+.postid-55 .album-cover-1, .postid-55 .album-cover-2,
+.postid-55 .album-cover-3, .postid-55 .album-cover-4 {
+  overflow: hidden;
+}
+/* line 534, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .album-cover-0 {
+  padding-bottom: 76.6%;
+}
+/* line 535, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .album-cover-1 {
+  padding-bottom: 132.5%;
+}
+/* line 536, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .album-cover-2 {
+  padding-bottom: 65%;
+}
+/* line 537, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .album-cover-3 {
+  padding-bottom: 56%;
+}
+/* line 538, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 .album-cover-4 {
+  padding-bottom: 67.1%;
+}
+/* line 540, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #partnership .pic-0 {
+  max-height: 265px;
+}
+/* line 541, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #key-influencers .pic-0 {
+  max-height: 450px;
+}
+/* line 542, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #advertising .pic-0 {
+  max-height: 225px;
+}
+/* line 543, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #events .pic-0 {
+  max-height: 185px;
+}
+/* line 544, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #experimental .pic-0 {
+  max-height: 225px;
+}
+/* line 547, ../scss/modules/pages/_single-case-study.scss */
+.postid-55 #events {
+  position: absolute;
+  top: 57.8%;
+}
+@media (min-width: 1030px) {
+  /* line 547, ../scss/modules/pages/_single-case-study.scss */
+  .postid-55 #events {
+    top: 58.9%;
+  }
+}
+
+/* line 563, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .pic-0, .postid-135 .album-cover-0,
+.postid-135 .album-cover-1, .postid-135 .album-cover-2,
+.postid-135 .album-cover-3, .postid-135 .album-cover-4 {
+  overflow: hidden;
+}
+/* line 565, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .album-cover-0 {
+  padding-bottom: 63%;
+}
+/* line 566, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .album-cover-1 {
+  padding-bottom: 143.5%;
+}
+/* line 567, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .album-cover-2 {
+  padding-bottom: 124.4%;
+}
+/* line 568, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .album-cover-3 {
+  padding-bottom: 53.1%;
+}
+/* line 569, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 .album-cover-4 {
+  padding-bottom: 118.7%;
+}
+/* line 571, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 ul[id^="ambassadors"] .pic-0 {
+  max-height: 270px;
+}
+/* line 572, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 #experimental .pic-0 {
+  max-height: 270px;
+}
+/* line 573, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 #partnerships .pic-0 {
+  max-height: 500px;
+}
+/* line 574, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 #viral .pic-0 {
+  max-height: 230px;
+}
+/* line 575, ../scss/modules/pages/_single-case-study.scss */
+.postid-135 #events .pic-0 {
+  max-height: 230px;
 }
 
 /* line 4, ../scss/modules/pages/_contact.scss */

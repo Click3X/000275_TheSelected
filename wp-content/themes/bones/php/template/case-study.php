@@ -36,7 +36,7 @@
                     echo '</div>';
 
                     // IMAGE HOLDER
-                    // IF GRID
+                    // IF GRID -----------------------------------------------------------------------------------------------------
                     if( $format == ' grid') {
                         $panel_class = $panel['grid_style'];
                         if(!$panel_class) {
@@ -46,6 +46,7 @@
                         echo '<div class="img-holder cf'.$grid_style.'">'; 
                         $events = $panel['events'];
                         
+                        $album_count = 0;
                         foreach ($events as $key => $event) {
                             // STORE VARS
                             $title = $event['event_title'];
@@ -55,13 +56,15 @@
 
                             foreach ($pics as $key => $pic) {
                                 echo '<li class="pic pic-'.$key.'">';
-                                    // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
                                     // IF FIRST SLIDE - ECHO OVERLAY
                                     if($key==0) {
+
                                         echo '<a href="'.$pic['image']['sizes']['case-study-lightbox'].'" class="swipebox" title="'.$title.'">';
-                                            echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                            // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
+                                            echo '<div class="album-cover album-cover-'.$album_count.'" style="background-image:url('.$pic['image']['sizes']['case-study-lightbox'].');"></div>';
                                             echo '<div class="case-overlay"><h3>'.$title.'</h3></div>';
                                         echo '</a>';
+
                                     } else {
                                         echo '<a href="'.$pic['image']['sizes']['case-study-lightbox'].'" class="swipebox" title="'.$title.'">';
                                             // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
@@ -70,10 +73,13 @@
                                 echo '</li>';
                             }
                             echo '</ul>';
+
+                            $album_count++;
                         }
                         echo '</div>';
+                    // END GRID -----------------------------------------------------------------------------------------------------
 
-                        // IF MIDDLE:
+                    // IF MIDDLE:
                      } elseif( $format == ' middle') {
                         $pics = $panel['pics'];
                         // helper($pics);

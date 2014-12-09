@@ -12,16 +12,14 @@ $case_vars = array();
 					<div id="main" class="m-all t-3of3 d-7of7 cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						
 						<?php
 							// GET PAGE DATA
 							include('php/data/case-study.php');
 
 							// GET PAGE TEMPLATE
 							include('php/template/case-study.php');
-
-							// helper($case_vars);
-
-							?>
+						?>
 
 						<?php endwhile; ?>
 
