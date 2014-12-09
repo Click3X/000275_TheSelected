@@ -17,9 +17,9 @@ $query = new WP_Query($args);
 						<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'cf case-study-link' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<a href="<?php echo get_the_permalink();?>" class="cf">								
+								<!-- <a href="<?php echo get_the_permalink();?>" class="cf"> -->							 
+								<a class="cf">
 								<?php 
-								// echo '<div class="overlay-holder cf">';
 									// LOGO IMAGE
 									$logo = get_field('logo');
 									if($logo) {
@@ -29,9 +29,9 @@ $query = new WP_Query($args);
 										// FEATURED IMAGE
 										the_post_thumbnail('case-study-mobile');
 										// OVERLAY 
-										echo '<div class="case-overlay cf">';
-											echo '<h3>View Case Study</h3>';
-										echo '</div>';
+										// echo '<div class="case-overlay cf">';
+										// 	echo '<h3>View Case Study</h3>';
+										// echo '</div>';
 									echo '</div>';
 								?>
 								</a>
