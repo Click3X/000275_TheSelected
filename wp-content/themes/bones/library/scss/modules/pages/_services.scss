@@ -495,11 +495,11 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
 
 // ROTATE CIRCLE
 .circle-wrapper .circle {
-    @include prefix(transform, rotate(75deg));
+    @include prefix(transform, rotate(105deg));
     @include prefix(transition, all 5200ms linear);
 }
 
 .circle-wrapper .circle.around {
-    @include prefix(transform, rotate(430deg));
+    @include prefix(transform, rotate(460deg));
     // @include prefix(transition, all 5200ms);
 }

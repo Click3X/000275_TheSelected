@@ -31,8 +31,8 @@ jQuery(document).ready(function($) {
     // REVERSE ORDER OF ARRAY
     arr.reverse();
     // MAKE LAST ELEMENT THE FIRST
-    var last = arr.pop();
-    arr.unshift(last);
+    // var last = arr.pop();
+    // arr.unshift(last);
 
     // ANIMATE FUNCTION
     (function animate(counter) {
