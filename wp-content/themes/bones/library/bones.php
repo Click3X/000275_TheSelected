@@ -152,6 +152,9 @@ function bones_scripts_and_styles() {
         wp_register_script( 'swipebox-js', get_stylesheet_directory_uri() . '/library/js/libs/swipebox/jquery.swipebox.min.js', array( 'jquery' ), '', true );
         wp_register_script( 'swipebox', get_stylesheet_directory_uri() . '/library/js/libs/swipebox/swipe.js', array( 'jquery', 'swipebox-js' ), '', true );
 
+        // OUR SERVICES SCRIPT
+        wp_register_script( 'our-services-js', get_stylesheet_directory_uri() . '/library/js/our-services.js', array( 'jquery' ), '', true );
+
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
@@ -177,6 +180,11 @@ function bones_scripts_and_styles() {
             wp_enqueue_style( 'swipebox-css' );
             wp_enqueue_script( 'swipebox-js' );
             wp_enqueue_script( 'swipebox' );
+        }
+
+        // ENQUEUE OUR SERVICES JS ON OUR SERVICES PAGE
+        if( is_page(8) ) {
+            wp_enqueue_script( 'our-services-js' );
         }
 	}
 }

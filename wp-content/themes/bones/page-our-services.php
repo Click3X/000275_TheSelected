@@ -55,20 +55,18 @@ $gold6 = get_field('360_brand');
 								<div class="circle-wrapper">
 
 									<!-- CIRCLE WRAPPER -->
-									<img class="circle" src="<?php echo get_template_directory_uri(); ?>/library/images/circle.png">
+									<img id="circle" class="circle" src="<?php echo get_template_directory_uri(); ?>/library/images/circle.png">
 
 									<!-- HEART WRAPPER -->
 									<div class="heart-container">
-									<div class="cubeWrapper">
-										<div class="rotator">
-										        <div class="cube">
-										          <img src="<?php echo get_template_directory_uri(); ?>/library/images/heart.png">
-										          
+										<div class="cubeWrapper">
+											<div class="rotator">
+											    <div class="cube">
+										        	<img src="<?php echo get_template_directory_uri(); ?>/library/images/heart.png">
 										        </div>
 										    </div>
 										</div>
 									</div>
-
 
 									<!-- TEXT LAYER -->
 									<div class="heart-text"><?php echo $heart_text; ?></div>
@@ -78,21 +76,21 @@ $gold6 = get_field('360_brand');
 									<div class="circle-labels label-cre"><div style="background:#daa250"></div> = <?php echo $label_cre; ?></div>
 
 									<!-- BLACK & GREY & GOLDEN TEXT -->
-									<div class="float-text black1"><?php echo $black1; ?></div>
-									<div class="float-text black2"><?php echo $black2; ?></div>
-									<div class="float-text black3"><?php echo $black3; ?></div>
-									<div class="float-text black4"><?php echo $black4; ?></div>
+									<div id="black1" class="float-text js-hide black1"><?php echo $black1; ?></div>
+									<div id="black2" class="float-text js-hide black2"><?php echo $black2; ?></div>
+									<div id="black3" class="float-text js-hide black3"><?php echo $black3; ?></div>
+									<div id="black4" class="float-text js-hide black4"><?php echo $black4; ?></div>
 									<!-- grey -->
-									<div class="float-text black5"><?php echo $black5; ?></div>
-									<div class="float-text black6"><?php echo $black6; ?></div>
-									<div class="float-text black7"><?php echo $black7; ?></div>
+									<div id="black5" class="float-text js-hide black5"><?php echo $black5; ?></div>
+									<div id="black6" class="float-text js-hide black6"><?php echo $black6; ?></div>
+									<div id="black7" class="float-text js-hide black7"><?php echo $black7; ?></div>
 									<!-- golden -->
-									<div class="float-text gold1"><?php echo $gold1; ?></div>
-									<div class="float-text gold2"><?php echo $gold2; ?></div>
-									<div class="float-text gold3"><?php echo $gold3; ?></div>
-									<div class="float-text gold4"><?php echo $gold4; ?></div>
-									<div class="float-text gold5"><?php echo $gold5; ?></div>
-									<div class="float-text gold6"><?php echo $gold6; ?></div>
+									<div id="gold1" class="float-text js-hide gold1"><?php echo $gold1; ?></div>
+									<div id="gold2" class="float-text js-hide gold2"><?php echo $gold2; ?></div>
+									<div id="gold3" class="float-text js-hide gold3"><?php echo $gold3; ?></div>
+									<div id="gold4" class="float-text js-hide gold4"><?php echo $gold4; ?></div>
+									<div id="gold5" class="float-text js-hide gold5"><?php echo $gold5; ?></div>
+									<div id="gold6" class="float-text js-hide gold6"><?php echo $gold6; ?></div>
 
 								</div>
 

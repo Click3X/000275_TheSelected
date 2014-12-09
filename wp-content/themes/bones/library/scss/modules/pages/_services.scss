@@ -480,3 +480,26 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
     em { vertical-align: top; }
     strong { display: inline-block; }
 }
+
+
+// ANIMATING LINKS CLASS
+.js-hide {
+    opacity: 0;
+    @include prefix(transition, all 300ms);
+}
+
+.js-show {
+    opacity: 1;
+    @include prefix(transition, all 300ms);
+}
+
+// ROTATE CIRCLE
+.circle-wrapper .circle {
+    @include prefix(transform, rotate(75deg));
+    @include prefix(transition, all 5200ms linear);
+}
+
+.circle-wrapper .circle.around {
+    @include prefix(transform, rotate(430deg));
+    // @include prefix(transition, all 5200ms);
+}
