@@ -464,3 +464,19 @@ width: 80px;
             font-size: 1em;
         }
     }
+
+#post-8 > section > div.circle-wrapper > div.float-text.gold4 > p {
+    max-width: 14em;
+
+    br {display: none;}
+}
+
+html.js body.page div#container.tk-brandon-grotesque div#content div#inner-content.wrap div#main.m-all article#post-8.post-8 section.entry-content div.circle-wrapper div.float-text p {
+    min-width: 11em;
+}
+
+
+#post-8 > section > div.circle-wrapper > div.float-text.black7 > p {
+    em { vertical-align: top; }
+    strong { display: inline-block; }
+}

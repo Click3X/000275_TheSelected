@@ -3082,6 +3082,29 @@ p {
   }
 }
 
+/* line 468, ../scss/modules/pages/_services.scss */
+#post-8 > section > div.circle-wrapper > div.float-text.gold4 > p {
+  max-width: 14em;
+}
+/* line 471, ../scss/modules/pages/_services.scss */
+#post-8 > section > div.circle-wrapper > div.float-text.gold4 > p br {
+  display: none;
+}
+
+/* line 474, ../scss/modules/pages/_services.scss */
+html.js body.page div#container.tk-brandon-grotesque div#content div#inner-content.wrap div#main.m-all article#post-8.post-8 section.entry-content div.circle-wrapper div.float-text p {
+  min-width: 11em;
+}
+
+/* line 480, ../scss/modules/pages/_services.scss */
+#post-8 > section > div.circle-wrapper > div.float-text.black7 > p em {
+  vertical-align: top;
+}
+/* line 481, ../scss/modules/pages/_services.scss */
+#post-8 > section > div.circle-wrapper > div.float-text.black7 > p strong {
+  display: inline-block;
+}
+
 /* line 2, ../scss/modules/pages/_case-study.scss */
 .case-study-link {
   float: left;
