@@ -138,16 +138,18 @@ p {
     .header-title {
         font-size: 8px;
         line-height: 12px;
-        color:#000;
         width: 10.5em;
         margin:1em auto;
         font-weight: 800;
-        background-color: transparent;
+
         // cursor: pointer;
 
+        color:#fff;
+        background-color: #000;
+
         &:hover {
-            color:#fff;
-            background-color: #000;
+            color:#000;
+            background-color: transparent;
         }
 
         @include prefix(transition, all 300ms);
@@ -187,4 +189,9 @@ p {
         top:1.2em;
 
     }
+}
+
+
+#post-44 > section:nth-child(2) > ul > li:nth-child(1) > div {
+    padding:1em 0 1em 2em;
 }
