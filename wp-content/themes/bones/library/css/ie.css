@@ -428,10 +428,10 @@ be seen on the Desktop.
 ******************************************************************/
 /* line 12, ../scss/breakpoints/_1030up.scss */
 .wrap {
-  width: 1040px;
+  width: 1020px;
 }
 
-/* line 16, ../scss/breakpoints/_1030up.scss */
+/* line 17, ../scss/breakpoints/_1030up.scss */
 div#inner-header.wrap {
   width: 100%;
   max-width: 1240px;
