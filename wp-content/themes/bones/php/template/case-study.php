@@ -58,9 +58,10 @@
                                 echo '<li class="pic pic-'.$key.'">';
                                     // IF FIRST SLIDE - ECHO OVERLAY
                                     if($key==0) {
-
+                                        // TAKING OUT LIGHTBOX CLICK THROUGH LINKS
+                                        // echo '<a class="">';
+                                        // PUTTING IN LIGHTBOX
                                         echo '<a href="'.$pic['image']['sizes']['case-study-lightbox'].'" class="swipebox" title="'.$title.'">';
-                                            // echo '<img src="'.$pic['image']['sizes']['case-study-lightbox'].'">';
                                             echo '<div class="album-cover album-cover-'.$album_count.'" style="background-image:url('.$pic['image']['sizes']['case-study-lightbox'].');"></div>';
                                             echo '<div class="case-overlay"><h3>'.$title.'</h3></div>';
                                         echo '</a>';

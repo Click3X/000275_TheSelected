@@ -1,7 +1,8 @@
 <?php get_header(); 
 
 $args = array(
-	'post_type'=>'case_study'
+	'post_type'=>'case_study',
+	'order'=>'ASC'
 );
 
 $query = new WP_Query($args); 

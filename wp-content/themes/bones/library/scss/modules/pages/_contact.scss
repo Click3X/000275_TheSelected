@@ -1,16 +1,14 @@
 // CONTACT SCSS
 .page-id-13 {
 
+    @media(min-width: 768px) { padding-top:0; }
+
     .marquee hr {
         width: 6em;
         margin: 1em auto 1.75em;
         height: 2px;
     }
     
-    #container {
-        // background-color: #000;
-    }
-
     #content {
         padding-top:0;
         background-color: transparent;
@@ -31,10 +29,35 @@
 
 // ALWAYS MAKE TEXT OUTPUT WHITE
 .contact-content {
-    // margin-top: 3.5em;
     margin-top: 2em;
     p {
         color:#fff;
         font-family:proxima-nova-alt,sans-serif;
     }
+}
+
+
+// HIDE FOOTER ON CONTACT PAGE
+.page-id-13 {
+    .footer { display: none; }
+    #container {
+      min-height:none;
+      /* equal to footer height */
+      margin-bottom:0;
+
+      @media(min-width: 620px) {
+            margin-bottom: 0; 
+        }
+    }
+    #container:after {
+      content: "";
+      display: none;
+    }
+    .footer, #container:after {
+      height:0;
+        @media(min-width: 620px) {
+            height:0;
+        }
+    }
+
 }

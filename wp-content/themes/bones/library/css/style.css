@@ -4134,36 +4134,74 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   }
 }
 
-/* line 4, ../scss/modules/pages/_contact.scss */
+@media (min-width: 768px) {
+  /* line 2, ../scss/modules/pages/_contact.scss */
+  .page-id-13 {
+    padding-top: 0;
+  }
+}
+/* line 6, ../scss/modules/pages/_contact.scss */
 .page-id-13 .marquee hr {
   width: 6em;
   margin: 1em auto 1.75em;
   height: 2px;
 }
-/* line 14, ../scss/modules/pages/_contact.scss */
+/* line 12, ../scss/modules/pages/_contact.scss */
 .page-id-13 #content {
   padding-top: 0;
   background-color: transparent;
 }
 @media (min-width: 620px) {
-  /* line 20, ../scss/modules/pages/_contact.scss */
+  /* line 18, ../scss/modules/pages/_contact.scss */
   .page-id-13 #container .marquee-holder {
     height: 314px;
   }
 }
-/* line 27, ../scss/modules/pages/_contact.scss */
+/* line 25, ../scss/modules/pages/_contact.scss */
 .page-id-13 #main > div > div > div.contact-content.cf > p:nth-child(2), .page-id-13 #main > div > div > div.contact-content.comment-respond > p:nth-child(2) {
   margin-top: 1em;
 }
 
-/* line 33, ../scss/modules/pages/_contact.scss */
+/* line 31, ../scss/modules/pages/_contact.scss */
 .contact-content {
   margin-top: 2em;
 }
-/* line 36, ../scss/modules/pages/_contact.scss */
+/* line 33, ../scss/modules/pages/_contact.scss */
 .contact-content p {
   color: #fff;
   font-family: proxima-nova-alt,sans-serif;
+}
+
+/* line 42, ../scss/modules/pages/_contact.scss */
+.page-id-13 .footer {
+  display: none;
+}
+/* line 43, ../scss/modules/pages/_contact.scss */
+.page-id-13 #container {
+  min-height: none;
+  /* equal to footer height */
+  margin-bottom: 0;
+}
+@media (min-width: 620px) {
+  /* line 43, ../scss/modules/pages/_contact.scss */
+  .page-id-13 #container {
+    margin-bottom: 0;
+  }
+}
+/* line 52, ../scss/modules/pages/_contact.scss */
+.page-id-13 #container:after {
+  content: "";
+  display: none;
+}
+/* line 56, ../scss/modules/pages/_contact.scss */
+.page-id-13 .footer, .page-id-13 #container:after {
+  height: 0;
+}
+@media (min-width: 620px) {
+  /* line 56, ../scss/modules/pages/_contact.scss */
+  .page-id-13 .footer, .page-id-13 #container:after {
+    height: 0;
+  }
 }
 
 /*********************
