@@ -98,9 +98,7 @@
         height: auto;
         width: 100%;
         margin:0 auto;
-
         float: right;
-        // max-width: 480px;
     }
 
     .pic-1 {
@@ -117,7 +115,6 @@
         }
         
         p { 
-            // max-width: 17em;
             max-width: 19.5em;
             margin: 0 auto 1em;
             @media(min-width: 768px) { margin: 0 auto; }
@@ -162,7 +159,6 @@
         }
         
         p {
-            // max-width: 17.5em;
             max-width: 19.5em;
             margin: 0 auto 1.5em;
             position: relative;
@@ -199,77 +195,55 @@
     .pic-2 { z-index: 0; }
 
     .pic-0 {
-        top:0; 
-        // right: 26.3%;
-        // width: 45%;
-        // max-width: 300px;
-        right: 36.3%;
+        top:0; right: 36.3%;
         width: 42%;
     }
 
     .pic-1 {
-        top: 34%;
-        right: 0%;
+        top: 34%; right: 0%;
         width: 45%;
-        // max-width: 300px;
     }
 
     .pic-2 {
-        top: 40%;
-        right: 53%;
+        top: 40%; right: 53%;
         width: 46%;
 
         @media(min-width: 768px) {
-            top:auto;
-            bottom:0;
+            top:auto; bottom:0;
         }
 
         @media(min-width: 1040px) {
-            top:40%;
-            bottom:auto;
+            top:40%; bottom:auto;
         }
     }
 
     .pic-3 {
-        right: 0;
-        top:0;
+        right: 0; top:0;
     }
 
 }
 
 
-.postid-55 {
-    .middle {
-        .pic-3 {
-            right:28%;
-            top:auto;
-            bottom:0;
-        }
-    }
+.postid-55 .middle .pic-3 {
+    right:28%; top:auto; bottom:0;
 }
 
 // LOGO
-.panel-inner {
-    position: relative;
-}
+.panel-inner { position: relative; }
 .panel-inner .panel-logo {
     background-image:url("../../../../../img/logos/logo-case.png") !important;
     background-size: contain !important;
-    width: 20%;
-    // max-width: 214px;
-    max-width: 175px;
+    width: 20%; max-width: 175px;
     padding-bottom: 20%;
     height: auto;
     position: absolute;
-    bottom: 46%;
-    left:0;
-
-    @media(min-width: 768px) {
-        bottom: 10%;
-        left:5%;
-    }
+    bottom: 46%; left:0;
 
     @include prefix(transform, rotate(-20deg));
+
+    @media(min-width: 768px) {
+        bottom: 10%; left:5%;
+    }
 }
 
 .svg .panel-inner .panel-logo {
@@ -358,29 +332,33 @@
     .pic-0 {display: block;}
 }
 
-// GRID 1
-// .grid-1 {
-//     .event-gallery { width: 50%; }
-//     .event-gallery:nth-of-type(3) { width: 55%; }
-//     .event-gallery:nth-of-type(4) { width: 45%; }
-//     .event-gallery:nth-of-type(3n+4) { width: 55%; }
-//     .event-gallery:nth-of-type(4n+4) { width: 45%; }
-// }
-
 // GRID 1 - CONTREAU
 .grid-1 {
-    .event-gallery { width: 50%; }
-    .event-gallery:first-of-type { width:26.042%; }
-    .event-gallery:nth-of-type(2) { width: 33.333%; }
-    .event-gallery:nth-of-type(3) { width: 40.625%; }
-    .event-gallery:nth-of-type(4) { width: 55%;  clear:left;}
-    .event-gallery:nth-of-type(5) { width: 45%; }
+    @media(max-width: 599px) {
+        .event-gallery { 
+            width: 100%;
+            margin-bottom: 1em;
+            .album-cover {
+                padding-bottom: 34%;
+            }
+        }
+    }
 
-    .event-gallery:nth-of-type(1n+5) { width:26.042%; }
-    .event-gallery:nth-of-type(2n+5) { width: 33.333%; }
-    .event-gallery:nth-of-type(3n+5) { width: 40.625%; }
-    .event-gallery:nth-of-type(4n+5) { width: 55%;}
-    .event-gallery:nth-of-type(5n+5) { width: 45%; }
+    @media(min-width: 600px) {
+
+        .event-gallery { width: 50%; }
+        .event-gallery:first-of-type { width:26.042%; }
+        .event-gallery:nth-of-type(2) { width: 33.333%; }
+        .event-gallery:nth-of-type(3) { width: 40.625%; }
+        .event-gallery:nth-of-type(4) { width: 55%;  clear:left;}
+        .event-gallery:nth-of-type(5) { width: 45%; }
+
+        .event-gallery:nth-of-type(1n+5) { width:26.042%; }
+        .event-gallery:nth-of-type(2n+5) { width: 33.333%; }
+        .event-gallery:nth-of-type(3n+5) { width: 40.625%; }
+        .event-gallery:nth-of-type(4n+5) { width: 55%;}
+        .event-gallery:nth-of-type(5n+5) { width: 45%; }
+    }
 }
 
 // GRID 2 - SMART WATER
@@ -516,8 +494,8 @@
     .album-cover-3, .album-cover-4 { overflow: hidden;}
 
     .album-cover-0 { padding-bottom: 120%; }
-    .album-cover-1 { padding-bottom: 93%; }
-    .album-cover-2 { padding-bottom: 76%; }
+    .album-cover-1 { padding-bottom: 94%; }
+    .album-cover-2 { padding-bottom: 77%; }
     .album-cover-3 { padding-bottom: 61%; }
     .album-cover-4 { padding-bottom: 74.9%; }
 
