@@ -3699,81 +3699,94 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   }
 }
 
-/* line 366, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery {
-  width: 50%;
+@media (max-width: 599px) {
+  /* line 367, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  /* line 370, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery .album-cover {
+    padding-bottom: 34%;
+  }
 }
-/* line 368, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:first-of-type {
-  width: 41.666%;
-}
-/* line 369, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(2) {
-  width: 18.751%;
-}
-/* line 370, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(3) {
-  width: 39.583%;
-  float: right;
-}
-/* line 371, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(4) {
-  width: 41.666%;
-}
-/* line 372, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(5) {
-  width: 18.751%;
-}
-/* line 374, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(1n+5) {
-  width: 41.666%;
-}
-/* line 375, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(2n+5) {
-  width: 18.751%;
-}
-/* line 376, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(3n+5) {
-  width: 39.583%;
-  float: right;
-}
-/* line 377, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(4n+5) {
-  width: 41.666%;
-}
-/* line 378, ../scss/modules/pages/_single-case-study.scss */
-.grid-2 .event-gallery:nth-of-type(5n+5) {
-  width: 18.751%;
+@media (min-width: 600px) {
+  /* line 377, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery {
+    width: 50%;
+  }
+  /* line 378, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:first-of-type {
+    width: 41.666%;
+  }
+  /* line 379, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(2) {
+    width: 18.751%;
+  }
+  /* line 380, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(3) {
+    width: 39.583%;
+    float: right;
+  }
+  /* line 381, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(4) {
+    width: 41.666%;
+  }
+  /* line 382, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(5) {
+    width: 18.751%;
+  }
+  /* line 384, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(1n+5) {
+    width: 41.666%;
+  }
+  /* line 385, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(2n+5) {
+    width: 18.751%;
+  }
+  /* line 386, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(3n+5) {
+    width: 39.583%;
+    float: right;
+  }
+  /* line 387, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(4n+5) {
+    width: 41.666%;
+  }
+  /* line 388, ../scss/modules/pages/_single-case-study.scss */
+  .grid-2 .event-gallery:nth-of-type(5n+5) {
+    width: 18.751%;
+  }
 }
 
-/* line 383, ../scss/modules/pages/_single-case-study.scss */
+/* line 394, ../scss/modules/pages/_single-case-study.scss */
 .grid-3 .event-gallery {
   width: 100%;
   margin-bottom: 1em;
 }
 @media (min-width: 600px) {
-  /* line 383, ../scss/modules/pages/_single-case-study.scss */
+  /* line 394, ../scss/modules/pages/_single-case-study.scss */
   .grid-3 .event-gallery {
     width: 33.333333%;
     margin-bottom: 0;
   }
 }
 
-/* line 395, ../scss/modules/pages/_single-case-study.scss */
+/* line 406, ../scss/modules/pages/_single-case-study.scss */
 #main .outro .pic {
   text-align: center;
 }
-/* line 398, ../scss/modules/pages/_single-case-study.scss */
+/* line 409, ../scss/modules/pages/_single-case-study.scss */
 #main .outro p {
   margin-bottom: 1em;
 }
 
-/* line 404, ../scss/modules/pages/_single-case-study.scss */
+/* line 415, ../scss/modules/pages/_single-case-study.scss */
 #main .middle .pic {
   text-align: center;
 }
 
-/* line 410, ../scss/modules/pages/_single-case-study.scss */
+/* line 421, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-bottom-bar {
   bottom: 0;
   top: 0;
@@ -3781,13 +3794,13 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   background: transparent !important;
 }
 
-/* line 417, ../scss/modules/pages/_single-case-study.scss */
+/* line 428, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-bottom-bar.visible-bars {
   -webkit-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
 
-/* line 424, ../scss/modules/pages/_single-case-study.scss */
+/* line 435, ../scss/modules/pages/_single-case-study.scss */
 #swipebox-title {
   text-transform: uppercase;
   font-weight: 800;
@@ -3795,40 +3808,40 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   letter-spacing: .0618em;
 }
 
-/* line 434, ../scss/modules/pages/_single-case-study.scss */
+/* line 445, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .middle .title-holder p {
   max-width: 31.5em;
 }
-/* line 438, ../scss/modules/pages/_single-case-study.scss */
+/* line 449, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .middle .middle-div-holder {
   padding-bottom: 47%;
 }
 @media (min-width: 768px) {
-  /* line 438, ../scss/modules/pages/_single-case-study.scss */
+  /* line 449, ../scss/modules/pages/_single-case-study.scss */
   .postid-135 .middle .middle-div-holder {
     padding-bottom: 30%;
   }
 }
-/* line 445, ../scss/modules/pages/_single-case-study.scss */
+/* line 456, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .middle .pic-0 {
   width: 11%;
 }
 @media (max-width: 767px) {
-  /* line 445, ../scss/modules/pages/_single-case-study.scss */
+  /* line 456, ../scss/modules/pages/_single-case-study.scss */
   .postid-135 .middle .pic-0 {
     left: 0;
     right: 0;
     margin: auto;
   }
 }
-/* line 458, ../scss/modules/pages/_single-case-study.scss */
+/* line 469, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .panel-inner .panel-logo {
   top: 70%;
   right: 60%;
   left: auto;
 }
 @media (min-width: 768px) {
-  /* line 458, ../scss/modules/pages/_single-case-study.scss */
+  /* line 469, ../scss/modules/pages/_single-case-study.scss */
   .postid-135 .panel-inner .panel-logo {
     bottom: -33%;
     right: 0;
@@ -3837,12 +3850,12 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   }
 }
 
-/* line 476, ../scss/modules/pages/_single-case-study.scss */
+/* line 487, ../scss/modules/pages/_single-case-study.scss */
 .img-holder {
   position: relative;
 }
 
-/* line 477, ../scss/modules/pages/_single-case-study.scss */
+/* line 488, ../scss/modules/pages/_single-case-study.scss */
 .album-cover {
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -3852,62 +3865,62 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   padding-bottom: 34%;
 }
 @media (min-width: 600px) {
-  /* line 477, ../scss/modules/pages/_single-case-study.scss */
+  /* line 488, ../scss/modules/pages/_single-case-study.scss */
   .album-cover {
     padding-bottom: 50%;
   }
 }
 
-/* line 494, ../scss/modules/pages/_single-case-study.scss */
+/* line 505, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .pic-0, .postid-110 .album-cover-0,
 .postid-110 .album-cover-1, .postid-110 .album-cover-2,
 .postid-110 .album-cover-3, .postid-110 .album-cover-4 {
   overflow: hidden;
 }
-/* line 496, ../scss/modules/pages/_single-case-study.scss */
+/* line 507, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .album-cover-0 {
   padding-bottom: 120%;
 }
-/* line 497, ../scss/modules/pages/_single-case-study.scss */
+/* line 508, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .album-cover-1 {
   padding-bottom: 94%;
 }
-/* line 498, ../scss/modules/pages/_single-case-study.scss */
+/* line 509, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .album-cover-2 {
   padding-bottom: 77%;
 }
-/* line 499, ../scss/modules/pages/_single-case-study.scss */
+/* line 510, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .album-cover-3 {
   padding-bottom: 61%;
 }
-/* line 500, ../scss/modules/pages/_single-case-study.scss */
+/* line 511, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .album-cover-4 {
   padding-bottom: 74.9%;
 }
-/* line 504, ../scss/modules/pages/_single-case-study.scss */
+/* line 515, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 #ambassadors .pic-0,
 .postid-110 #sampling .pic-0,
 .postid-110 #events .pic-0 {
   max-height: 313px;
 }
-/* line 507, ../scss/modules/pages/_single-case-study.scss */
+/* line 518, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 #media .pic-0,
 .postid-110 #experimental .pic-0 {
   max-height: 343px;
 }
-/* line 511, ../scss/modules/pages/_single-case-study.scss */
+/* line 522, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .middle .pic-0 {
   top: 7%;
   right: 46.3%;
   width: 46%;
 }
 @media (min-width: 768px) {
-  /* line 511, ../scss/modules/pages/_single-case-study.scss */
+  /* line 522, ../scss/modules/pages/_single-case-study.scss */
   .postid-110 .middle .pic-0 {
     top: 0;
   }
 }
-/* line 521, ../scss/modules/pages/_single-case-study.scss */
+/* line 532, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .middle .pic-1 {
   top: 41.5%;
   right: 2%;
@@ -3915,127 +3928,127 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   z-index: 2;
 }
 @media (min-width: 768px) {
-  /* line 521, ../scss/modules/pages/_single-case-study.scss */
+  /* line 532, ../scss/modules/pages/_single-case-study.scss */
   .postid-110 .middle .pic-1 {
     top: 34.5%;
   }
 }
-/* line 531, ../scss/modules/pages/_single-case-study.scss */
+/* line 542, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .middle .pic-2 {
   width: 46%;
   top: 49%;
   right: 54%;
 }
 @media (min-width: 768px) {
-  /* line 531, ../scss/modules/pages/_single-case-study.scss */
+  /* line 542, ../scss/modules/pages/_single-case-study.scss */
   .postid-110 .middle .pic-2 {
     top: 35%;
     right: 70%;
   }
 }
-/* line 542, ../scss/modules/pages/_single-case-study.scss */
+/* line 553, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .middle .pic-3 {
   width: 38.947%;
   right: 0;
   top: -2%;
 }
 @media (min-width: 768px) {
-  /* line 542, ../scss/modules/pages/_single-case-study.scss */
+  /* line 553, ../scss/modules/pages/_single-case-study.scss */
   .postid-110 .middle .pic-3 {
     right: 4%;
     top: -11%;
   }
 }
-/* line 554, ../scss/modules/pages/_single-case-study.scss */
+/* line 565, ../scss/modules/pages/_single-case-study.scss */
 .postid-110 .panel-inner .panel-logo {
   bottom: 76%;
 }
 @media (min-width: 768px) {
-  /* line 554, ../scss/modules/pages/_single-case-study.scss */
+  /* line 565, ../scss/modules/pages/_single-case-study.scss */
   .postid-110 .panel-inner .panel-logo {
     bottom: 25%;
   }
 }
 
-/* line 568, ../scss/modules/pages/_single-case-study.scss */
+/* line 579, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .pic-0, .postid-55 .album-cover-0,
 .postid-55 .album-cover-1, .postid-55 .album-cover-2,
 .postid-55 .album-cover-3, .postid-55 .album-cover-4 {
   overflow: hidden;
 }
 @media (min-width: 600px) {
-  /* line 572, ../scss/modules/pages/_single-case-study.scss */
+  /* line 583, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 .album-cover-0 {
     padding-bottom: 76.6%;
   }
-  /* line 573, ../scss/modules/pages/_single-case-study.scss */
+  /* line 584, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 .album-cover-1 {
     padding-bottom: 132.5%;
   }
-  /* line 574, ../scss/modules/pages/_single-case-study.scss */
+  /* line 585, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 .album-cover-2 {
     padding-bottom: 65%;
   }
-  /* line 575, ../scss/modules/pages/_single-case-study.scss */
+  /* line 586, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 .album-cover-3 {
     padding-bottom: 56%;
   }
-  /* line 576, ../scss/modules/pages/_single-case-study.scss */
+  /* line 587, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 .album-cover-4 {
     padding-bottom: 67.1%;
   }
-  /* line 578, ../scss/modules/pages/_single-case-study.scss */
+  /* line 589, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #partnership .pic-0 {
     max-height: 265px;
   }
-  /* line 579, ../scss/modules/pages/_single-case-study.scss */
+  /* line 590, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #key-influencers .pic-0 {
     max-height: 450px;
   }
-  /* line 580, ../scss/modules/pages/_single-case-study.scss */
+  /* line 591, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #advertising .pic-0 {
     max-height: 225px;
   }
-  /* line 581, ../scss/modules/pages/_single-case-study.scss */
+  /* line 592, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #events .pic-0 {
     max-height: 185px;
   }
-  /* line 582, ../scss/modules/pages/_single-case-study.scss */
+  /* line 593, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #experimental .pic-0 {
     max-height: 225px;
   }
-  /* line 585, ../scss/modules/pages/_single-case-study.scss */
+  /* line 596, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #events {
     position: absolute;
     top: 57.8%;
   }
 }
 @media (min-width: 600px) and (min-width: 1030px) {
-  /* line 585, ../scss/modules/pages/_single-case-study.scss */
+  /* line 596, ../scss/modules/pages/_single-case-study.scss */
   .postid-55 #events {
     top: 58.9%;
   }
 }
-/* line 595, ../scss/modules/pages/_single-case-study.scss */
+/* line 606, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .middle .pic-0 {
   top: 0;
   right: 33.3%;
   width: 41.95%;
 }
-/* line 602, ../scss/modules/pages/_single-case-study.scss */
+/* line 613, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .middle .pic-1 {
   top: -3%;
   right: 0;
   width: 30.436%;
 }
-/* line 613, ../scss/modules/pages/_single-case-study.scss */
+/* line 624, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .middle .pic-2 {
   top: 32%;
   right: 66%;
   width: 33.984%;
   z-index: 2;
 }
-/* line 620, ../scss/modules/pages/_single-case-study.scss */
+/* line 631, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .middle .pic-3 {
   right: 31%;
   top: auto;
@@ -4043,59 +4056,59 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   z-index: 2;
   width: 33.8%;
 }
-/* line 631, ../scss/modules/pages/_single-case-study.scss */
+/* line 642, ../scss/modules/pages/_single-case-study.scss */
 .postid-55 .panel-container.intro img {
   max-width: 480px;
 }
 
-/* line 640, ../scss/modules/pages/_single-case-study.scss */
+/* line 651, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .pic-0, .postid-135 .album-cover-0,
 .postid-135 .album-cover-1, .postid-135 .album-cover-2,
 .postid-135 .album-cover-3, .postid-135 .album-cover-4 {
   overflow: hidden;
 }
-/* line 642, ../scss/modules/pages/_single-case-study.scss */
+/* line 653, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .album-cover-0 {
   padding-bottom: 63%;
 }
-/* line 643, ../scss/modules/pages/_single-case-study.scss */
+/* line 654, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .album-cover-1 {
   padding-bottom: 143.5%;
 }
-/* line 644, ../scss/modules/pages/_single-case-study.scss */
+/* line 655, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .album-cover-2 {
   padding-bottom: 124.4%;
 }
-/* line 645, ../scss/modules/pages/_single-case-study.scss */
+/* line 656, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .album-cover-3 {
   padding-bottom: 53.1%;
 }
-/* line 646, ../scss/modules/pages/_single-case-study.scss */
+/* line 657, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 .album-cover-4 {
   padding-bottom: 118.7%;
 }
-/* line 648, ../scss/modules/pages/_single-case-study.scss */
+/* line 659, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 ul[id^="ambassadors"] .pic-0 {
   max-height: 270px;
 }
-/* line 649, ../scss/modules/pages/_single-case-study.scss */
+/* line 660, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 #experimental .pic-0 {
   max-height: 270px;
 }
-/* line 650, ../scss/modules/pages/_single-case-study.scss */
+/* line 661, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 #partnerships .pic-0 {
   max-height: 500px;
 }
-/* line 651, ../scss/modules/pages/_single-case-study.scss */
+/* line 662, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 #viral .pic-0 {
   max-height: 230px;
 }
-/* line 652, ../scss/modules/pages/_single-case-study.scss */
+/* line 663, ../scss/modules/pages/_single-case-study.scss */
 .postid-135 #events .pic-0 {
   max-height: 230px;
 }
 @media (min-width: 768px) {
-  /* line 655, ../scss/modules/pages/_single-case-study.scss */
+  /* line 666, ../scss/modules/pages/_single-case-study.scss */
   .postid-135 .panel-inner .panel-logo {
     bottom: -33%;
     left: auto;
