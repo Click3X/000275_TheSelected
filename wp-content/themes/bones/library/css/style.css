@@ -3133,11 +3133,11 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
 
 /* line 497, ../scss/modules/pages/_services.scss */
 .circle-wrapper .circle {
-  -webkit-transform: rotate(105deg);
-  -moz-transform: rotate(105deg);
-  -o-transform: rotate(105deg);
-  -ms-transform: rotate(105deg);
-  transform: rotate(105deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
   -webkit-transition: all 5200ms linear;
   -moz-transition: all 5200ms linear;
   -o-transition: all 5200ms linear;
@@ -3147,11 +3147,11 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
 
 /* line 502, ../scss/modules/pages/_services.scss */
 .circle-wrapper .circle.around {
-  -webkit-transform: rotate(460deg);
-  -moz-transform: rotate(460deg);
-  -o-transform: rotate(460deg);
-  -ms-transform: rotate(460deg);
-  transform: rotate(460deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 /* line 2, ../scss/modules/pages/_case-study.scss */

@@ -29,10 +29,15 @@ jQuery(document).ready(function($) {
 
     // REVERSE ORDER OF ARRAY
     arr.reverse();
-    // MAKE LAST ELEMENT THE FIRST
-    // var last = arr.pop();
-    // arr.unshift(last);
+    // SHIFT ELEMENT ORDER SO BUSINESS STRATEGY IS FIRST
+    for (var i =0; i < 4; i++) {
+        var last = arr.pop();
+        arr.unshift(last);    
+    }
 
+    // console.log('This is your array: ');
+    // console.dir(arr);
+    
     // ANIMATE FUNCTION
     (function animate(counter) {
       
