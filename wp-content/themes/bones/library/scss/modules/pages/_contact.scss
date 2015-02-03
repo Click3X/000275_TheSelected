@@ -61,3 +61,14 @@
     }
 
 }
+
+.page-id-13 #main > div > div > div.contact-content.cf p a {
+    color:white;
+    text-decoration: none;
+
+    @include prefix(transition, color 400ms);
+
+    &:hover {
+        color:$gold;
+    }
+}

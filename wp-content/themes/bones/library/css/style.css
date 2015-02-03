@@ -4200,6 +4200,21 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
   }
 }
 
+/* line 65, ../scss/modules/pages/_contact.scss */
+.page-id-13 #main > div > div > div.contact-content.cf p a, .page-id-13 #main > div > div > div.contact-content.comment-respond p a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 400ms;
+  -moz-transition: color 400ms;
+  -o-transition: color 400ms;
+  -ms-transition: color 400ms;
+  transition: color 400ms;
+}
+/* line 71, ../scss/modules/pages/_contact.scss */
+.page-id-13 #main > div > div > div.contact-content.cf p a:hover, .page-id-13 #main > div > div > div.contact-content.comment-respond p a:hover {
+  color: #DAA250;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
