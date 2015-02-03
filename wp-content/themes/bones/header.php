@@ -11,7 +11,7 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php wp_title(' | '); ?></title>
         <!-- TYPE KIT LINKS -->
         <script type="text/javascript" src="//use.typekit.net/taa4ovr.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

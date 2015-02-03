@@ -1,23 +1,12 @@
 // HOME SCSS
 .page-id-4 {
     #container,
-    .hentry {
-        background-color: #000;
-    }
+    .hentry { background-color: #000; }
 }
 
 .page-id-44 #content { padding-top:1.5em; }
 
-p {
-    font-size: 12px;
-    // line-height: 18px;
-    line-height: 1.3em;
-
-    // @media(min-width: 620px) {
-    //     font-size: 16px;
-    //     line-height: 24px;
-    // }
-}
+p { font-size: 12px; line-height: 1.3em; }
 
 .page-template-page-template-home-php {
 
@@ -36,8 +25,7 @@ p {
                 display: block;
                 background-color: #000;
                 margin: 2.6em auto 1.45em;
-                height: 4px;
-                width: 7.5em;
+                width: 7.5em; height: 4px;
             }
         }
     }
@@ -45,20 +33,13 @@ p {
         .wp-post-image {
             display: block;
             margin:0 auto;
-            height: auto;
-            width:100%;
-            max-width:870px;
+            height: auto; width:100%; max-width:870px;
         }
 
         .article-footer {
             p {
                 max-width: 45em;
                 margin:0 auto;
-                // font-size: 1.2em;
-                // line-height: 1.3em;
-
-                // font-size: 1.2em;
-                // line-height: 1.2rem;
             }
         }
     }
@@ -77,9 +58,7 @@ p {
 
             span {
                 font-size:14px !important;
-                @media(min-width: 620px) {
-                    font-size:18px !important;
-                }
+                @media(min-width: 620px) { font-size:18px !important; }
             }
         }
 
@@ -101,9 +80,7 @@ p {
             li {
                 display: inline-block;
 
-                h2 {
-                    display: inline-block;
-                }
+                h2 { display: inline-block; }
             }
         }
     }
@@ -122,7 +99,6 @@ p {
             text-transform: uppercase;
             border: 2px solid #000;
             text-align: center;
-            // display: inline-block;
         }
 
         .header-image-holder {
@@ -136,62 +112,37 @@ p {
 
 #main {
     .header-title {
-        font-size: 8px;
-        line-height: 12px;
+        font-size: 8px; line-height: 12px;
         width: 10.5em;
         margin:1em auto;
         font-weight: 800;
+        color:#fff; background-color: #000;
 
-        // cursor: pointer;
+        a {color:inherit;}
 
-        color:#fff;
-        background-color: #000;
-
-        &:hover {
-            color:#000;
-            background-color: transparent;
-        }
+        &:hover { color:#000; background-color: transparent; }
 
         @include prefix(transition, all 300ms);
 
-      @media (min-width: 400px) {
-        font-size: 10px;
-        line-height: 15px;
-      }
-
-      @media (min-width: 560px) {
-        font-size: 12px;
-        line-height: 18px;
-      }
-
-      @media (min-width: 685px) {
-        font-size: 14px;
-        line-height: 25px;
-      }
+      @media (min-width: 400px) { font-size: 10px; line-height: 15px; }
+      @media (min-width: 560px) { font-size: 12px; line-height: 18px; }
+      @media (min-width: 685px) { font-size: 14px; line-height: 25px; }
     }
 }
 
 .header-image-box {
-    .header-image {
-        position: relative;
-    }
+    .header-image { position: relative; }
 
     .header-image:first-of-type .header-title:after,
     .header-image:nth-of-type(2) .header-title:after {
         content: "X";
         display: block;
-        width: 1em;
-        height: 1.3em;
+        width: 1em; height: 1.3em;
         font-weight: 800;
         color:#000;
         position: absolute;
-        right:-.5em;
-        top:1.2em;
-
+        right:-.5em; top:1.2em;
     }
 }
 
-
-#post-44 > section:nth-child(2) > ul > li:nth-child(1) > div {
-    padding:1em 0 1em 2em;
-}
+#post-44 > section:nth-child(2) > ul > li:nth-child(1) > div { padding:1em 0 1em 2em; }

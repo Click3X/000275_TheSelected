@@ -189,7 +189,6 @@
     min-width: 87px; min-height: 87px;
     padding-bottom: 10%;
     position: absolute;
-    // top:38.5%; 
     top: 26.5%;
     left:0; right:0;
     z-index: 1;
@@ -206,4 +205,13 @@
 
 .page-id-6 {
     #content {padding-top:0;}
+}
+
+.what-we-do-title {
+    color:#000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0;
 }
