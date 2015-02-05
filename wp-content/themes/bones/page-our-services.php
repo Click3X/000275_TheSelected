@@ -33,9 +33,7 @@ $gold6 = get_field('360_brand');
 ?>
 
 			<div id="content" style="overflow-x: hidden">
-
 				<div id="inner-content" class="wrap cf">
-
 					<div id="main" class="m-all cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -70,7 +68,8 @@ $gold6 = get_field('360_brand');
 
 									<!-- TEXT LAYER -->
 									<div class="heart-text"><?php echo $heart_text; ?></div>
-									<img class="lines" src="<?php echo get_template_directory_uri(); ?>/library/images/lines.png">
+									<!-- <img class="lines" src="<?php echo get_template_directory_uri(); ?>/library/images/lines.png"> -->
+									<img class="lines" src="img/our-services/lines-new.png">
 									<div class="circle-labels label-str"><div></div> = <?php echo $label_str; ?></div>
 									<div class="circle-labels label-com"><div style="background:#5d5e61"></div> = <?php echo $label_com; ?></div>
 									<div class="circle-labels label-cre"><div style="background:#daa250"></div> = <?php echo $label_cre; ?></div>
@@ -97,20 +96,13 @@ $gold6 = get_field('360_brand');
 								<p class="bottom-text"><?php echo $bottom_text; ?></p>
 								
 							</section>
-
-
 						</article>
 
 						<?php endwhile; else : ?>
-
 						<?php endif; ?>
 
 					</div>
-
-
 				</div>
-
 			</div>
-
 
 <?php get_footer(); ?>

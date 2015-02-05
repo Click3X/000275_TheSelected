@@ -16,6 +16,7 @@
 
 <!-- PANELS -->
 <?php 
+    $myid=get_the_ID();
     $panels = $case_vars['panels'];
     $num = 1;
     foreach ($panels as $key => $panel) {
@@ -27,13 +28,29 @@
             echo '<div class="panel-inner cf">';
 
                     // TITLE, DESCRIPTION, PANEL #
-                    echo '<div class="title-holder cf">';
-                        echo '<div class="num-title-holder">';
-                            echo '<div class="num-holder">'.$num.'</div>';
-                            echo '<h3 class="c-title">'.$panel['title'].'</h3>';
+                    // DONT PRINT PANEL 4 IF PAGE IS COINTREAU, OR SAILOR JERRY
+                    if ( ($myid == 110 || $myid == 55) && ( $num == 4 ) ) {
+                    } else {
+                        echo '<div class="title-holder cf">';
+                            echo '<div class="num-title-holder">';
+                                echo '<div class="num-holder">'.$num.'</div>';
+                                echo '<h3 class="c-title">'.$panel['title'].'</h3>';
+                            echo '</div>';
+                            echo $panel['description'];
                         echo '</div>';
-                        echo $panel['description'];
-                    echo '</div>';
+
+                    }
+
+                    // // IF PAGE IS CONTREAU OR SAILOR JERRY, INCLUDE PANEL 4 PARAGRAPH AND TITLE IN PANEL 3'S CONTAINER
+                    // if ( ($myid == 110 || $myid == 55) && ( $num == 3 ) ) {
+                    //     echo '<div class="title-holder cf">';
+                    //         echo '<div class="num-title-holder">';
+                    //             echo '<div class="num-holder">'.($num+1).'</div>';
+                    //             echo '<h3 class="c-title">'.$panels[($key+1)]['title'].'</h3>';
+                    //         echo '</div>';
+                    //         echo $panels[($key+1)]['description'];
+                    //     echo '</div>';
+                    // } 
 
                     // IMAGE HOLDER
                     // IF GRID -----------------------------------------------------------------------------------------------------
@@ -83,28 +100,28 @@
                     // IF MIDDLE:
                      } elseif( $format == ' middle') {
                         $pics = $panel['pics'];
-                        // helper($pics);
                         echo '<div class="cf middle-div-holder">';
                         foreach ($pics as $key => $pic) {
-
-                            // $maxW = $pic['pic']['sizes']['square-300-width'].'px';
-                            // $maxH = $pic['pic']['sizes']['square-300-height'].'px';
                             $maxW = $pic['pic']['width'].'px';
                             $maxH = $pic['pic']['height'].'px';
-
                             $img_src = $pic['pic']['url'];
-
-                            // if($key == 2) {
-                            //     $img_src = $pic['pic']['sizes']['square-300'];  
-                            // } else {
-                            //     $img_src = $pic['pic']['sizes']['square-300'];    
-                            // }
-                            
                             echo '<div class="pic pic-'.$key.'">';
                                 echo '<img src="'.$img_src.'" style="max-width:'.$maxW.'; max-height:'.$maxH.'; ">';
                             echo '</div>';
                         }
                         echo '</div>'; // /.middle-div-holder
+
+                        // IF PAGE IS CONTREAU OR SAILOR JERRY, INCLUDE PANEL 4 PARAGRAPH AND TITLE IN PANEL 3'S CONTAINER
+                        if ( ($myid == 110 || $myid == 55) && ( $num == 3 ) ) {
+                            echo '<div class="title-holder cf">';
+                                echo '<div class="num-title-holder">';
+                                    echo '<div class="num-holder">'.($num+1).'</div>';
+                                    echo '<h3 class="c-title">'.$panels[$key]['title'].'</h3>';
+                                echo '</div>';
+                                echo $panels[$key]['description'];
+                            echo '</div>';
+                        } 
+
                         
                         // LOGO
                         echo '<div class="panel-logo"></div>';

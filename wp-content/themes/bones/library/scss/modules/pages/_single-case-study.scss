@@ -11,7 +11,8 @@
         img {
             height: auto;
             width: 100%;
-            max-width: 300px;
+            // max-width: 300px;
+            max-width: 220px;
         }
     }
 
@@ -22,6 +23,7 @@
         font-weight: 800;
         max-width: 39em;
         margin: 0 auto;
+        line-height: 1.4em;
 
         &:after {
             content: "";
@@ -78,13 +80,7 @@
             }
         }
 
-        p {
-            // font-size: 19px;
-            // line-height:1.3em;
-            // font-size: 1rem;
-            // line-height: 1.19rem;
-            font-family:proxima-nova-alt,sans-serif;
-        }
+        p { font-family:proxima-nova-alt,sans-serif; }
     }
 }
 
@@ -96,7 +92,7 @@
     img {
         display: block;
         height: auto;
-        width: 100%;
+        width: 100%; max-width: 384px;
         margin:0 auto;
         float: right;
     }
@@ -146,16 +142,17 @@
 // MIDDLE PANEL
 .middle {
     @media(min-width: 768px) { 
-        // margin-top: 2.5em; 
-        margin-top: 6em; 
+        // margin-top: 6em; 
+        margin-top:2em; 
     }
 
     .title-holder {
         @media(min-width: 768px) {
             float: left;
-            width:50%;
+            // width:50%;
             max-width:520px;
-            position: absolute;
+            // position: absolute;
+            margin: 0 auto;
         }
         
         p {
@@ -254,8 +251,11 @@
 
 // OUTRO PANEL
 .outro {
-    padding-bottom: 5em;
     margin-top: 2em;
+
+    @media(min-width: 768px) {
+        padding-bottom:2em;
+    }
 }
 
 // GALLERY SCSS
@@ -263,9 +263,6 @@
     position: relative;
     float: left;
     margin:0;
-    // padding:.15em;
-
-    // @media(min-width: 481px) { padding:.3em; }
 
     .pic {
         position: relative;
@@ -440,10 +437,11 @@
     }
 
     .middle .middle-div-holder {
-        padding-bottom: 47%;
-        @media (min-width: 768px) {
-            padding-bottom: 30%;
-        }
+        // padding-bottom: 47%;
+        padding-bottom:0;
+        // @media (min-width: 768px) {
+        //     padding-bottom: 30%;
+        // }
     }
 
     .middle .pic-0 {
@@ -460,16 +458,19 @@
     .panel-inner {
 
         .panel-logo {
-            top: 70%;
-            right: 60%;
+            // top: 70%;
+            // right: 60%;
+            // left: auto;
+            top: -11%;
+            right: 70%;
             left: auto;
 
-            @media(min-width: 768px) {
-                bottom: -33%;
-                right: 0;
-                left: auto;
-                z-index: 2;
-            }
+            // @media(min-width: 768px) {
+            //     bottom: -33%;
+            //     right: 0;
+            //     left: auto;
+            //     z-index: 2;
+            // }
         }
     }
 }
@@ -528,7 +529,8 @@
             width: 52%;
             z-index: 2;
             @media(min-width: 768px) {
-                top: 34.5%;
+                // top: 34.5%;
+                top: 46%;
             }
         }
 
@@ -538,8 +540,9 @@
             right: 54%;
             
             @media(min-width: 768px) {
-                top: 35%;
-                right: 70%;
+                top: 33%;
+                right: 61%;
+                width: 36%;
             }
         }
 
@@ -550,7 +553,8 @@
 
             @media(min-width: 768px) {
                 right: 4%;
-                top: -11%;
+                // top: -11%;
+                top:0;
             }
         }
     }
@@ -558,7 +562,9 @@
     .panel-inner .panel-logo {
         bottom: 76%;
         @media(min-width: 768px) {
-            bottom: 25%;
+            // bottom: 25%;
+            bottom: -1%;
+            left: 34%;
         }
     }
 }
@@ -598,6 +604,11 @@
         .pic-0 {
             top: 0; right: 33.3%;
             width: 41.95%;
+
+            @media(min-width: 768px) {
+                top: 3%;
+                width: 36.95%;
+            }
         }
 
         .pic-1 {
@@ -609,6 +620,10 @@
             top: 32%; right: 66%;
             width: 33.984%;
             z-index: 2;
+
+            @media(min-width: 768px) {
+                width:26.984%
+            }
         }
 
         .pic-3 {
@@ -620,7 +635,10 @@
     }
 
     // INTRO PANEL
-    .panel-container.intro img { max-width: 480px; }
+    .panel-container.intro img { 
+        // max-width: 480px; 
+        max-width: 384px;
+    }
 
 }
 
@@ -645,11 +663,68 @@
 
     @media(min-width: 768px) {
         .panel-inner .panel-logo {
-            bottom: -33%;
+            // bottom: -33%;
+            // left: auto;
+            // right: 8%;
+            top: 0;
+            right: 70%;
             left: auto;
-            right: 8%;
+            bottom:auto;
+
             z-index: 2;
         }
+
+        .panel-container.panel-4.outro,
+        .panel-container.panel-3.middle {
+            float: left; width:50%;
+        }
+
+        .middle .title-holder {
+            float: none;
+        }
+
     }
 
+}
+
+.postid-110 #main > div.panel-container.cf.panel-1.intro > div > div.pic.pic-1 > img {
+    // max-width: 300px;
+    max-width: 240px;
+    float: left;
+}
+
+.outro .title-holder p {
+    max-width: 31.5em;
+    margin:0 auto;
+}
+
+// @media (min-width: 768px) {
+//     .page-id-55,
+//     .page-id-110 {
+//         .middle .title-holder {
+//             width: 36%;
+//             max-width: 300px;
+//         }
+//     }
+// }
+
+@media (min-width: 768px) {
+    .postid-55 #main > div.panel-container.cf.panel-3.middle > div .title-holder,
+    .postid-110 #main > div.panel-container.cf.panel-3.middle > div .title-holder {
+        width: 36%;
+    }
+
+    .postid-55 .panel-logo {
+        top: 0;
+        bottom: auto;
+        left: 40%;
+    }
+}
+
+// HIDE LAST PANEL ON COINTREAU AND SAILOR JERRY
+.postid-55, 
+.postid-110 {
+    .panel-4 {
+        display: none;
+    }
 }

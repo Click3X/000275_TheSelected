@@ -21,45 +21,69 @@
     top: 1%;
     left: -20px;
     right: 0;
+
+    @media(min-width: 700px) {
+        top: 3%;
+    }
 }
 
 .black2 {
     top: 18%;
-    left: 20%;
+    left: 16%;
 }
 
 .black3 {
-    top: 33%;
-    left: 6%;
+    // top: 33%;
+    // left: 6%;
+    top: 33.5%;
+    left: 5%;
 }
-
+    
 .black4 {
-    top: 48%;
-    left: 6%;
+    top: 48.5%;
+    // left: 6%;
+    left: 5%;
 }
 
 .black5 {
-    top: 61%;
-    left: 6%;
+    /* top: 61%;
+    left: 6%; */
+    top: 73.5%;
+    left: 13%;
 }
 
 .black6 {
-    top: 73%;
-left: 14%;
+    // top: 73%;
+    // left: 14%;
+    top: auto;
+    bottom: 13%;
+    left: 23%;
 }
 
 .black7 {
-    bottom: 11%;
-left: 26%;
+    left:0; right:0;
+    bottom: 3%; 
 }
 
-@media(max-width: 870px) {
-    .black3,.black4,.black5 {
+// @media(max-width: 870px) {
+@media(max-width: 720px) {
+    .black3,.black4 {
         left:0;
     }
 
-    .black6,.black7 {
-        left: 7%;
+    .black5 {
+        left: 2.5%;
+        top: 72.5%;
+    }
+
+    .black6 {
+        top: auto;
+        bottom: 12%;
+        left: 13%;
+    }
+    .black7 {
+        left:0; right:0;
+        bottom: 0%;
     }
 
     .black2 {
@@ -101,24 +125,35 @@ left: 26%;
 }
 
 // GOLDEN
+// .gold1 {
+//     left: 0;
+//     right: 0;
+//     bottom: 3%;
+// }
+
 .gold1 {
-    left: 0;
+    left: 41%;
     right: 0;
-    bottom: 3%;
+    bottom: 8%;
 }
 
 .gold2 {
-    right: 20%;
-    bottom: 19%;
+    // right: 12%;
+    // bottom: 23%;
+    right: 12%;
+    bottom: 21%;
 }
 
 .gold3 {
-    right: 12%;
+    // right: 12%;
+    right: 10%;
     bottom: 35%;
 }
 
 .gold4 {
-    right: 2%;
+    // right: 2%;
+    // top: 47%;
+    right: 0;
     top: 47%;
 }
 
@@ -128,11 +163,14 @@ left: 26%;
 }
 
 .gold6 {
-    top: 15%;
+    // top: 15%;
+    // right: 17%;
+    top: 17%;
     right: 17%;
 }
 
-@media(max-width: 870px) {
+// @media(max-width: 870px) {
+@media(max-width: 720px) {
     .gold4,.gold5 {
         right:0;
     }
@@ -143,12 +181,16 @@ left: 26%;
     }
 
     .gold2 {
-        right: 16%;
-        bottom: 16%;
+        // right: 16%;
+        // bottom: 16%;
+        right: 7%;
+        bottom: 20%;
     }
 
     .gold1 {
-        bottom:1%;
+        left: 50%;
+        right: 0;
+        bottom: 8%;
     }
 
     // .black6,.black7 {
@@ -259,7 +301,7 @@ width: 80px;
 
 .label-cre {
     right: 10%;
-    bottom: 3%;
+    // bottom: 3%;
     // padding: 5px 17px;
     padding: 6px 17px 5px;
     border: 1px solid #daa250;
@@ -276,7 +318,8 @@ width: 80px;
 
     .label-cre {
         right:0;
-        bottom:0;
+        // bottom:0;
+        bottom: -8%;
     }
 }
 
