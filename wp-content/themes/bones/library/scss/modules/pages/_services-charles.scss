@@ -1,0 +1,68 @@
+// OUR SERVICES PAGE UPDATE
+.black1,
+.black2,
+.black3,
+.black4,
+.black5,
+.black6,
+.black7,
+.black8,
+.black9,
+.gold1,
+.gold2,
+.gold3,
+.gold4,
+.gold5,
+.gold6 {
+        p {
+        font-size: 8px; line-height: 9px;
+        @media(min-width: 400px) { font-size: 10px; line-height: 11px; }
+        @media(min-width: 686px) { font-size: 12px; line-height: 16px; }
+    }
+}
+
+.black1 {
+    top: 1%; left: -20px; right: 0;
+    @media(min-width: 700px) { top: 2.5%; }
+}
+.black2 {
+    left: 18%; top: 12%;
+    @media(min-width: 520px) { left:22%;  top: 13%;}
+}
+.black3 {
+    top: 22%; left:8%;
+    @media(min-width: 520px) { left:12%; }
+}   
+.black4 {
+    top: 33.5%; left:0;
+    @media(min-width: 520px) { left: 5%; }
+}
+.black5 { 
+    left: 6%; top: 73.5%;
+    @media(min-width: 481px) { left: 13%; }
+}
+.black6 { 
+    top: 86.5%; left: 15%;
+    @media(min-width: 481px) { top: 85.5%; left: 20%; }
+}
+
+.black7 { top: 92%; left: 38.5%; }
+.black8 {
+    top:48.5%; left:0;
+    @media(min-width: 520px) { left: 4%; }
+}
+.black9 { 
+    top: 60.5%; left: -2%;
+    @media(min-width: 528px) { top: 61%; left: 6.5%; }
+}
+
+
+.gold1 { left: 65%; top: 83%; }
+.gold2 { left: 71.5%; top: 67.5%; }
+.gold3 { left: 78%; top: 53%; }
+.gold4 { top: 36.5%; left: 74.5%; }
+.gold5 { top: 21%; left: 75%; }
+.gold6 { top: 7%;left: 61%;
+    @media(min-width: 481px) { top: 8%; }
+    @media(min-width: 581px) { top: 9%; }
+}

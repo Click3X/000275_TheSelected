@@ -26,7 +26,6 @@
         // CONTAINER DIV
         echo '<div class="panel-container cf'.$panelClass.$format.'">';
             echo '<div class="panel-inner cf">';
-
                     // TITLE, DESCRIPTION, PANEL #
                     // DONT PRINT PANEL 4 IF PAGE IS COINTREAU, OR SAILOR JERRY
                     if ( ($myid == 110 || $myid == 55) && ( $num == 4 ) ) {
@@ -38,19 +37,7 @@
                             echo '</div>';
                             echo $panel['description'];
                         echo '</div>';
-
                     }
-
-                    // // IF PAGE IS CONTREAU OR SAILOR JERRY, INCLUDE PANEL 4 PARAGRAPH AND TITLE IN PANEL 3'S CONTAINER
-                    // if ( ($myid == 110 || $myid == 55) && ( $num == 3 ) ) {
-                    //     echo '<div class="title-holder cf">';
-                    //         echo '<div class="num-title-holder">';
-                    //             echo '<div class="num-holder">'.($num+1).'</div>';
-                    //             echo '<h3 class="c-title">'.$panels[($key+1)]['title'].'</h3>';
-                    //         echo '</div>';
-                    //         echo $panels[($key+1)]['description'];
-                    //     echo '</div>';
-                    // } 
 
                     // IMAGE HOLDER
                     // IF GRID -----------------------------------------------------------------------------------------------------
@@ -122,7 +109,6 @@
                             echo '</div>';
                         } 
 
-                        
                         // LOGO
                         echo '<div class="panel-logo"></div>';
 
@@ -142,5 +128,4 @@
         // INCREMENT PANEL NUMBER
         $num++;
     }
-
 ?>

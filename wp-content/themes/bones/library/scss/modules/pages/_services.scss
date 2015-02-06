@@ -2,205 +2,12 @@
     border-bottom: 2px solid black;
     width: 80px;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px; margin-bottom: 30px;
 
-    @media(max-width: 399px) {
-        margin-top: 15px;
-        margin-bottom: 45px;
-    }
+    @media(max-width: 399px) { margin-top: 15px; margin-bottom: 45px; }
 }
 
-.float-text {
-    position: absolute;
-}
-
-
-
-.black1 {
-    top: 1%;
-    left: -20px;
-    right: 0;
-
-    @media(min-width: 700px) {
-        top: 3%;
-    }
-}
-
-.black2 {
-    top: 18%;
-    left: 16%;
-}
-
-.black3 {
-    // top: 33%;
-    // left: 6%;
-    top: 33.5%;
-    left: 5%;
-}
-    
-.black4 {
-    top: 48.5%;
-    // left: 6%;
-    left: 5%;
-}
-
-.black5 {
-    /* top: 61%;
-    left: 6%; */
-    top: 73.5%;
-    left: 13%;
-}
-
-.black6 {
-    // top: 73%;
-    // left: 14%;
-    top: auto;
-    bottom: 13%;
-    left: 23%;
-}
-
-.black7 {
-    left:0; right:0;
-    bottom: 3%; 
-}
-
-// @media(max-width: 870px) {
-@media(max-width: 720px) {
-    .black3,.black4 {
-        left:0;
-    }
-
-    .black5 {
-        left: 2.5%;
-        top: 72.5%;
-    }
-
-    .black6 {
-        top: auto;
-        bottom: 12%;
-        left: 13%;
-    }
-    .black7 {
-        left:0; right:0;
-        bottom: 0%;
-    }
-
-    .black2 {
-        left: 7%;
-    }
-}
-
-@media(max-width: 685px) {
-    .black1,.black2,.black3,.black4,.black5,.black6,.black7,.gold1,.gold2,.gold3,.gold4,.gold5,.gold6 {
-            
-        p{
-            font-size: 12px;
-            line-height: 16px;           
-        }
-    }
-
-}
-
-@media(max-width: 560px) {
-    .black1,.black2,.black3,.black4,.black5,.black6,.black7,.gold1,.gold2,.gold3,.gold4,.gold5,.gold6 {
-            
-        p{
-            font-size: 10px;
-            line-height: 11px;
-        }
-    }
-
-}
-
-@media(max-width: 399px) {
-    .black1,.black2,.black3,.black4,.black5,.black6,.black7,.gold1,.gold2,.gold3,.gold4,.gold5,.gold6 {
-            
-        p{
-            font-size: 8px;
-            line-height: 9px;
-        }
-    }
-
-}
-
-// GOLDEN
-// .gold1 {
-//     left: 0;
-//     right: 0;
-//     bottom: 3%;
-// }
-
-.gold1 {
-    left: 41%;
-    right: 0;
-    bottom: 8%;
-}
-
-.gold2 {
-    // right: 12%;
-    // bottom: 23%;
-    right: 12%;
-    bottom: 21%;
-}
-
-.gold3 {
-    // right: 12%;
-    right: 10%;
-    bottom: 35%;
-}
-
-.gold4 {
-    // right: 2%;
-    // top: 47%;
-    right: 0;
-    top: 47%;
-}
-
-.gold5 {
-    right: 3%;
-    top: 32%;
-}
-
-.gold6 {
-    // top: 15%;
-    // right: 17%;
-    top: 17%;
-    right: 17%;
-}
-
-// @media(max-width: 870px) {
-@media(max-width: 720px) {
-    .gold4,.gold5 {
-        right:0;
-    }
-
-    .gold3 {
-        right:7%;
-        bottom: 33%;
-    }
-
-    .gold2 {
-        // right: 16%;
-        // bottom: 16%;
-        right: 7%;
-        bottom: 20%;
-    }
-
-    .gold1 {
-        left: 50%;
-        right: 0;
-        bottom: 8%;
-    }
-
-    // .black6,.black7 {
-    //     left: 7%;
-    // }
-
-    // .black2 {
-    //     left: 7%;
-    // }
-}
+.float-text { position: absolute; }
 
 .heart-text {
     position: absolute;
@@ -209,13 +16,10 @@
     text-transform: uppercase;
     font-weight: 800;
     width: 270px;
-    top: 45%;
-    left: 0;
-    right: 0;
+    top: 45%; left: 0; right: 0;
     margin: auto;
     text-align: center;
     padding: 10px;
-
     font-size: .85em;
     max-width: 17em;
 
@@ -225,35 +29,27 @@
         padding: 8px;
     }
 
-        @media(max-width: 875px) {
-            font-size: 0.75em;
-            width: 190px;
-            padding: 8px;
+    @media(max-width: 875px) {
+        font-size: 0.75em;
+        width: 190px;
+        padding: 8px;
     }
 
-            @media(max-width: 560px) {
-font-size: 0.55em;
-width: 140px;
-padding: 4px;
-top: 39%;
+    @media(max-width: 560px) {
+        font-size: 0.55em;
+        width: 140px;
+        padding: 4px;
+        top: 39%;
     }
 
-                @media(max-width: 450px) {
-
-width: 80px;
-
-    }
+    @media(max-width: 450px) { width: 80px; }
 }
 
 .lines {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0; bottom: 0; left: 0; right: 0;
     margin: auto !important;
-    max-width: 80% !important;
-    max-height: 80%;
+    max-width: 80% !important; max-height: 80%;
 }
 
 .circle-labels {
@@ -261,66 +57,40 @@ width: 80px;
     text-transform: uppercase;
     font-weight: 800;
     color: black;
-
     font-size:12px;
 
     div {
-        // width: 20px; height: 20px; 
         width: 15px; height: 15px;
         border-radius: 50%; background: black; display: inline-block;
         vertical-align: top;
-        margin-top: 2   px;
-
-        // @media(max-width: 399px) {
-        //     width: 15px;
-        //     height: 15px;
-        // }
+        margin-top: 2px;
     }
 }
 
 .label-str {
-    top: 15px;
-    left: 10%;
-    // padding: 5px 17px;
+    top: 15px; left: 10%;
     padding: 6px 17px 5px;
     border: 1px solid black;
 }
 
 .label-com {
-    bottom: 11%;
-    left: 5%;
-    // padding: 5px 17px;
+    bottom: 3%; left: 15%;
     padding: 6px 17px 5px;
     border: 1px solid black;
 
-    @media(max-width: 870px) {
-        left: 0;
-        bottom: 3%;
-    }
+    @media(max-width: 870px) { left: 0; }
 }
 
 .label-cre {
-    right: 10%;
-    // bottom: 3%;
-    // padding: 5px 17px;
     padding: 6px 17px 5px;
     border: 1px solid #daa250;
+    bottom:4%; right:5%;
 }
 
 @media(max-width: 620px) {
-    .label-str {
-        left: 0;
-    }
-
-    .label-com {
-        bottom:0;
-    }
-
-    .label-cre {
-        right:0;
-        // bottom:0;
-        bottom: -8%;
-    }
+    .label-str { left: 0; }
+    .label-com { bottom:0; }
+    .label-cre { right:0; bottom: -8%; }
 }
 
 @media(max-width: 500px) {
@@ -337,73 +107,42 @@ width: 80px;
     }
 
     .label-cre {
-        
-        bottom:-10%;
+        bottom:-12%;
         padding: 3px 6px;
         font-size: 13px;
     }
 }
 
 @media(max-width: 399px) {
-    .label-str, .label-com,.label-cre {
-        font-size: 11px;
-    }
+    .label-str, .label-com,.label-cre { font-size: 11px; }
 }
-
-
 
 .circle-wrapper {
     position: relative;
     margin:0 auto;
-    // max-width: 621px;
     max-width: 776px;
 }
 
 .circle {
-    
     margin: auto !important;
     max-width: 80% !important;
     display: block;
-
 }
 
 .heart-container {
     position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-
-    //     @media(min-width: 891px) {
-    //     top: 25%;
-    // }
-
-    // @media(max-width: 890px) {
-    //     top: 25%;
-    // }
-
-    // @media(max-width: 767px) {
-    //     top: 21%;
-    // }
-
-        @media(max-width: 560px) {
-        top: 10%;
-    }
-
-
+    top: 16%; left: 0; right: 0;
+    @media(max-width: 560px) { top: 10%; }
 }
 
 .cubeWrapper {
     position: relative;
     margin: 50px auto;
-
     -webkit-perspective: 800px;
     perspective: 800px;
     -webkit-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
-    // width: 534px;
-    // height: 300px;
-    width: 70%;
-    height: 70%;
+    width: 70%; height: 70%;
 }
 
 .cubeWrapper .rotator{
@@ -416,16 +155,10 @@ width: 80px;
 
 .cubeWrapper .cube {
     text-align: center;
-    // width: 534px;
-    // height: 501px;
-    width: 70%;
-    height: 70%;
+    width: 70%; height: 70%;
     margin: auto;
 
-    img {
-        margin: 0 0 0 0 !important;
-        // max-width: none !important;
-    }
+    img { margin: 0 0 0 0 !important; }
 }
 
 @-webkit-keyframes rotate3d {
@@ -494,19 +227,16 @@ width: 80px;
     }
 }
 
-    .bottom-text {
-        width: 80%;
-        text-align: center;
-        margin: auto;
-        color: black;
-        font-size: 1.2em;
-        margin: 90px auto;
-        line-height: 1.3em;
+.bottom-text {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-size: 1.2em; line-height: 1.3em;
+    margin: 90px auto;
 
-        @media(max-width: 767px) {
-            font-size: 1em;
-        }
-    }
+    @media(max-width: 767px) { font-size: 1em; }
+}
 
 #post-8 > section > div.circle-wrapper > div.float-text.gold4 > p {
     max-width: 14em;
@@ -538,11 +268,12 @@ html.js body.page div#container.tk-brandon-grotesque div#content div#inner-conte
 
 // ROTATE CIRCLE
 .circle-wrapper .circle {
-    @include prefix(transform, rotate(-20deg));
-    @include prefix(transition, all 5200ms linear);
+    // @include prefix(transform, rotate(-20deg));
+    @include prefix(transform, rotate(-12deg));
+    // @include prefix(transition, all 5200ms linear);
+    @include prefix(transition, all 6000ms linear);
 }
 
 .circle-wrapper .circle.around {
     @include prefix(transform, rotate(360deg));
-    // @include prefix(transition, all 5200ms);
 }

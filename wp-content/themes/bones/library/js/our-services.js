@@ -13,6 +13,8 @@ jQuery(document).ready(function($) {
         '#black7',
         '#black6',
         '#black5',
+        '#black9',
+        '#black8',
         '#black4',
         '#black3',
         '#black2'
@@ -32,7 +34,7 @@ jQuery(document).ready(function($) {
     // SHIFT ELEMENT ORDER SO BUSINESS STRATEGY IS FIRST
     for (var i =0; i < 4; i++) {
         var last = arr.pop();
-        arr.unshift(last);    
+        arr.unshift(last);
     }
 
     // console.log('This is your array: ');

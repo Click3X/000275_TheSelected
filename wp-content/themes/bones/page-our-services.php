@@ -20,6 +20,9 @@ $black4 = get_field('business_strategy');
 $black5 = get_field('product_innovation');
 $black6 = get_field('trade_engagement');
 $black7 = get_field('sales_channel');
+// NEW LISTINGS
+$black8 = get_field('brand_diagnostics');
+$black9 = get_field('brand_management');
 
 // GOLDEN
 $gold1 = get_field('key_influencer');
@@ -28,7 +31,6 @@ $gold3 = get_field('digital_creative');
 $gold4 = get_field('advertising_creative');
 $gold5 = get_field('partnerships_media');
 $gold6 = get_field('360_brand');
-
 
 ?>
 
@@ -39,19 +41,12 @@ $gold6 = get_field('360_brand');
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-
 							<section class="entry-content cf" itemprop="articleBody">
-								<?php the_content(); 
-
-
-								?>
-
+								<?php the_content();?>
 								<div class="short-divider"></div>
 
 								<!-- WHOLE WRAPPER -->
 								<div class="circle-wrapper">
-
 									<!-- CIRCLE WRAPPER -->
 									<img id="circle" class="circle" src="<?php echo get_template_directory_uri(); ?>/library/images/circle.png">
 
@@ -79,7 +74,9 @@ $gold6 = get_field('360_brand');
 									<div id="black2" class="float-text js-hide black2"><?php echo $black2; ?></div>
 									<div id="black3" class="float-text js-hide black3"><?php echo $black3; ?></div>
 									<div id="black4" class="float-text js-hide black4"><?php echo $black4; ?></div>
+									<div id="black8" class="float-text js-hide black8"><?php echo $black8; ?></div>
 									<!-- grey -->
+									<div id="black9" class="float-text js-hide black9"><?php echo $black9; ?></div>
 									<div id="black5" class="float-text js-hide black5"><?php echo $black5; ?></div>
 									<div id="black6" class="float-text js-hide black6"><?php echo $black6; ?></div>
 									<div id="black7" class="float-text js-hide black7"><?php echo $black7; ?></div>
